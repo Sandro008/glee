@@ -45,6 +45,10 @@
         font-size: 15px;
         line-height: 12px;
         color: $accent;
+        transition: color 0.5s;
+        &:hover{
+            color: #fcd7b6;
+        }
     }
 
     &__list-link--active {
