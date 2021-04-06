@@ -3,9 +3,106 @@
 @import 'reset';
 @import 'global';
 
+.header {
+    padding: 50px 0;
 
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+
+.logo {
+    display: flex;
+    font-size: 36px;
+    line-height: 58px;
+    @extend %rubik-500;
+    color: $accent;
+
+    &__img {
+        margin-right: 10px;
+    }
+}
+
+.menu {
+
+    &__list {
+        display: flex;
+    }
+
+    &__list span {
+        padding-left: 5px;
+    }
+
+    &__list-item+.menu__list-item {
+        padding-left: 35px;
+    }
+
+    &__list-link {
+        @extend %rubik-500;
+        font-size: 15px;
+        line-height: 12px;
+        color: $accent;
+    }
+
+    &__list-link--active {
+        color: #fcd7b6;
+        border-bottom: 1px solid transparent;
+    }
+}
+
+.user-nav {
+    display: flex;
+
+    &__search {
+        padding: 19px;
+        border-radius: 50%;
+        background-color: #edf1f4;
+    }
+
+    &__menubar {
+        background-color: $title;
+        border-radius: 50%;
+        padding: 15px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        margin: 0 20px;
+        padding: 0 43px;
+        background-color: #fcd7b6;
+        border-radius: 25px;
+
+    }
+
+    &__link {
+        position: relative;
+    }
+
+    &__images {
+        padding: 10px 30px;
+    }
+
+    &__num {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #fff;
+        top: -9px;
+        right: -8px;
+        font-size: 15px;
+        color: $accent;
+        text-align: center;
+        line-height: 16px;
+
+    }
+
+
+
+}
 
 @import 'media';
-
-
-
