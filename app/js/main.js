@@ -1,11 +1,38 @@
 $(function () {
     $('.top-slider__inner').slick({
         arrows: false,
-        dots: true
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
 
     })
 });
 
 $(function () {
-    var mixer = mixitup(' .products-content ');
+    $('.design-partners__slider').slick({
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        touchMove:true
+
+    })
+
+})
+
+$(function () {
+    var mixerOne = mixitup('.products__mixitup', {
+        controls: {
+            scope: 'local'
+        }
+    });
+
+    var mixertwo = mixitup('.disign__mixitup', {
+        controls: {
+            scope: 'local'
+        }
+    });
 });

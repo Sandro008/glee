@@ -1,0 +1,237 @@
+.products {
+    padding-top: 60px;
+    background: $white;
+
+    &__title {
+        margin-bottom: 15px;
+    }
+}
+
+.content-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
+
+    &__list:not(:last-child) {
+        margin-right: 18px;
+
+        &--active {
+            color: $black-700;
+        }
+
+    }
+
+    &__btn {
+        @extend %dmsans-700;
+        color: $gray-400;
+        border: none;
+        background-color: transparent;
+        outline: transparent;
+        cursor: pointer;
+        transition: color 0.5s;
+
+        &:hover {
+            color: $black-700;
+        }
+
+        &--active {
+            color: $black-700;
+        }
+
+    }
+}
+
+.products-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px 30px;
+    margin-bottom: 185px;
+
+    &__item {
+        border-radius: 10px;
+        box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    }
+
+}
+
+.products-card {
+    height: 380px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+
+
+    &:hover .products-card__pointing {
+        display: flex;
+        opacity: 1;
+    }
+
+    &__inner {
+        margin: auto;
+    }
+
+    &__img {
+        margin-bottom: 10px;
+        @extend %fit;
+    }
+
+    &__wrapper {
+        text-align: center;
+        padding: 10px;
+    }
+
+    &__title {
+        font-weight: 700;
+        color: $blue-100;
+        font-size: 16px;
+        line-height: 2.5;
+        margin-bottom: -5px;
+        @extend %ellipsis;
+    }
+
+    &__price {
+        color: $title;
+        font-weight: 700;
+        line-height: 2.5;
+
+    }
+
+    &__pointing {
+        position: absolute;
+        display: flex;
+        bottom: 150px;
+        opacity: 0;
+        transition: opacity 1s;
+
+    }
+
+    &__element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $white;
+        box-shadow: 0 0 3px $title;
+        margin-right: 15px;
+        transition: all 1s;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background-color: $title;
+            transform: scale(1.1);
+
+            svg {
+                fill: $white;
+            }
+        }
+
+    }
+
+    &__svg {
+        border: transparent;
+        background-color: transparent;
+        cursor: pointer;
+
+        svg {
+            fill: $title;
+        }
+
+    }
+}
+
+
+.products-links {
+    display: flex;
+    margin-bottom: 90px;
+
+    &__item {
+        width: 50%;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.products-box {
+    height: 392px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: $orange-200;
+    position: relative;
+    padding-right: 150px;
+    padding-bottom: 22px;
+
+    &__inner {
+        max-width: 250px;
+    }
+
+    &__img {
+        margin: -89px 0 80px 0;
+        @extend %fit;
+    }
+
+    &__wrapper {
+        max-width: 350px;
+        padding-left: 17px;
+        margin: auto 0;
+
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        color: $blue-100;
+        margin-bottom: 20px;
+        max-height: 65px;
+        @extend %ellipsis;
+    }
+
+    &__subtitle {
+        @extend %rubik-400;
+        line-height: 1.88;
+        margin-bottom: 44px;
+        max-height: 90px;
+        @extend %ellipsis;
+    }
+
+    &__btn {
+        @extend %rubik-400;
+        font-size: 15px;
+        line-height: 1;
+        color: $accent;
+        padding: 20px 90px 20px 20px;
+        border-radius: 5px;
+        border: 1px solid $blue-200;
+        transition: color 0.5s, background-color 0.5s;
+        position: relative;
+
+        &:hover {
+            background-color: $blue-200;
+            color: $white;
+
+            svg {
+                fill: $white;
+            }
+        }
+    }
+
+    svg {
+        position: absolute;
+        fill: $blue-200;
+        right: 8%;
+        top: 40%;
+
+    }
+}

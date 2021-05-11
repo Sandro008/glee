@@ -1,0 +1,151 @@
+footer {
+    color: $footer;
+    @extend %rubik-400;
+    font-size: 14px;
+    line-height: 2.3;
+}
+
+.footer-section {
+    padding: 75px 0 50px 0;
+    border-bottom: 1px solid $white-100;
+    display: flex;
+    
+
+    &__contact {
+        width: 230px;
+        padding: 10px;
+        margin-right: 65px;
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 22px;
+
+    }
+
+    &__data {
+        display: block;
+        line-height: 1.7;
+        font-style: normal;
+        margin-bottom: 17px;
+        transition: color 0.5s;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover {
+            color: $orange-500;
+        }
+    }
+
+    &__services {
+        margin-right: 130px;
+        padding: 10px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        @extend %dmsans-700;
+        font-size: 16px;
+        line-height: 2.3;
+        color: $dblue;
+        margin-bottom: 14px;
+    }
+
+    &__link {
+        transition: color 0.3s;
+
+        &:hover {
+            color: $orange-500;
+        }
+
+    }
+
+    &__account {
+        margin-right: 180px;
+        padding: 10px;
+    }
+
+    &__newsletter {
+        max-width: 300px;
+        padding: 10px;
+
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+
+    &__input {
+        @extend %dmsans-400;
+        font-size: 12px;
+        color: $dblue-50;
+        max-width: 170px;
+        width: 100%;
+        background-color: $orange-100;
+        border: none;
+        padding: 5px 15px;
+        outline: transparent;
+        border: 1px solid transparent;
+        transition: all 0.5s;
+
+        &::placeholder {
+            color: $dblue-50;
+        }
+
+        &:focus {
+            border: 1px solid $dblue-50;
+            background-color: $title;
+        }
+
+    }
+
+    &__btn {
+        @extend %dmsans-400;
+        font-size: 14px;
+        line-height: 1.5;
+        border: none;
+        background-color: $title;
+        color: $white;
+        max-width: 100px;
+        padding: 6px 17px;
+        transition: background-color 0.5s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $orange-500;
+        }
+
+    }
+
+}
+
+.footer-subsection {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    &__menu {
+        display: flex;
+    }
+
+    &__list {
+        transition: color 0.3s;
+
+        &:hover {
+            color: $orange-500;
+        }
+
+        &:after {
+            content: '|';
+            margin: 0 15px;
+        }
+
+        &:last-child:after {
+            content: '';
+            margin: 0;
+        }
+
+    }
+}

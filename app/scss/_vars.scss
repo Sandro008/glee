@@ -1,35 +1,75 @@
 $accent: #436372;
+$search-bg: #edf1f4;
+$orange-50:#fde3cc;
+$orange-100: #fef7f0;
+$orange-200:#feefe2;
+$orange-500: #fcd7b6;
 $default: #585858;
 $title: #a3bbc8;
 $footer:#7b7b7b;
+$blue-50:#222933;
+$blue-100: #243f4d;
+$blue-200:#436372;
+$blue-700:#243f4d;
+$dblue:#1f2044;
+$dblue-50:#234969;
+$black-500: #414141;
+$black-700: #191919;
+$gray-100:#e8e4df;
+$gray-300:#f8f8f8;
+$gray-400: #8b8b8b;
+$white: #fff;
+$white-100: #dae4e9;
+$bb:#e0e0e0;
+
 
 
 %dmsans-400 {
-    font-family: 'DMSans-Regular', sans-serif;
+    font-family: 'DMSans', sans-serif;
     font-weight: 400;
 }
 
 %dmsans-500 {
-    font-family: 'DMSans-Medium', sans-serif;
+    font-family: 'DMSans', sans-serif;
     font-weight: 500;
 }
 
 %dmsans-700 {
-    font-family: 'DMSans-Bold', sans-serif;
+    font-family: 'DMSans', sans-serif;
     font-weight: 700;
 }
 
 %poppins-700 {
-    font-family: 'Poppins-Bold', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
 
 %rubik-400 {
-    font-family: 'Rubik-Regular', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
 }
 
 %rubik-500 {
-    font-family: 'Rubik-Medium', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 500;
+}
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
+
+%ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+%fit {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
 }
