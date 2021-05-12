@@ -65,12 +65,12 @@
     &__wrapper {
         display: flex;
 
-        &:hover .user-nav__input {
+        &:hover .menu-nav__input {
             width: 200px;
             padding: 0 25px;
         }
 
-        &:hover .user-nav__button {
+        &:hover .menu-nav__button {
             background-color: $orange-500;
         }
     }

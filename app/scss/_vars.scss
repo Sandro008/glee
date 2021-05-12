@@ -38,10 +38,19 @@ $bb:#e0e0e0;
     font-family: 'DMSans', sans-serif;
     font-weight: 700;
 }
+%poppins-600 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
 
 %poppins-700 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+}
+
+%rubik-300 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
 }
 
 %rubik-400 {
@@ -53,6 +62,11 @@ $bb:#e0e0e0;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
 }
+%rubik-700 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
 
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
