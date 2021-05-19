@@ -1,0 +1,101 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+
+    &:hover .product-card__pointing {
+        display: flex;
+        opacity: 1;
+    }
+
+    &__inner {
+        margin: auto;
+        height: 240px;
+        margin-bottom: 23px
+    }
+
+    &__image {
+        @extend %fit;
+    }
+
+    &__wrapper {
+        text-align: center;
+
+    }
+
+    &__title {
+        font-weight: 700;
+        color: $blue-100;
+        font-size: 16px;
+        line-height: 2.5;
+        margin-bottom: -5px;
+        @include line-clamp(1)
+    }
+
+    &__price {
+        color: $title;
+        font-weight: 700;
+        line-height: 2.5;
+
+    }
+
+    &__pointing {
+        position: absolute;
+        display: flex;
+        bottom: 130px;
+        opacity: 0;
+        transition: opacity 1s;
+
+    }
+
+    &__element {
+        margin-right: 15px;
+        transition: all 1s;
+        border-radius: 50%;
+        background-color: $white;
+        border: transparent;
+        box-shadow: 0 0 3px $title;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background-color: $title;
+            transform: scale(1.1);
+
+            svg {
+                fill: $white;
+            }
+        }
+
+        &:active {
+            background-color: $orange-500;
+            transform: scale(1.1);
+
+            svg {
+                fill: $accent;
+            }
+        }
+
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        cursor: pointer;
+        border: transparent;
+
+        svg {
+            fill: $title;
+        }
+
+    }
+}

@@ -1,0 +1,41 @@
+.content-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 75px;
+
+    &__item:not(:last-child) {
+        margin-right: 18px;
+
+        &--active {
+            color: $black-700;
+        }
+
+    }
+
+    &__btn {
+        @extend %dmsans-700;
+        color: $gray-400;
+        border: transparent;
+        background-color: transparent;
+        cursor: pointer;
+        transition: color 0.5s;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:focus {
+            color: $title;
+        }
+
+        &:active {
+            color: $black-700;
+        }
+
+        &--active {
+            color: $black-700;
+        }
+
+    }
+}

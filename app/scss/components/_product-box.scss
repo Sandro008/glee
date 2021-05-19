@@ -1,0 +1,74 @@
+.product-box {
+    display: flex;
+    justify-content: center;
+    background-color: $orange-200;
+    position: relative;
+
+    &__inner {
+        height: 394px;
+        max-width: 225px;
+    }
+
+    &__img {
+        transform: translateY(-23%);
+        @extend %fit;
+    }
+
+    &__wrapper {
+        max-width: 350px;
+        padding-left: 10px;
+        margin: auto 0;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.2;
+        color: $blue-100;
+        margin-bottom: 20px;
+        max-height: 65px;
+        @include line-clamp(2)
+    }
+
+    &__subtitle {
+        @extend %rubik-400;
+        line-height: 1.88;
+        margin-bottom: 44px;
+        max-height: 90px;
+        @include line-clamp(3)
+    }
+
+    &__btn {
+        color: $accent;
+        border-radius: 5px;
+        border: 1px solid $blue-200;
+        transition: color 0.5s, background-color 0.5s;
+        position: relative;
+
+        &:hover {
+            background-color: $blue-200;
+            color: $white;
+
+            svg {
+                fill: $white;
+            }
+        }
+
+        &:active {
+            background-color: $white;
+            color: $accent;
+
+            svg {
+                fill: $accent;
+            }
+        }
+    }
+
+    svg {
+        position: absolute;
+        fill: $blue-200;
+        right: 8%;
+        top: 40%;
+
+    }
+}

@@ -1,0 +1,19 @@
+.partners {
+    background-color: $orange-100;
+    padding: 260px 0 76px;
+    margin-top: -170px;
+
+    &__item {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        height: 100px
+    }
+
+    & .slick-track {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

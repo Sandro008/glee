@@ -9,7 +9,7 @@ $(function () {
 });
 
 $(function () {
-    $('.design-partners__slider').slick({
+    $('.partners__slider').slick({
         arrows: false,
         dots: false,
         autoplay: true,
@@ -30,7 +30,7 @@ $(function () {
         }
     });
 
-    var mixertwo = mixitup('.disign__mixitup', {
+    var mixertwo = mixitup('.design__mixitup', {
         controls: {
             scope: 'local'
         }

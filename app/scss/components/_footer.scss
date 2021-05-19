@@ -1,20 +1,29 @@
-footer {
+.footer {
     color: $footer;
     @extend %rubik-400;
     font-size: 14px;
     line-height: 2.3;
-}
 
-.footer-section {
-    padding: 75px 0 50px 0;
-    border-bottom: 1px solid $white-100;
-    display: flex;
-    
+    &__section {
+        padding: 75px 0 64px 0;
+        border-bottom: 1px solid $white-100;
+        display: flex;
 
-    &__contact {
+    }
+
+    &__column {
         width: 230px;
-        padding: 10px;
         margin-right: 65px;
+
+        &:last-child {
+            margin-right: 0;
+            width: 300px;
+        }
+
+        &:not(:nth-child(1)) {
+            padding-top: 17px;
+            padding-left: 8px;
+        }
     }
 
     &__logo {
@@ -27,7 +36,7 @@ footer {
         display: block;
         line-height: 1.7;
         font-style: normal;
-        margin-bottom: 17px;
+        margin-bottom: 13px;
         transition: color 0.5s;
 
         &:last-child {
@@ -37,11 +46,10 @@ footer {
         &:hover {
             color: $orange-500;
         }
-    }
 
-    &__services {
-        margin-right: 130px;
-        padding: 10px;
+        &:active {
+            color: $accent;
+        }
     }
 
     &__title {
@@ -50,7 +58,7 @@ footer {
         font-size: 16px;
         line-height: 2.3;
         color: $dblue;
-        margin-bottom: 14px;
+        margin-bottom: 8px;
     }
 
     &__link {
@@ -60,16 +68,9 @@ footer {
             color: $orange-500;
         }
 
-    }
-
-    &__account {
-        margin-right: 180px;
-        padding: 10px;
-    }
-
-    &__newsletter {
-        max-width: 300px;
-        padding: 10px;
+        &:active {
+            color: $accent;
+        }
 
     }
 
@@ -89,53 +90,58 @@ footer {
         outline: transparent;
         border: 1px solid transparent;
         transition: all 0.5s;
+        margin-right: -3px;
 
         &::placeholder {
             color: $dblue-50;
         }
 
         &:focus {
-            border: 1px solid $dblue-50;
+            border-color: $dblue-50;
             background-color: $title;
+            color: $white;
         }
 
     }
 
     &__btn {
-        @extend %dmsans-400;
         font-size: 14px;
         line-height: 1.5;
         border: none;
         background-color: $title;
         color: $white;
         max-width: 100px;
-        padding: 6px 17px;
-        transition: background-color 0.5s;
+        padding: 5px 15px;
+        transition: background-color 0.5s, color 0.5s;
         cursor: pointer;
 
         &:hover {
             background-color: $orange-500;
         }
 
+        &:active {
+            color: $accent;
+        }
+
+        &:focus {
+            background-color: $title;
+            color: $accent;
+        }
+
     }
 
-}
-
-.footer-subsection {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0;
+    &__subsection {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
 
     &__menu {
         display: flex;
     }
 
-    &__list {
+    &__element {
         transition: color 0.3s;
-
-        &:hover {
-            color: $orange-500;
-        }
 
         &:after {
             content: '|';
@@ -147,5 +153,18 @@ footer {
             margin: 0;
         }
 
+        &:hover {
+            color: $orange-500;
+
+            &:after {
+                color: $footer;
+            }
+        }
+
+        &:active {
+            color: $accent;
+        }
+
     }
+
 }

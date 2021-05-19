@@ -7,6 +7,7 @@ $orange-500: #fcd7b6;
 $default: #585858;
 $title: #a3bbc8;
 $footer:#7b7b7b;
+$fiolet: #565872;
 $blue-50:#222933;
 $blue-100: #243f4d;
 $blue-200:#436372;
@@ -15,12 +16,14 @@ $dblue:#1f2044;
 $dblue-50:#234969;
 $black-500: #414141;
 $black-700: #191919;
+$garay-50: #4c4c4c;
 $gray-100:#e8e4df;
 $gray-300:#f8f8f8;
 $gray-400: #8b8b8b;
 $white: #fff;
 $white-100: #dae4e9;
 $bb:#e0e0e0;
+$about-bb: #e6eaf0;
 
 
 
@@ -76,8 +79,10 @@ $bb:#e0e0e0;
     @return m#{i}n(#{$numbers});
 }
 
-%ellipsis {
-    text-overflow: ellipsis;
+@mixin line-clamp($lines) {
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
@@ -87,3 +92,4 @@ $bb:#e0e0e0;
     object-position: center;
     object-fit: contain;
 }
+

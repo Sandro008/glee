@@ -4,6 +4,9 @@
     &__inner {
         background-color: $orange-500;
 
+        & .slick-slide {
+            overflow: hidden;
+        }
     }
 
     &__item {
@@ -13,14 +16,18 @@
         justify-content: space-between;
         align-items: center;
         position: relative;
+        z-index: 1;
 
         &::after {
             content: '';
             position: absolute;
             background-image: url(../images/png/slider-photo/circle.png);
-            width: 630px;
-            height: 630px;
+            background-repeat: no-repeat;
+            width: 51%;
+            height: 77%;
+            top: 50%;
             left: 58%;
+            transform: translateY(-50%);
             z-index: 0;
 
         }
@@ -32,45 +39,30 @@
         max-width: 430px;
         padding-bottom: 80px;
         padding-left: 15px;
-
-
     }
-
-    &__wrapper {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        max-height: 300px;
-    }
-
 
     &__title {
         text-transform: uppercase;
-        @extend %ellipsis;
-        height: 150px;
         font-size: 72px;
         line-height: 1;
         color: $blue-100;
-        margin-bottom: 30px
+        margin-bottom: 30px;
+        @include line-clamp(2)
     }
 
     &__subtitle {
         max-width: 380px;
-        @extend %ellipsis;
-        height: 90px;
         font-weight: 400;
         font-size: 18px;
         line-height: 1.67;
         color: $accent;
-        margin-bottom: 50px
+        margin-bottom: 50px;
+        @include line-clamp(3)
     }
 
     &__btn {
-        font-size: 15px;
-        line-height: 1;
         color: $white;
-        padding: 24px 103px 18px 26px;
         background-color: $title;
-        outline: transparent;
         position: relative;
         transition: color 0.5s, background-color 0.5s;
 
@@ -80,6 +72,24 @@
 
             svg {
                 fill: $title;
+            }
+        }
+
+        &:focus {
+            background-color: $orange-500;
+            color: $title;
+
+            svg {
+                fill: $title;
+            }
+        }
+
+        &:active {
+            background-color: $title;
+            color: $orange-500;
+
+            svg {
+                fill: $orange-500;
             }
         }
 
@@ -94,11 +104,11 @@
 
     &__picture {
         height: 500px;
-        max-width: 600px;
+        max-width: 640px;
+        z-index: 1;
     }
 
     &__img {
-        z-index: 1;
         @extend %fit;
     }
 
@@ -124,28 +134,38 @@
                 @extend %rubik-400;
                 font-size: 10px;
                 border: none;
-                outline: transparent;
-                transition: transform .3s;
+                transition: transform .3s, background-color 0.5s;
                 cursor: pointer;
+
+                &:hover {
+                    background-color: $white;
+                }
+
+                &:focus {
+                    background-color: $title;
+                }
             }
 
             &.slick-active {
                 button {
                     background-color: $white;
                     transform: scale(1.1);
+
                 }
+
 
             }
         }
 
     }
+}
 
-    &__service {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+.advantage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
-    &__about {
+
+    &__item {
         padding: 38px 0;
         background-color: $orange-100;
         display: flex;
@@ -156,22 +176,20 @@
         &:last-child {
             border-right: none;
         }
+
     }
 
-    &__all {
+    &__text {
         max-width: 235px;
         padding-left: 20px;
+        @include line-clamp(3)
     }
 
-    &__subject {
+    &__title {
         font-weight: 700;
         font-size: 18px;
         line-height: 2.2;
-    }
-
-    &__list {
-        @extend %ellipsis;
-        max-height: 80px;
+        @include line-clamp(1)
     }
 
 }

@@ -5,6 +5,7 @@ body {
 
 body {
     @extend %dmsans-400;
+    background-color: $white;
     color: $default;
     font-size: 16px;
     line-height: 1.65;
@@ -31,4 +32,10 @@ body {
     font-size: 36px;
     text-align: center;
     color: $black-700;
+}
+.button {
+    font-size: 15px;
+    line-height: 1;
+    padding: 20px 90px 20px 20px;
+    @extend %rubik-500;
 }

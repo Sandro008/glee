@@ -1,0 +1,42 @@
+.design {
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        margin-bottom: 115px;
+    }
+
+    &__items {
+        background-color: $gray-300;
+        transition: transform 0.5s;
+
+        &:nth-last-child(4),
+        &:nth-last-child(3),
+        &:nth-last-child(2) {
+            .product-new__text {
+                max-width: 170px;
+
+            }
+        }
+
+        &:nth-last-child(4) {
+            .product-new__img {
+                margin-right: 55px;
+
+            }
+        }
+
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            opacity: 0.9;
+        }
+    }
+}

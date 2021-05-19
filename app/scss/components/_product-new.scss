@@ -1,0 +1,39 @@
+.product-new {
+    position: relative;
+
+    &__text {
+        position: absolute;
+        max-width: 215px;
+        font-weight: 700;
+        top: 13%;
+        left: 10%;
+
+    }
+
+    &__title {
+        font-size: 20px;
+        color: $black-700;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        text-shadow: 0 0 5px $gray-300;
+        @include line-clamp(2)
+    }
+
+    &__subtitle {
+        color: $title;
+        @include line-clamp(1)
+    }
+
+    &__wrapper {
+        display: flex;
+        height: 246px;
+        overflow: hidden;
+    }
+
+    &__img {
+        margin: auto;
+        margin-right: 30px;
+        border-radius: 5px;
+    }
+
+}

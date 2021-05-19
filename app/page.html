@@ -19,7 +19,6 @@
 <body>
     <header class="header">
         <div class="container">
-            <h1 class="visually-hidden">Glee,buy furniture,chairs,lamp,big sale</h1>
             <div class="header__inner">
                 <nav class="menu-nav">
                     <a class="menu-nav__logo logo">
@@ -47,7 +46,7 @@
                     <div class="menu-nav">
                         <div class="menu-nav__wrapper">
                             <label class="visually-hidden" for="search">search</label>
-                            <input class="menu-nav__input" id="search" type="text" name="search"
+                            <input class="menu-nav__input" id="search" type="search" name="search"
                                 placeholder="Search...">
                             <button class="menu-nav__button" type="button">
                                 <span class="visually-hidden"> Button Search</span>
@@ -57,15 +56,15 @@
                             </button>
                         </div>
                         <div class="menu-nav__inner">
-                            <a class="menu-nav__wrap" href="#">
-                                <span class="visually-hidden">Link Heart</span>
-                                <svg width="17.87" height="15.531">
+                            <a class="menu-nav__items" href="#">
+                                <span class="visually-hidden">Favorite Page</span>
+                                <svg width="19" height="17">
                                     <use xlink:href="images/sprite.svg#heart"></use>
                                 </svg>
                                 <span class="menu-nav__num">0</span>
                             </a>
-                            <a class="menu-nav__wrap" href="#">
-                                <span class="visually-hidden">Link Cart</span>
+                            <a class="menu-nav__items" href="#">
+                                <span class="visually-hidden">Cart Page</span>
                                 <svg width="18.94" height="16.969">
                                     <use xlink:href="images/sprite.svg#cart"></use>
                                 </svg>
@@ -73,7 +72,7 @@
                             </a>
                         </div>
                         <button class="menu-nav__menubar" type="button">
-                            <span class="visually-hidden">Button Menubar</span>
+                            <span class="visually-hidden">Open Menubar</span>
                             <svg width="20.03" height="20.031">
                                 <use xlink:href="images/sprite.svg#menubar"></use>
                             </svg>
@@ -83,93 +82,284 @@
             </div>
         </div>
     </header>
-
+    
     <main class="main">
         <section class="about-us">
-            <h1 class="about-us__title">About Us</h1>
-            <div class="crumbs">
-                <ul class="crumbs__list">
-                    <li class="crumbs__item">
-                        <a class="crumbs__link" href="#">Home</a>
+            <div class="titles-all">
+                <h2 class="titles-all__title">About Us</h2>
+                <ul class="titles-all__list">
+                    <li class="titles-all__item">
+                        <a class="titles-all__link" href="#">Home</a>
                     </li>
-                    <li class="crumbs__item">
-                        <a class="crumbs__link" href="#">About Us</a>
+                    <li class="titles-all__item">
+                        <a class="titles-all__link" href="#">About Us</a>
                 </ul>
-
             </div>
             <div class="container container--sm">
-
-
-            </div>
-
-        </section>
-
-    </main>
-    <footer class="footer">
-        <div class="container container--sm">
-            <div class="footer-section">
-                <div class="footer-section__contact">
-                    <a class="footer-section__logo logo" href="#">
-                        <img class="logo__img" src="images/png/logo/logo.png" alt="logo">
-                    </a>
-                    <address class="footer-section__address">
-                        <a class="footer-section__data" href="#">ADDRESS: 4772 Wines Lane Houston,TX 77032</a>
-                        <a class="footer-section__data" href="tel:+8323475843">TELEPHONE: +832-347-5843</a>
-                        <a class="footer-section__data" href="mailto:contact@Glee.com">EMAIL: contact@Glee.com</a>
-                    </address>
+                <div class="about-us__mission">
+                    <div class="about-us__images">
+                        <img class="about-us__img" src="images/png/about-us/about-photo.png" alt="boy">
+                    </div>
+                    <div class="about-us__text">
+                        <div class="about-us__slogan">
+                            <span>12</span>
+                            <p class="about-us__wd">Years Experience Working</p>
+                        </div>
+                        <h3 class="about-us__subject">Mission of our creative house</h3>
+                        <p class="about-us__desc">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                        </p>
+                        <ul class="about-us__statistic">
+                            <li class="about-us__word">
+                                <svg class="about-us__svg" width="37" height="38">">
+                                    <use xlink:href="images/sprite.svg#list"></use>
+                                </svg>
+                                <div class="about-us__wrap">
+                                    <p class="about-us__num">520+</p>
+                                    <p class="about-us__news">Projects</p>
+                                </div>
+                            </li>
+                            <li class="about-us__word">
+                                <svg class="about-us__svg" width="44" height="40">">">
+                                    <use xlink:href="images/sprite.svg#shout"></use>
+                                </svg>
+                                <div class="about-us__wrap">
+                                    <p class="about-us__num">$4M</p>
+                                    <p class="about-us__news">Revenue</p>
+                                </div>
+                            </li>
+                            <li class="about-us__word">
+                                <svg class="about-us__svg" width="43" height="42">">">
+                                    <use xlink:href="images/sprite.svg#diamond"></use>
+                                </svg>
+                                <div class="about-us__wrap">
+                                    <p class="about-us__num">250</p>
+                                    <p class="about-us__news">Awards</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="footer-section__services">
-                    <p class="footer-section__title">Services</p>
-                    <ul class="footer-section__list">
-                        <li class="footer-section__link"><a class="footer-section__list" href="#">About us</a></li>
-                        <li class="footer-section__link"><a class="footer-section__list" href="#">Return Policy</a></li>
-                        <li class="footer-section__link"><a class="footer-section__list" href="#">Our Blog </a></li>
-                        <li class="footer-section__link"><a class="footer-section__list" href="#">Contact Us</a></li>
-                        <li class="footer-section__link"><a class="footer-section__list" href="#">Terms & Condition</a>
+            </div>
+            <div class="about-us__inner">
+                <div class="container container--sm">
+                    <ul class="about-us__statical">
+                        <li class="about-us__info">
+                            <svg width="74" height="60">
+                                <use xlink:href="images/sprite.svg#laptop"></use>
+                            </svg>
+                            <p class="about-us__say"><span>99%</span>Satisﬁed Clients Rate </p>
+                        </li>
+                        <li class="about-us__info">
+                            <svg width="73" height="52">
+                                <use xlink:href="images/sprite.svg#bus"></use>
+                            </svg>
+                            <p class="about-us__say"><span>5020+</span>Products Delivered </p>
+                        </li>
+                        <li class="about-us__info">
+                            <svg width="79" height="64">
+                                <use xlink:href="images/sprite.svg#phone24"></use>
+                            </svg>
+                            <p class="about-us__say"><span>23h</span>Daily Working Time </p>
+                        </li>
+                        <li class="about-us__info">
+                            <svg width="61" height="64">
+                                <use xlink:href="images/sprite.svg#star"></use>
+                            </svg>
+                            <p class="about-us__say"><span>140+</span>Brands in Store</p>
                         </li>
                     </ul>
                 </div>
-                <div class="footer-section__account">
-                    <p class="footer-section__title">Account</p>
-                    <ul class="footer-section__information">
-                        <li class="footer-section__link"><a class="footer-section__list" href="#">Your Account</a></li>
-                        <li class="footer-section__link"><a class="footer-section__list" href="#">Checkout</a></li>
-                        <li class="footer-section__link"><a class="footer-section__list" href="#">Login</a></li>
-                        <li class="footer-section__link"><a class="footer-section__list" href="#">Register</a></li>
+            </div>
+            <div class="container container--sm">
+                <div class="about-us__holder">
+                    <div class="about-us__team">
+                        <h3 class="about-us__caption">Our Team</h3>
+                        <p class="about-us__version">Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit, sed do
+                            eiusmod tempor inciLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a class="about-us__ref" href="#">Join With US
+                            <svg width="15" height="11">
+                                <use xlink:href="images/sprite.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <ul class="about-us__people">
+                        <li class="about-us__labor">
+                            <a href="#" class="about-us__reference">
+                                <img src="images/png/about-us/team1.png" alt="Eliza Elliot">
+                            </a>
+                            <div class="about-us__phototitle">
+                                <div class="about-us__box">
+                                    <p class="about-us__username">Eliza Elliot</p>
+                                    <p class="about-us__position">Commodo tempor </p>
+                                </div>
+                                <div class="about-us__boxs">
+                                    <a class="about-us__boxswrap" href="#">
+                                        <span class="visually-hidden">Instagramm logo</span>
+                                        <svg width="41" height="41">
+                                            <use xlink:href="images/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="about-us__boxswrap" href="#">
+                                        <span class="visually-hidden">Google +</span>
+                                        <svg width="41" height="41">
+                                            <use xlink:href="images/sprite.svg#google+"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="about-us__labor">
+                            <a href="#" class="about-us__reference">
+                                <img src="images/png/about-us/team2.png" alt="Roscoe A.">
+                            </a>
+                            <div class="about-us__phototitle">
+                                <div class="about-us__box">
+                                    <p class="about-us__username">Roscoe A.</p>
+                                    <p class="about-us__position">Commodo tempor </p>
+                                </div>
+                                <div class="about-us__boxs">
+                                    <a class="about-us__boxswrap" href="#">
+                                        <span class="visually-hidden">Instagramm logo</span>
+                                        <svg width="41" height="41">
+                                            <use xlink:href="images/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="about-us__boxswrap" href="#">
+                                        <span class="visually-hidden">Google +</span>
+                                        <svg width="41" height="41">
+                                            <use xlink:href="images/sprite.svg#google+"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="about-us__labor">
+                            <a href="#" class="about-us__reference">
+                                <img src="images/png/about-us/team3.png" alt="Ruby M.">
+                            </a>
+                            <div class="about-us__phototitle">
+                                <div class="about-us__box">
+                                    <p class="about-us__username">Ruby M.</p>
+                                    <p class="about-us__position">Commodo tempor </p>
+                                </div>
+                                <div class="about-us__boxs">
+                                    <a class="about-us__boxswrap" href="#">
+                                        <span class="visually-hidden">Instagramm logo</span>
+                                        <svg width="41" height="41">
+                                            <use xlink:href="images/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="about-us__boxswrap" href="#">
+                                        <span class="visually-hidden">Google +</span>
+                                        <svg width="41" height="41">
+                                            <use xlink:href="images/sprite.svg#google+"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="about-us__labor">
+                            <a href="#" class="about-us__reference">
+                                <img src="images/png/about-us/team4.png" alt="Marie F.Bloss">
+                            </a>
+                            <div class="about-us__phototitle">
+                                <div class="about-us__box">
+                                    <p class="about-us__username">Marie F.Bloss</p>
+                                    <p class="about-us__position">Commodo tempor </p>
+                                </div>
+                                <div class="about-us__boxs">
+                                    <a class="about-us__boxswrap" href="#">
+                                        <span class="visually-hidden">Instagramm logo</span>
+                                        <svg width="41" height="41">
+                                            <use xlink:href="images/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="about-us__boxswrap" href="#">
+                                        <span class="visually-hidden">Google +</span>
+                                        <svg width="41" height="41">
+                                            <use xlink:href="images/sprite.svg#google+"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-                <div class="footer-section__newsletter">
-                    <p class="footer-section__title">Newsletter</p>
-                    <p class="footer-section__text">Subscribe by our newsletter and get update protidin.</p>
-                    <form class="footer-section__form" action="#">
-                        <label class="visually-hidden" for="email">email</label>
-                        <input id="email" class="footer-section__input" type="email" name="email"
-                            placeholder="Email address" required>
-                        <button class="footer-section__btn" type="submit">Subscribe</button>
-                    </form>
-                </div>
             </div>
-            <div class="footer-subsection">
-                <p class="footer-subsection__copy">©2020 CopyRight Example. All rights reserved.</p>
-                <ul class="footer-subsection__menu">
-                    <li class="footer-subsection__list">
-                        <a class="footer-subsection__link" href="#">Home</a>
-                    </li>
-                    <li class="footer-subsection__list">
-                        <a class="footer-subsection__link" href="#">About</a>
-                    </li>
-                    <li class="footer-subsection__list">
-                        <a class="footer-subsection__link" href="#">Blog</a>
-                    </li>
-                    <li class="footer-subsection__list">
+        </section>
 
-                        <a class="footer-subsection__link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    </main>
+     <footer class="footer">
+         <div class="container container--sm">
+             <div class="footer__section">
+                 <div class="footer__contact">
+                     <a class="footer__logo logo" href="#">
+                         <img class="logo__img" src="images/png/logo/logo.png" alt="logo">
+                     </a>
+                     <address class="footer__address">
+                         <a class="footer__data" href="#">ADDRESS: 4772 Wines Lane Houston,TX 77032</a>
+                         <a class="footer__data" href="tel:+8323475843">TELEPHONE: +832-347-5843</a>
+                         <a class="footer__data" href="mailto:contact@Glee.com">EMAIL: contact@Glee.com</a>
+                     </address>
+                 </div>
+                 <div class="footer__services">
+                     <p class="footer__title">Services</p>
+                     <ul class="footer__list">
+                         <li class="footer__link"><a class="footer__list" href="#">About us</a></li>
+                         <li class="footer__link"><a class="footer__list" href="#">Return Policy</a></li>
+                         <li class="footer__link"><a class="footer__list" href="#">Our Blog </a></li>
+                         <li class="footer__link"><a class="footer__list" href="#">Contact Us</a></li>
+                         <li class="footer__link"><a class="footer__list" href="#">Terms & Condition</a>
+                         </li>
+                     </ul>
+                 </div>
+                 <div class="footer__account">
+                     <p class="footer__title">Account</p>
+                     <ul class="footer-section__information">
+                         <li class="footer__link"><a class="footer__list" href="#">Your Account</a></li>
+                         <li class="footer__link"><a class="footer__list" href="#">Checkout</a></li>
+                         <li class="footer__link"><a class="footer__list" href="#">Login</a></li>
+                         <li class="footer__link"><a class="footer__list" href="#">Register</a></li>
+                     </ul>
+                 </div>
+                 <div class="footer__newsletter">
+                     <p class="footer__title">Newsletter</p>
+                     <p class="footer__text">Subscribe by our newsletter and get update protidin.</p>
+                     <form class="footer__form" action="#">
+                         <label class="visually-hidden" for="email">email</label>
+                         <input id="email" class="footer__input" type="email" name="email" placeholder="Email address"
+                             required>
+                         <button class="footer__btn" type="submit">Subscribe</button>
+                     </form>
+                 </div>
+             </div>
+             <div class="footer__subsection">
+                 <p class="footer__copy">©2020 CopyRight Example. All rights reserved.</p>
+                 <ul class="footer__menu">
+                     <li class="footer__element">
+                         <a class="footer__ref" href="#">Home</a>
+                     </li>
+                     <li class="footer__element">
+                         <a class="footer__ref" href="#">About</a>
+                     </li>
+                     <li class="footer__element">
+                         <a class="footer__ref" href="#">Blog</a>
+                     </li>
+                     <li class="footer__element">
+                         <a class="footer__ref" href="#">Contact</a>
+                     </li>
+                 </ul>
+             </div>
 
-        </div>
-    </footer>
+         </div>
+     </footer>
+  
 
 
 
