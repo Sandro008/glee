@@ -1,4 +1,15 @@
 $(function () {
+    $('.menu-nav__menu').on('click', function () {
+        $('.menubar').removeClass('menubar--close');
+    });
+     $('.menubar__close').on('click', function () {
+         $('.menubar').addClass('menubar--close');
+     });
+});
+
+
+
+$(function () {
     $('.top-slider__inner').slick({
         arrows: false,
         dots: true,
@@ -22,6 +33,7 @@ $(function () {
     })
 
 })
+
 
 $(function () {
     var mixerOne = mixitup('.products__mixitup', {

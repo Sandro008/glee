@@ -8,6 +8,15 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
         margin-bottom: 115px;
+
+        @include for-size(laptop) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include for-size(phone) {
+            grid-template-columns: repeat(1, 1fr);
+             margin-bottom: 30px;
+        }
     }
 
     &__items {

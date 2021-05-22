@@ -41,6 +41,7 @@ $about-bb: #e6eaf0;
     font-family: 'DMSans', sans-serif;
     font-weight: 700;
 }
+
 %poppins-600 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -65,6 +66,7 @@ $about-bb: #e6eaf0;
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
 }
+
 %rubik-700 {
     font-family: 'Rubik', sans-serif;
     font-weight: 700;
@@ -86,10 +88,37 @@ $about-bb: #e6eaf0;
     overflow: hidden;
 }
 
+
+@mixin for-size($size) {
+    @if $size==phone {
+        @media (max-width: 575px) {
+            @content;
+        }
+    }
+
+    @else if $size==tablet-min {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $size==tablet {
+        @media (max-width: 991px) {
+            @content;
+        }
+    }
+
+    @else if $size==laptop {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+}
+
+
 %fit {
     width: 100%;
     height: 100%;
     object-position: center;
     object-fit: contain;
 }
-

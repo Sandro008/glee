@@ -18,6 +18,14 @@
         position: relative;
         z-index: 1;
 
+        @include for-size(tablet) {
+            height: 500px;
+        }
+
+        @include for-size(tablet-min) {
+            height: 400px;
+        }
+
         &::after {
             content: '';
             position: absolute;
@@ -30,6 +38,13 @@
             transform: translateY(-50%);
             z-index: 0;
 
+            @include for-size (tablet) {
+                background-size: cover
+            }
+              @include for-size(phone) {
+                  display: none;
+              }
+
         }
 
     }
@@ -39,6 +54,9 @@
         max-width: 430px;
         padding-bottom: 80px;
         padding-left: 15px;
+          @include for-size(tablet-min) {
+               padding-bottom: 20px;
+          }
     }
 
     &__title {
@@ -47,7 +65,17 @@
         line-height: 1;
         color: $blue-100;
         margin-bottom: 30px;
-        @include line-clamp(2)
+        @include line-clamp(2);
+
+        @include for-size (tablet) {
+            font-size: 36px;
+        }
+
+        @include for-size (tablet-min) {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
     }
 
     &__subtitle {
@@ -57,7 +85,13 @@
         line-height: 1.67;
         color: $accent;
         margin-bottom: 50px;
-        @include line-clamp(3)
+        @include line-clamp(3);
+
+        @include for-size (tablet) {
+            max-width: 300px;
+            font-size: 14px;
+        }
+
     }
 
     &__btn {
@@ -106,6 +140,19 @@
         height: 500px;
         max-width: 640px;
         z-index: 1;
+
+        @include for-size (tablet) {
+            height: 300px;
+            max-width: 440px;
+        }
+
+        @include for-size (tablet-min) {
+            height: 200px;
+            max-width: 300px;
+        }
+          @include for-size(phone) {
+              display: none;
+          }
     }
 
     &__img {
@@ -120,6 +167,10 @@
         left: 50%;
         right: 50%;
         transform: translate(-50%, -50%);
+        
+        @include for-size(tablet-min){
+           bottom: 10px;
+        }
 
         li {
             margin-right: 10px;
@@ -136,6 +187,12 @@
                 border: none;
                 transition: transform .3s, background-color 0.5s;
                 cursor: pointer;
+
+                @include for-size (tablet) {
+                    width: 20px;
+                    height: 20px;
+                    font-size: 8px;
+                }
 
                 &:hover {
                     background-color: $white;
@@ -164,6 +221,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+    @include for-size (tablet-min) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 
     &__item {
         padding: 38px 0;
@@ -177,19 +238,42 @@
             border-right: none;
         }
 
+        @include for-size(tablet) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        @include for-size(tablet-min) {
+            flex-direction: row;
+            align-items: center;
+            border-right: none;
+            border-bottom: 1px solid $gray-100;
+            padding: 0;
+
+        }
+
     }
 
     &__text {
         max-width: 235px;
         padding-left: 20px;
-        @include line-clamp(3)
+        @include line-clamp(3);
+
+        @include for-size(tablet) {
+            padding: 0;
+        }
+
+        @include for-size(tablet-min) {
+            padding: 20px;
+        }
     }
 
     &__title {
         font-weight: 700;
         font-size: 18px;
         line-height: 2.2;
-        @include line-clamp(1)
+        @include line-clamp(1);
     }
 
 }

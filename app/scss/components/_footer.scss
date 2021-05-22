@@ -8,12 +8,24 @@
         padding: 75px 0 64px 0;
         border-bottom: 1px solid $white-100;
         display: flex;
+        justify-content: space-between;
+
+        @include for-size(tablet) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        @include for-size(phone) {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 20px;
+        }
 
     }
 
     &__column {
         width: 230px;
-        margin-right: 65px;
 
         &:last-child {
             margin-right: 0;
@@ -23,6 +35,10 @@
         &:not(:nth-child(1)) {
             padding-top: 17px;
             padding-left: 8px;
+        }
+
+        @include for-size(laptop) {
+            max-width: 100%;
         }
     }
 
@@ -130,10 +146,21 @@
 
     }
 
+    &__form {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+    }
+
     &__subsection {
         display: flex;
         justify-content: space-between;
         padding: 30px 0;
+
+        @include for-size(tablet-min) {
+            flex-direction: column-reverse;
+            align-items: center;
+        }
     }
 
     &__menu {
@@ -165,6 +192,10 @@
             color: $accent;
         }
 
+    }
+
+    &__copy {
+        font-size: 12px;
     }
 
 }

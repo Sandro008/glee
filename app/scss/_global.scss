@@ -32,10 +32,23 @@ body {
     font-size: 36px;
     text-align: center;
     color: $black-700;
+
+    @include for-size(tablet-min) {
+        font-size: 27px;
+    }
 }
+
 .button {
     font-size: 15px;
     line-height: 1;
     padding: 20px 90px 20px 20px;
     @extend %rubik-500;
+
+    @include for-size(tablet) {
+        padding: 15px 70px 15px 15px;
+    }
+
+    @include for-size(tablet-min) {
+        padding: 10px 50px 10px 10px;
+    }
 }

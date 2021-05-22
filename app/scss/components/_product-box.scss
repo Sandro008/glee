@@ -4,20 +4,39 @@
     background-color: $orange-200;
     position: relative;
 
+    @include for-size(laptop) {
+        justify-content: space-around;
+    }
+
     &__inner {
         height: 394px;
         max-width: 225px;
+        width: 100%;
+         @include for-size(phone) {
+            height: 200px;
+            max-width: 130px;
+           
+         }
     }
 
     &__img {
         transform: translateY(-23%);
         @extend %fit;
+
+        @include for-size(laptop) {
+            transform: none;
+        }
+
     }
 
     &__wrapper {
         max-width: 350px;
         padding-left: 10px;
         margin: auto 0;
+         @include for-size(phone) {
+             max-width: 170px;
+             padding: 10px;
+         }
     }
 
     &__title {
@@ -27,7 +46,10 @@
         color: $blue-100;
         margin-bottom: 20px;
         max-height: 65px;
-        @include line-clamp(2)
+        @include line-clamp(2);
+         @include for-size(phone) {
+             font-size: 22px;
+         }
     }
 
     &__subtitle {
@@ -35,7 +57,11 @@
         line-height: 1.88;
         margin-bottom: 44px;
         max-height: 90px;
-        @include line-clamp(3)
+        @include line-clamp(3);
+          @include for-size(phone) {
+              max-width: 180px;
+              margin-bottom: 20px;
+          }
     }
 
     &__btn {

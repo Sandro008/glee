@@ -11,6 +11,10 @@
             color: $black-700;
         }
 
+        @include for-size(tablet-min) {
+            margin-right: 0;
+        }
+
     }
 
     &__btn {

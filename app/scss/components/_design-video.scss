@@ -8,6 +8,18 @@
         background-size: cover;
         position: relative;
 
+        @include for-size(laptop) {
+            height: 400px;
+        }
+
+        @include for-size(tablet) {
+            height: 300px;
+        }
+
+        @include for-size(tablet) {
+            height: 250px;
+        }
+
     }
 
     &__link {
@@ -28,6 +40,12 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
+        @include for-size(phone) {
+            width: 70px;
+            height: 70px;
+        }
+
     }
+
 
 }
