@@ -10,6 +10,9 @@
 .logo {
     max-width: 150px;
     height: 50px;
+    @include for-size(phone){
+        max-width: 120px
+    }
 
     &__img {
         @extend %fit;
@@ -83,6 +86,7 @@
 
     &__wrapper {
         display: flex;
+        position: relative;
 
         @include for-size(tablet-min) {
             display: none;
@@ -90,8 +94,9 @@
 
 
         &:hover .menu-nav__input {
+            transform: translateX(-200px);
             width: 200px;
-            padding: 0 20px;
+            height: 50px;
         }
 
         &:hover .menu-nav__button {
@@ -100,16 +105,24 @@
     }
 
     &__input {
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
         font-weight: 700;
         border-radius: 25px;
+        padding: 0 20px;
         border: black;
         outline: transparent;
         box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
         color: $dblue-50;
         transition: 1s;
         line-height: 2;
-        width: 0;
         margin-right: -5px;
+        margin: auto;
 
         &::placeholder {
             padding: 0 5px;
@@ -144,6 +157,14 @@
             fill: $blue-100;
         }
 
+        &:focus {
+            background-color: $title;
+
+            & svg {
+                fill: $white;
+            }
+        }
+
         &:active {
             background-color: $title;
 
@@ -152,13 +173,6 @@
             }
         }
 
-        &:focus {
-            background-color: $title;
-
-            & svg {
-                fill: $white;
-            }
-        }
     }
 
     &__menu {
@@ -170,14 +184,6 @@
             fill: $white;
         }
 
-        &:active {
-            background-color: $white;
-
-            & svg {
-                fill: $title;
-            }
-        }
-
         &:focus {
             background-color: $orange-500;
 
@@ -186,6 +192,13 @@
             }
         }
 
+        &:active {
+            background-color: $white;
+
+            & svg {
+                fill: $title;
+            }
+        }
     }
 
     &__inner {
@@ -195,7 +208,7 @@
         margin-right: 17px;
 
         @include for-size(phone) {
-            display: none;
+            margin-right: 0;
         }
     }
 
@@ -210,6 +223,11 @@
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
         transition: background-color 0.5s;
+         @include for-size(phone){
+             width: 50px;
+             border-radius: 50%;
+             margin-right: 5px;
+         }
 
         &::after {
             content: '|';
@@ -220,6 +238,9 @@
             background-color: $white;
             opacity: 0.4;
             right: 0;
+             @include for-size(phone) {
+                content: none;
+             }
 
         }
 
@@ -228,6 +249,9 @@
             border-bottom-left-radius: 0;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
+               @include for-size(phone) {
+                   border-radius: 50%;
+               }
 
             &::after {
                 content: none;
@@ -254,6 +278,11 @@
         font-size: 10px;
         color: $accent;
         text-align: center;
+        
+        @include for-size(phone){
+            top: 6px;
+            right: 6px;
+        }
     }
 
 }
@@ -271,9 +300,41 @@
     z-index: 999;
     transition: all 0.5s;
 
+    @include for-size(tablet-min) {
+        padding: 17px 20px;
+    }
+
     &.menubar--close {
         transform: translateY(-200%);
     }
+
+    &__wrapper {
+        display: flex;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    & .menu-nav__wrapper {
+        display: none;
+
+
+        @include for-size(tablet-min) {
+            display: flex;
+        }
+    }
+
+    & .menu-nav__input {
+        &:focus {
+            background-color: $orange-500;
+        }
+    }
+
+    & .menu-nav__button {
+        margin-right: 0;
+    }
+
 
     &__list {
         display: flex;
@@ -281,14 +342,13 @@
         display: none;
 
         @include for-size(tablet) {
-            display: block;
+            display: flex;
         }
     }
 
     &__close {
         background-color: $orange-500;
         border: transparent;
-        float: right;
         border-radius: 50%;
         display: flex;
         justify-content: center;
@@ -296,8 +356,11 @@
         width: 50px;
         height: 50px;
         cursor: pointer;
-        margin-bottom: 30px;
         transition: all 0.5s;
+
+        &:focus {
+            background-color: $white;
+        }
 
         &:hover {
             background-color: $white;
@@ -312,9 +375,7 @@
             background-color: $accent;
         }
 
-        &:focus {
-            background-color: $white;
-        }
+
     }
 
     &__item {

@@ -1,0 +1,63 @@
+.breadcrumbs {
+    padding: 34px 0 28px;
+    background-color: $search-bg;
+    text-align: center;
+    margin-bottom: 118px;
+
+    @include for-size(laptop) {
+        margin-bottom: 60px;
+    }
+
+    @include for-size(tablet) {
+        margin-bottom: 40px;
+    }
+
+    @include for-size(phone) {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        @extend %rubik-300;
+        font-size: 36px;
+        line-height: 0.7;
+        color: $blue-50;
+        margin-bottom: 10px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        @extend %rubik-400;
+        font-size: 14px;
+        line-height: 2;
+        color: $blue-50;
+        opacity: 0.6;
+
+        &::after {
+            content: '/';
+            padding: 0 5px;
+        }
+
+        &:last-child {
+            &::after {
+                content: none;
+            }
+        }
+    }
+
+    &__link {
+        transition: all 0.5s;
+
+        &:hover {
+            color: $accent;
+        }
+
+        &:active {
+            color: $orange-500;
+        }
+    }
+
+}

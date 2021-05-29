@@ -20,8 +20,7 @@
     }
 
     &__items {
-        background-color: $gray-300;
-        transition: transform 0.5s;
+        
 
         &:nth-last-child(4),
         &:nth-last-child(3),
@@ -39,13 +38,5 @@
             }
         }
 
-
-        &:hover {
-            transform: scale(1.1);
-        }
-
-        &:active {
-            opacity: 0.9;
-        }
     }
 }

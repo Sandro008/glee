@@ -11,6 +11,7 @@
  const uglify       = require('gulp-uglify');
  const imagemin     = require('gulp-imagemin');
  const del          = require('del');
+//  const fileinclude  = require('gulp-file-include');
  const svgSprite    = require('gulp-svg-sprite')
  const browserSync  = require('browser-sync').create();
 
@@ -36,6 +37,15 @@ function svgSprites() {
     )
     .pipe(dest('app/images'));
 }
+
+//  function html () {
+//     return src('app/parts/**.html')
+//         .pipe(fileinclude({
+//             prefix: '@@',
+//             basepath: '@file'
+//         }))
+//         .pipe(dest("app"));
+//     }
 
  function styles() {
      return src('app/scss/style.scss')
@@ -103,6 +113,7 @@ function cleanDist() {
 
  exports.styles       = styles;
  exports.svgSprites   = svgSprites
+//  exports.html         = html
  exports.scripts      = scripts;
  exports.browsersync  = browsersync;
  exports.watching     = watching;

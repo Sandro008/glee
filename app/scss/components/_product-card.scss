@@ -4,6 +4,14 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
+    border-radius: 10px;
+    box-shadow: 0 6px 47px 3px rgba(37, 37, 37, 0.05);
+    padding: 20px;
+
+    @include for-size(phone) {
+        max-width: 270px;
+        margin: 0 auto;
+    }
 
 
     &:hover .product-card__pointing {
@@ -48,6 +56,11 @@
         bottom: 130px;
         opacity: 0;
         transition: opacity 1s;
+
+        @include for-size(phone) {
+            bottom: 100px;
+            opacity: 1;
+        }
 
     }
 

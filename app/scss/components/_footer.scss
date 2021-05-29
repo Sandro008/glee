@@ -127,20 +127,20 @@
         background-color: $title;
         color: $white;
         max-width: 100px;
-        padding: 5px 15px;
+        padding: 9px 15px;
         transition: background-color 0.5s, color 0.5s;
         cursor: pointer;
+
+        &:focus {
+            background-color: $title;
+            color: $accent;
+        }
 
         &:hover {
             background-color: $orange-500;
         }
 
         &:active {
-            color: $accent;
-        }
-
-        &:focus {
-            background-color: $title;
             color: $accent;
         }
 

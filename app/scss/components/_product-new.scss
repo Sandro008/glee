@@ -1,5 +1,19 @@
 .product-new {
     position: relative;
+    background-color: $gray-300;
+    transition: transform 0.5s;
+
+     &:hover {
+         transform: scale(1.1);
+     }
+
+     &:active {
+         opacity: 0.9;
+     }
+    @include for-size(phone){
+        max-width: 370px;
+        margin: 0 auto;
+    }
 
     &__text {
         position: absolute;
