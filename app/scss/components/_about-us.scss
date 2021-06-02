@@ -100,15 +100,13 @@
     }
 
     &__subject {
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 0.9;
+        text-align: left;
         color: $blue-100;
         margin-bottom: 37px;
         @include line-clamp(1);
     }
 
-    &__desc {
+    &__txt {
         @extend %rubik-400;
         line-height: 1.9;
         color: $blue-100;
@@ -268,11 +266,11 @@
         @include line-clamp(1)
     }
 
-    &__version {
+    &__wrapper {
         @extend %rubik-400;
         line-height: 1.9;
         margin-bottom: 35px;
-        @include line-clamp(18)
+        @include line-clamp(10)
     }
 
     &__ref {

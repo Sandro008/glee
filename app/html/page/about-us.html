@@ -1,26 +1,26 @@
 @@include('../parts/_head.html',{
-    "title" : "About-us"
+"title" : "About-us"
 })
 
 <body>
-     @@include('../parts/_header.html')
+    @@include('../parts/_header.html')
     <main class="main">
+        <section class="top">
+            <h1 class="top__title">About Us</h1>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link">About Us</a>
+            </ul>
+        </section>
         <section class="about-us">
-            <div class="breadcrumbs">
-                <h1 class="breadcrumbs__title">About Us</h1>
-                <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" href="#">Home</a>
-                    </li>
-                    <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" href="#">About Us</a>
-                </ul>
-            </div>
             <div class="container container--sm">
                 <div class="about-us__mission">
                     <div class="about-us__wrapp">
                         <div class="about-us__images"
-                            style="background-image: url(../../images/png/about-us/about-photo.png);">
+                            style="background-image: url(../images/png/about-us/about-photo.png);">
                         </div>
                     </div>
                     <div class="about-us__text">
@@ -28,9 +28,9 @@
                             <span>12</span>
                             <p class="about-us__wd">Years Experience Working</p>
                         </div>
-                        <h2 class="about-us__subject">Mission of our creative house</h2>
+                        <h2 class="about-us__subject title">Mission of our creative house</h2>
                         <div class="about-us__txt">
-                            <p class="about-us__desc">consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                                 labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                                 reprehenderit in voluptate velit esse cillum
@@ -103,7 +103,7 @@
                     <div class="about-us__team">
                         <h2 class="about-us__caption title">Our Team</h2>
                         <div class="about-us__wrapper">
-                            <p class="about-us__version">Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit,
+                            <p>Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit,
                                 sed
                                 do
                                 eiusmod tempor inciLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -121,250 +121,38 @@
                     </div>
                     <ul class="about-us__people">
                         <li class="about-us__labor">
-                            <article class="team">
-                                <a class="team__link" href="#">
-                                    <img class="team__img" src="images/png/about-us/team1.png" alt="Eliza Elliot">
-                                </a>
-                                <div class="team__phototitle">
-                                    <div class="team__wrapper">
-                                        <h3 class="team__username">Eliza Elliot</h3>
-                                        <p class="team__position">Commodo tempor </p>
-                                    </div>
-                                    <ul class="team__socials">
-                                        <li class="team__item">
-                                            <a class="team__logo" href="#">
-                                                <span class="visually-hidden">Instagramm logo</span>
-                                                <svg width="41" height="41">
-                                                    <use xlink:href="images/sprite.svg#instagram"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="team__item">
-                                            <a class="team__logo" href="#">
-                                                <span class="visually-hidden">Google +</span>
-                                                <svg width="41" height="41">
-                                                    <use xlink:href="images/sprite.svg#google+"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
+                            @@include('../parts/_team.html',{
+                                "image": "images/png/about-us/team1.png",
+                                "title": "Eliza Elliot",
+                                "subtitle": "Commodo tempor"
+                               })
                         </li>
                         <li class="about-us__labor">
-                            <article class="team">
-                                <a class="team__link" href="#">
-                                    <img class="team__img" src="images/png/about-us/team2.png" alt="Roscoe A.">
-                                </a>
-                                <div class="team__phototitle">
-                                    <div class="team__wrapper">
-                                        <h3 class="team__username">Roscoe A.</h3>
-                                        <p class="team__position">Commodo tempor </p>
-                                    </div>
-                                    <ul class="team__socials">
-                                        <li class="team__item">
-                                            <a class="team__logo" href="#">
-                                                <span class="visually-hidden">Instagramm logo</span>
-                                                <svg width="41" height="41">
-                                                    <use xlink:href="images/sprite.svg#instagram"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="team__item">
-                                            <a class="team__logo" href="#">
-                                                <span class="visually-hidden">Google +</span>
-                                                <svg width="41" height="41">
-                                                    <use xlink:href="images/sprite.svg#google+"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
+                             @@include('../parts/_team.html',{
+                             "image": "images/png/about-us/team2.png",
+                             "title": "Roscoe A.",
+                             "subtitle": "Commodo tempor"
+                             })
                         </li>
                         <li class="about-us__labor">
-                            <article class="team">
-                                <a class="team__link" href="#">
-                                    <img class="team__img" src="images/png/about-us/team3.png" alt="Ruby M.">
-                                </a>
-                                <div class="team__phototitle">
-                                    <div class="team__wrapper">
-                                        <h3 class="team__username">Ruby M.</h3>
-                                        <p class="team__position">Commodo tempor </p>
-                                    </div>
-                                    <ul class="team__socials">
-                                        <li class="team__item">
-                                            <a class="team__logo" href="#">
-                                                <span class="visually-hidden">Instagramm logo</span>
-                                                <svg width="41" height="41">
-                                                    <use xlink:href="images/sprite.svg#instagram"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="team__item">
-                                            <a class="team__logo" href="#">
-                                                <span class="visually-hidden">Google +</span>
-                                                <svg width="41" height="41">
-                                                    <use xlink:href="images/sprite.svg#google+"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
+                            @@include('../parts/_team.html',{
+                            "image": "images/png/about-us/team3.png",
+                            "title": "Ruby M.",
+                            "subtitle": "Commodo tempor"
+                            })
                         </li>
                         <li class="about-us__labor">
-                            <article class="team">
-                                <a class="team__link" href="#">
-                                    <img class="team__img" src="images/png/about-us/team4.png" alt="Marie F.Bloss">
-                                </a>
-                                <div class="team__phototitle">
-                                    <div class="team__wrapper">
-                                        <h3 class="team__username">Marie F.Bloss</h3>
-                                        <p class="team__position">Commodo tempor </p>
-                                    </div>
-                                    <ul class="team__socials">
-                                        <li class="team__item">
-                                            <a class="team__logo" href="#">
-                                                <span class="visually-hidden">Instagramm logo</span>
-                                                <svg width="41" height="41">
-                                                    <use xlink:href="images/sprite.svg#instagram"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li class="team__item">
-                                            <a class="team__logo" href="#">
-                                                <span class="visually-hidden">Google +</span>
-                                                <svg width="41" height="41">
-                                                    <use xlink:href="images/sprite.svg#google+"></use>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
+                              @@include('../parts/_team.html',{
+                              "image": "images/png/about-us/team4.png",
+                              "title": "Marie F.Bloss",
+                              "subtitle": "Commodo tempor"
+                              })
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
-        <section class="articles">
-            <div class="container container--sm">
-                <div class="articles__inner">
-                    <h2 class="articles__title title">Our Insights & Articles</h2>
-                    <a class="articles__all" href="#">View All<span>></span></a>
-                </div>
-                <ul class="articles__items">
-                    <li class="articles__item">
-                        <article class="news">
-                            <a class="news__link" href="#">
-                                <img class="news__image" src="images/png/articles/news1.png" alt="photo new">
-                                <span class="news__name">news</span>
-                                <div class="news__text">
-                                    <h3 class="news__title">
-                                        Diusmod tempor incididunt ut labore et dolore
-                                        magna aliqua.Ut enim ad minim veniam
-                                    </h3>
-                                    <div class="news__txt">
-                                        <div class="news__wrap">
-                                            <svg class="news__svg" width="10" height="10">
-                                                <use xlink:href="images/sprite.svg#calendar"></use>
-                                            </svg>
-                                            <p class="news__data"> 28 january, 2020</p>
-                                        </div>
-                                        <div class="news__wrap">
-                                            <svg class="news__svg" width="13" height="10">
-                                                <use xlink:href="images/sprite.svg#admin"></use>
-                                            </svg>
-                                            <span class="news__admin"> by admin</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
-                    <li class="articles__item">
-                        <article class="news">
-                            <a class="news__link" href="#">
-                                <img class="news__image" src="images/png/articles/news2.png" alt="photo new">
-                                <span class="news__name">news</span>
-                                <div class="news__text">
-                                    <h3 class="news__title">
-                                        Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                                        et dolore
-                                    </h3>
-                                    <div class="news__txt">
-                                        <div class="news__wrap">
-                                            <svg class="news__svg" width="10" height="10">
-                                                <use xlink:href="images/sprite.svg#calendar"></use>
-                                            </svg>
-                                            <p class="news__data"> 28 january, 2020</p>
-                                        </div>
-                                        <div class="news__wrap">
-                                            <svg class="news__svg" width="13" height="10">
-                                                <use xlink:href="images/sprite.svg#admin"></use>
-                                            </svg>
-                                            <span class="news__admin"> by admin</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
-                    <li class="articles__item">
-                        <article class="news">
-                            <a class="news__link" href="#">
-                                <img class="news__image" src="images/png/articles/news3.png" alt="photo new">
-                                <span class="news__name">news</span>
-                                <div class="news__text">
-                                    <h3 class="news__title">
-                                        Rncididunt ut labore et dolore magna aliqua. Ut enim
-                                    </h3>
-                                    <div class="news__txt">
-                                        <div class="news__wrap">
-                                            <svg class="news__svg" width="10" height="10">
-                                                <use xlink:href="images/sprite.svg#calendar"></use>
-                                            </svg>
-                                            <p class="news__data"> 28 january, 2020</p>
-                                        </div>
-                                        <div class="news__wrap">
-                                            <svg class="news__svg" width="13" height="10">
-                                                <use xlink:href="images/sprite.svg#admin"></use>
-                                            </svg>
-                                            <span class="news__admin"> by admin</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </article>
-                    </li>
-                </ul>
-            </div>
-            <div class="partners">
-                <div class="container container--sm">
-                    <ul class="partners__slider">
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo1.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo2.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo3.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo4.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo5.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo6.png" alt="Partners logo">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      @@include('../parts/_articles.html')
     </main>
     @@include('../parts/_footer.html')
 

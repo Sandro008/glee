@@ -1,0 +1,14 @@
+.top {
+    padding: 34px 0 28px;
+    background-color: $search-bg;
+    text-align: center;
+
+    &__title{
+     @extend %rubik-300;
+     font-size: 36px;
+     line-height: 0.7;
+     color: $blue-50;
+     margin-bottom: 10px;
+     
+    }
+}
