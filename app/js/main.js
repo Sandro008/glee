@@ -7,6 +7,10 @@ $(function () {
      });
 });
 
+$(function () {
+    $('.catalg__input').ionRangeSlider();
+});
+
 
 
 $(function () {

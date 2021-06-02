@@ -1,0 +1,63 @@
+@@include('../parts/_head.html',{
+"title" : "Product-List 1"
+})
+
+<body>
+    @@include('../parts/_header.html')
+    <main>
+        <section class="catalog">
+            <div class="breadcrumbs">
+                <h1 class="breadcrumbs__title">Product-list 1</h1>
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Home</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Product-list 1</a>
+                </ul>
+            </div>
+            <div class="container container--sm">
+                <div class="catalog__wrapper">
+                    <div class="catalog__filter">
+                        <div class="catalog__box">
+                            <h2 class="catalog__title">Category</h2>
+                            <ul class="catalog__list">
+                                <li class="catalog__item">
+                                    <a class="catalog__link" href="#">Chair</a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog__link" href="#">Table</a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog__link" href="#">Lamp</a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog__link" href="#">Watch</a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog__link" href="#">Clock</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="catalog__box">
+                            <h2 class="catalog__title">Price</h2>
+                            <form class="catalog__form" action="#">
+                                <input class="catalg__input" type="text">
+                            </form>
+                        </div>
+
+
+                    </div>
+                    <div class="catalog__content"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    @@include('../parts/_footer.html')
+</body>
+
+
+
+
+</html>

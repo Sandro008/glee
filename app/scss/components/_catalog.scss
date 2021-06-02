@@ -1,0 +1,79 @@
+.catalog {
+    margin-bottom: 118px;
+
+    &__wrapper {
+        padding-top: 110px;
+        display: flex;
+        background-color: $white;
+    }
+
+    &__filter {
+        width: 270px;
+        margin-right: 30px;
+    }
+
+    &__box {
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $blue-700;
+        margin-bottom: 22px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 39px;
+            height: 3px;
+            top: 43%;
+            margin-left: 16px;
+            background-color: $title;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        display: inline-block;
+        max-width: 270px;
+        width: 100%;
+        padding: 0 25px 0 15px;
+        border-radius: 5px;
+        @extend %rubik-400;
+        line-height: 2.7;
+        color: $blue-700;
+        position: relative;
+        transition: background-color 0.5s;
+
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url(../../images/sprite.svg#more);
+            background-size: cover;
+            width: 10px;
+            height: 10px;
+            left: 89%;
+            top: 36%;
+            transition: all 0.4s;
+
+        }
+
+        &:hover {
+            background-color: $catalog-bg;
+            &::after{
+                transform: rotate(180deg);
+            }
+        }
+
+        &:active {
+            background-color: $orange-50;
+        }
+    }
+}

@@ -2,19 +2,7 @@
     padding: 34px 0 28px;
     background-color: $search-bg;
     text-align: center;
-    margin-bottom: 118px;
 
-    @include for-size(laptop) {
-        margin-bottom: 60px;
-    }
-
-    @include for-size(tablet) {
-        margin-bottom: 40px;
-    }
-
-    @include for-size(phone) {
-        margin-bottom: 20px;
-    }
 
     &__title {
         @extend %rubik-300;

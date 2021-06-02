@@ -1,427 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glee | Home Page</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/style.min.css">
-
-</head>
+@@include('../parts/_head.html',{
+"title" : "Home Page"
+})
 
 <body>
-    @@include('../parts/header.html')
+    @@include('../parts/_header.html')
     <main class="main">
         <h1 class="visually-hidden">Glee,buy furniture,chairs,lamp,big sale</h1>
-        <section class="top-slider">
-            <div class="container">
-                <h2 class="visually-hidden">Slider new Disign</h2>
-                <ul class="top-slider__inner">
-                    <li class="top-slider__item container container--sm">
-                        <div class="top-slider__text">
-                            <div class="top-slider__wrapper">
-                                <p class="top-slider__title">smart and trendy</p>
-                                <div class="top-slider__txt">
-                                    <p class="top-slider__subtitle">Dolor sit amet, consectetur adipisicing elit, sed
-                                        do
-                                        eiusmod tempor incididunt</p>
-                                </div>
-                            </div>
-                            <a class="button top-slider__btn" href="#">Shop Now
-                                <svg width="22" height="9">
-                                    <use xlink:href="images/sprite.svg#arrow"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="top-slider__picture">
-                            <img class="top-slider__img" src="images/png/slider-photo/slide1.png" alt="slide image">
-                        </div>
-                    </li>
-                    <li class="top-slider__item container container--sm">
-                        <div class="top-slider__text">
-
-                            <div class="top-slider__wrapper">
-                                <p class="top-slider__title">Lorem, ipsum dolor.</p>
-                                <div class="top-slider__txt">
-                                    <p class="top-slider__subtitle">Dolor sit amet, consectetur adipisicing elit, sed
-                                        do
-                                        eiusmod tempor incididunt</p>
-                                </div>
-                            </div>
-                            <a class="button top-slider__btn" href="#">Shop Now
-                                <svg width="22" height="9">
-                                    <use xlink:href="images/sprite.svg#arrow"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="top-slider__picture">
-                            <img class="top-slider__img" src="images/png/slider-photo/slide1.png" alt="slide image">
-                        </div>
-                    </li>
-                    <li class="top-slider__item container container--sm">
-                        <div class="top-slider__text">
-                            <div class="top-slider__wrapper">
-                                <p class="top-slider__title">smart and trendy</p>
-                                <div class="top-slider__txt">
-                                    <p class="top-slider__subtitle">Dolor sit amet, consectetur adipisicing elit, sed
-                                        do
-                                        eiusmod tempor incididunt</p>
-                                </div>
-                            </div>
-                            <a class="button top-slider__btn" href="#">Shop Now
-                                <svg width="22" height="9">
-                                    <use xlink:href="images/sprite.svg#arrow"></use>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="top-slider__picture">
-                            <img class="top-slider__img" src="images/png/slider-photo/slide1.png" alt="slide image">
-                        </div>
-                    </li>
-                </ul>
-                <ul class="advantage">
-                    <li class="advantage__item">
-                        <svg width="52" height="54">
-                            <use xlink:href="images/sprite.svg#support"></use>
-                        </svg>
-                        <div class="advantage__text">
-                            <p class="advantage__title">Support 24/7.</p>
-                            <p class="advantage__txt">Contact us 24 hours a day, 7 days a week.
-                            </p>
-                        </div>
-                    </li>
-                    <li class="advantage__item">
-                        <svg width="55" height="37">
-                            <use xlink:href="images/sprite.svg#delivery"></use>
-                        </svg>
-                        <div class="advantage__text">
-                            <p class="advantage__title">Delivery.</p>
-                            <p class="advantage__txt">Free shipping on all US order.</p>
-                        </div>
-                    </li>
-                    <li class="advantage__item">
-                        <svg width="54" height="53">
-                            <use xlink:href="images/sprite.svg#payment"></use>
-                        </svg>
-                        <div class="advantage__text">
-                            <p class="advantage__title">100% Payment secure.</p>
-                            <p class="advantage__txt">We ensure secure payment
-                                with PEV.</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        @@include('../parts/_top-slider.html')
         <section class="products">
             <div class="container container--sm">
                 <h2 class="products__title title">Products of the week</h2>
                 <div class="products__mixitup">
-                    <ul class="content-menu">
-                        <li class="content-menu__item">
-                            <button class="content-menu__btn  content-menu__btn--active " data-filter="all">All
-                            </button>
-                        </li>
-                        <li class="content-menu__item">
-                            <button class="content-menu__btn" data-filter=".category-a">Furnitures</button>
-                        </li>
-                        <li class="content-menu__item">
-                            <button class="content-menu__btn" data-filter=".category-b">Chairs</button>
-                        </li>
-                        <li class="content-menu__item">
-                            <button class="content-menu__btn" data-filter=".category-c">Lighting</button>
-                        </li>
-                        <li class="content-menu__item">
-                            <button class="content-menu__btn" data-filter=".category-d">Decor</button>
-                        </li>
-                    </ul>
+                    @@include('../parts/_content-menu.html')
                     <ul class="products__list">
                         <li class="products__items mix category-a">
-                            <article class="product-card">
-                                <div class="product-card__inner">
-                                    <img class="product-card__image" src="images/jpg/week-products/one.jpg"
-                                        alt="style Wooden radio">
-                                </div>
-                                <div class="product-card__wrapper">
-                                    <h3 class="product-card__title">Wooden radio</h3>
-                                    <p class="product-card__price"><span>$</span>29.00</p>
-                                </div>
-                                <ul class="product-card__pointing">
-                                    <li class="product-card__element">
-                                        <a class="product-card__btn" href="#">
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/sprite.svg#card-search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="20">
-                                                <use xlink:href="images/sprite.svg#card-cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="18">
-                                                <use xlink:href="images/sprite.svg#card-heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                            @@include('../parts/_product-card.html',{
+                            "img" : "images/jpg/week-products/one.jpg",
+                            "name" : "Wooden radio",
+                            "price": "29.00"
+                            })
                         </li>
                         <li class="products__items mix category-a">
-                            <article class="product-card">
-                                <div class="product-card__inner">
-                                    <img class="product-card__image" src="images/jpg/week-products/two.jpg"
-                                        alt="style Wooden chair">
-                                </div>
-                                <div class="product-card__wrapper">
-                                    <h3 class="product-card__title">Wooden chair</h3>
-                                    <p class="product-card__price"><span>$</span>29.00</p>
-                                </div>
-                                <ul class="product-card__pointing">
-                                    <li class="product-card__element">
-                                        <a class="product-card__btn" href="#">
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/sprite.svg#card-search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="20">
-                                                <use xlink:href="images/sprite.svg#card-cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="18">
-                                                <use xlink:href="images/sprite.svg#card-heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                            @@include('../parts/_product-card.html',{
+                            "img" : "images/jpg/week-products/two.jpg",
+                            "name" : "Wooden chair",
+                            "price": "19.00"
+                            })
                         </li>
                         <li class="products__items mix category-b">
-                            <article class="product-card">
-                                <div class="product-card__inner">
-                                    <img class="product-card__image" src="images/jpg/week-products/thre.jpg"
-                                        alt="style Wooden chair">
-                                </div>
-                                <div class="product-card__wrapper">
-                                    <h3 class="product-card__title">White chair</h3>
-                                    <p class="product-card__price"><span>$</span>29.00</p>
-                                </div>
-                                <ul class="product-card__pointing">
-                                    <li class="product-card__element">
-                                        <a class="product-card__btn" href="#">
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/sprite.svg#card-search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="20">
-                                                <use xlink:href="images/sprite.svg#card-cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="18">
-                                                <use xlink:href="images/sprite.svg#card-heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                            @@include('../parts/_product-card.html',{
+                            "img" : "images/jpg/week-products/thre.jpg",
+                            "name" : "White chair",
+                            "price": "49.00"
+                            })
                         </li>
                         <li class="products__items mix category-c">
-                            <article class="product-card">
-                                <div class="product-card__inner">
-                                    <img class="product-card__image" src="images/jpg/week-products/four.jpg"
-                                        alt="style Retro table">
-                                </div>
-                                <div class="product-card__wrapper">
-                                    <h3 class="product-card__title">Retro table</h3>
-                                    <p class="product-card__price"><span>$</span>29.00</p>
-                                </div>
-                                <ul class="product-card__pointing">
-                                    <li class="product-card__element">
-                                        <a class="product-card__btn" href="#">
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/sprite.svg#card-search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="20">
-                                                <use xlink:href="images/sprite.svg#card-cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="18">
-                                                <use xlink:href="images/sprite.svg#card-heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                            @@include('../parts/_product-card.html',{
+                            "img" : "images/jpg/week-products/four.jpg",
+                            "name" : "Retro table",
+                            "price": "49.00"
+                            })
                         </li>
                         <li class="products__items mix category-c">
-                            <article class="product-card">
-                                <div class="product-card__inner">
-                                    <img class="product-card__image" src="images/jpg/week-products/five.jpg"
-                                        alt="style Wooden radio">
-                                </div>
-                                <div class="product-card__wrapper">
-                                    <h3 class="product-card__title">Wooden radio</h3>
-                                    <p class="product-card__price"><span>$</span>29.00</p>
-                                </div>
-                                <ul class="product-card__pointing">
-                                    <li class="product-card__element">
-                                        <a class="product-card__btn" href="#">
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/sprite.svg#card-search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="20">
-                                                <use xlink:href="images/sprite.svg#card-cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="18">
-                                                <use xlink:href="images/sprite.svg#card-heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                            @@include('../parts/_product-card.html',{
+                            "img" : "images/jpg/week-products/five.jpg",
+                            "name" : "Wooden Radio",
+                            "price": "69.00"
+                            })
                         </li>
                         <li class="products__items mix category-b">
-                            <article class="product-card">
-                                <div class="product-card__inner">
-                                    <img class="product-card__image" src="images/jpg/week-products/six.jpg"
-                                        alt="style Wooden chair">
-                                </div>
-                                <div class="product-card__wrapper">
-                                    <h3 class="product-card__title">Wooden chair</h3>
-                                    <p class="product-card__price"><span>$</span>29.00</p>
-                                </div>
-                                <ul class="product-card__pointing">
-                                    <li class="product-card__element">
-                                        <a class="product-card__btn" href="#">
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/sprite.svg#card-search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="20">
-                                                <use xlink:href="images/sprite.svg#card-cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="18">
-                                                <use xlink:href="images/sprite.svg#card-heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                            @@include('../parts/_product-card.html',{
+                            "img" : "images/jpg/week-products/six.jpg",
+                            "name" : "Wooden Chair",
+                            "price": "29.00"
+                            })
                         </li>
                         <li class="products__items mix category-d">
-                            <article class="product-card">
-                                <div class="product-card__inner">
-                                    <img class="product-card__image" src="images/jpg/week-products/seven.jpg"
-                                        alt="style Wooden chair">
-                                </div>
-                                <div class="product-card__wrapper">
-                                    <h3 class="product-card__title">White radio</h3>
-                                    <p class="product-card__price"><span>$</span>29.00</p>
-                                </div>
-                                <ul class="product-card__pointing">
-                                    <li class="product-card__element">
-                                        <a class="product-card__btn" href="#">
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/sprite.svg#card-search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="20">
-                                                <use xlink:href="images/sprite.svg#card-cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="18">
-                                                <use xlink:href="images/sprite.svg#card-heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                            @@include('../parts/_product-card.html',{
+                            "img" : "images/jpg/week-products/seven.jpg",
+                            "name" : "White radio",
+                            "price": "49.00"
+                            })
                         </li>
                         <li class="products__items mix category-d">
-                            <article class="product-card">
-                                <div class="product-card__inner">
-                                    <img class="product-card__image" src="images/jpg/week-products/eight.jpg"
-                                        alt="style Wooden table">
-                                </div>
-                                <div class="product-card__wrapper">
-                                    <h3 class="product-card__title">Retro table</h3>
-                                    <p class="product-card__price"><span>$</span>29.00</p>
-                                </div>
-                                <ul class="product-card__pointing">
-                                    <li class="product-card__element">
-                                        <a class="product-card__btn" href="#">
-                                            <svg width="20" height="20">
-                                                <use xlink:href="images/sprite.svg#card-search"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="20">
-                                                <use xlink:href="images/sprite.svg#card-cart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                    <li class="product-card__element">
-                                        <button class="product-card__btn" type="button">
-                                            <svg width="22" height="18">
-                                                <use xlink:href="images/sprite.svg#card-heart"></use>
-                                            </svg>
-                                        </button>
-                                    </li>
-                                </ul>
-                            </article>
+                            @@include('../parts/_product-card.html',{
+                            "img" : "images/jpg/week-products/eight.jpg",
+                            "name" : "Retro table",
+                            "price": "29.00"
+                            })
                         </li>
                     </ul>
                 </div>
@@ -429,43 +75,18 @@
             <div class="container">
                 <ul class="products-links">
                     <li class="products-links__item">
-                        <article class="product-box">
-                            <div class="product-box__inner">
-                                <img class="product-box__img" src="images/png/week-products/lamp1.png" alt="lamp1">
-                            </div>
-                            <div class="product-box__wrapper">
-                                <h3 class="product-box__title">Mirum Notare Tellus</h3>
-                                <div class="produsct-box__txt">
-                                    <p class="product-box__subtitle">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26
-                                        E27LEDCornLight
-                                    </p>
-                                </div>
-                                <a class="button product-box__btn" href="#">View More
-                                    <svg width="22" height="9">
-                                        <use xlink:href="images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </article>
+                        @@include('../parts/_product-box.html',{
+                        "image" : "images/png/week-products/lamp1.png",
+                        "box-title" : "Mirum Notare Tellus",
+                        "box-subtitle" : "LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight"
+                        })
                     </li>
                     <li class="products-links__item">
-                        <article class="product-box">
-                            <div class="product-box__inner">
-                                <img class="product-box__img" src="images/png/week-products/lamp2.png" alt="lamp2">
-                            </div>
-                            <div class="product-box__wrapper">
-                                <h3 class="product-box__title">Malesuada Tempor Euismod</h3>
-                                <div class="produsct-box__txt">
-                                    <p class="product-box__subtitle">50W 8000lm Compact Size for HID
-                                        StreetLightReplacementLEDCornLight</p>
-                                </div>
-                                <a class="button product-box__btn" href="#">View More
-                                    <svg width="22" height="9">
-                                        <use xlink:href="images/sprite.svg#arrow"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </article>
+                        @@include('../parts/_product-box.html',{
+                        "image" : "images/png/week-products/lamp2.png",
+                        "box-title" : "Malesuada Tempor Euismod",
+                        "box-subtitle" : "50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight"
+                        })
                     </li>
                 </ul>
             </div>
@@ -474,108 +95,43 @@
             <div class="container container--sm">
                 <h2 class="design__title title">New Design</h2>
                 <div class="design__mixitup">
-                    <ul class="content-menu">
-                        <li class="content-menu__item">
-                            <button class="content-menu__btn  content-menu__btn--active " data-filter="all">All
-                            </button>
-                        </li>
-                        <li class="content-menu__item">
-                            <button class="content-menu__btn" data-filter=".category-a">Furnitures</button>
-                        </li>
-                        <li class="content-menu__item">
-                            <button class="content-menu__btn" data-filter=".category-b">Chairs</button>
-                        </li>
-                        <li class="content-menu__item">
-                            <button class="content-menu__btn" data-filter=".category-c">Lighting</button>
-                        </li>
-                        <li class="content-menu__item">
-                            <button class="content-menu__btn" data-filter=".category-d">Decor</button>
-                        </li>
-                    </ul>
+                    @@include('../parts/_content-menu.html')
                     <ul class="design__list">
                         <li class="design__items mix category-a">
-                            <article class="product-new">
-                                <a href="#" class="product-new__link">
-                                    <div class="product-new__text">
-                                        <h3 class="product-new__title">Beat Flat Pendant Black</h3>
-                                        <span class="product-new__subtitle">Classic</span>
-                                    </div>
-                                    <div class="product-new__wrapper">
-                                        <img class="product-new__img" src="images/png/new-disign/photo1.png"
-                                            alt="Beat Flat Pendant Black">
-                                    </div>
-                                </a>
-                            </article>
+                            @@include('../parts/_product-new.html',{
+                            "product-new-title":"Beat Flat Pendant Black",
+                            "product-new-image":"images/png/new-disign/photo1.png"
+                            })
                         </li>
                         <li class="design__items mix category-b">
-                            <article class="product-new">
-                                <a href="#" class="product-new__link">
-                                    <div class="product-new__text">
-                                        <h3 class="product-new__title">Lampe Sur Pieds Bamboo</h3>
-                                        <span class="product-new__subtitle">Classic</span>
-                                    </div>
-                                    <div class="product-new__wrapper">
-                                        <img class="product-new__img" src="images/png/new-disign/photo2.png"
-                                            alt="Lampe Sur Pieds Bamboo">
-                                    </div>
-                                </a>
-                            </article>
+                            @@include('../parts/_product-new.html',{
+                            "product-new-title":"Lampe Sur Pieds Bamboo",
+                            "product-new-image":"images/png/new-disign/photo2.png"
+                            })
                         </li>
                         <li class="design__items mix category-b">
-                            <article class="product-new">
-                                <a href="#" class="product-new__link">
-                                    <div class="product-new__text">
-                                        <h3 class="product-new__title">Rattan Rocking Chair</h3>
-                                        <span class="product-new__subtitle">Classic</span>
-                                    </div>
-                                    <div class="product-new__wrapper">
-                                        <img class="product-new__img" src="images/png/new-disign/photo3.png"
-                                            alt="Beat Flat Pendant Black">
-                                    </div>
-                                </a>
-                            </article>
+                            @@include('../parts/_product-new.html',{
+                            "product-new-title":"Rattan Rocking Chair",
+                            "product-new-image":"images/png/new-disign/photo3.png"
+                            })
                         </li>
                         <li class="design__items mix category-c">
-                            <article class="product-new">
-                                <a href="#" class="product-new__link">
-                                    <div class="product-new__text">
-                                        <h3 class="product-new__title">Rattan Rocking Chair</h3>
-                                        <span class="product-new__subtitle">Classic</span>
-                                    </div>
-                                    <div class="product-new__wrapper">
-                                        <img class="product-new__img" src="images/png/new-disign/photo4.png"
-                                            alt="Rattan Rocking Chair">
-                                    </div>
-                                </a>
-                            </article>
+                            @@include('../parts/_product-new.html',{
+                            "product-new-title":"Rattan Rocking Chair",
+                            "product-new-image":"images/png/new-disign/photo4.png"
+                            })
                         </li>
                         <li class="design__items mix category-d">
-                            <article class="product-new">
-                                <a href="#" class="product-new__link">
-                                    <div class="product-new__text">
-                                        <h3 class="product-new__title">Rattan Rocking Chair</h3>
-                                        <span class="product-new__subtitle">Classic</span>
-                                    </div>
-                                    <div class="product-new__wrapper">
-                                        <img class="product-new__img" src="images/png/new-disign/photo5.png"
-                                            alt="Rattan Rocking Chair">
-                                    </div>
-                                </a>
-                            </article>
+                            @@include('../parts/_product-new.html',{
+                            "product-new-title":"Rattan Rocking Chair",
+                            "product-new-image":"images/png/new-disign/photo5.png"
+                            })
                         </li>
                         <li class="design__items mix category-d">
-                            <article class="product-new">
-                                <a href="#" class="product-new__link">
-                                    <div class="product-new__text">
-                                        <h3 class="product-new__title">Lampe Sur Pieds Bamboo</h3>
-                                        <span class="product-new__subtitle">Classic</span>
-                                    </div>
-                                    <div class="product-new__wrapper">
-                                        <img class="product-new__img" src="images/png/new-disign/photo6.png"
-                                            alt="Lampe Sur Pieds Bamboo">
-                                    </div>
-                                </a>
-                            </article>
+                            @@include('../parts/_product-new.html',{
+                            "product-new-title":"Lampe Sur Pieds Bamboo",
+                            "product-new-image":"images/png/new-disign/photo6.png"
+                            })
                         </li>
                     </ul>
                 </div>
@@ -599,87 +155,30 @@
                 </div>
                 <ul class="articles__items">
                     <li class="articles__item">
-                        <article class="news">
-                            <a class="news__link" href="#">
-                                <img class="news__image" src="images/png/articles/news1.png" alt="photo new">
-                                <span class="news__name">news</span>
-                                <div class="news__text">
-                                    <h3 class="news__title">
-                                        Diusmod tempor incididunt ut labore et dolore
-                                        magna aliqua.Ut enim ad minim veniam
-                                    </h3>
-                                    <div class="news__txt">
-                                        <div class="news__wrap">
-                                            <svg class="news__svg" width="10" height="10">
-                                                <use xlink:href="images/sprite.svg#calendar"></use>
-                                            </svg>
-                                            <time class="news__data"> 28 january, 2020</time>
-                                        </div>
-                                        <div class="news__wrap">
-                                            <svg class="news__svg" width="13" height="10">
-                                                <use xlink:href="images/sprite.svg#admin"></use>
-                                            </svg>
-                                            <span class="news__admin"> by admin</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </article>
+                        @@include('../parts/_news.html',{
+                        "images":"images/png/articles/news1.png",
+                        "text":
+                        "Diusmod tempor incididunt ut labore et doloremagna aliqua.Ut enim ad minim veniam",
+                        "data":"28 january, 2020",
+                        "admin":"by admin"
+                        })
                     </li>
                     <li class="articles__item">
-                        <article class="news">
-                            <a class="news__link" href="#">
-                                <img class="news__image" src="images/png/articles/news2.png" alt="photo new">
-                                <span class="news__name">news</span>
-                                <div class="news__text">
-                                    <h3 class="news__title">
-                                        Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                                        et dolore
-                                    </h3>
-                                    <div class="news__txt">
-                                        <div class="news__wrap">
-                                            <svg class="news__svg" width="10" height="10">
-                                                <use xlink:href="images/sprite.svg#calendar"></use>
-                                            </svg>
-                                            <time class="news__data"> 28 january, 2020</time>
-                                        </div>
-                                        <div class="news__wrap">
-                                            <svg class="news__svg" width="13" height="10">
-                                                <use xlink:href="images/sprite.svg#admin"></use>
-                                            </svg>
-                                            <span class="news__admin"> by admin</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </article>
+                         @@include('../parts/_news.html',{
+                         "images":"images/png/articles/news2.png",
+                         "text":
+              "Aonsectetur adipisicing elit,sed do eiusmod tempor incididunt ut labore et dolore",
+                         "data":"27 january, 2020",
+                         "admin":"by admin"
+                         })
                     </li>
                     <li class="articles__item">
-                        <article class="news">
-                            <a class="news__link" href="#">
-                                <img class="news__image" src="images/png/articles/news3.png" alt="photo new">
-                                <span class="news__name">news</span>
-                                <div class="news__text">
-                                    <h3 class="news__title">
-                                        Rncididunt ut labore et dolore magna aliqua. Ut enim
-                                    </h3>
-                                    <div class="news__txt">
-                                        <div class="news__wrap">
-                                            <svg class="news__svg" width="10" height="10">
-                                                <use xlink:href="images/sprite.svg#calendar"></use>
-                                            </svg>
-                                            <time class="news__data"> 28 january, 2020</time>
-                                        </div>
-                                        <div class="news__wrap">
-                                            <svg class="news__svg" width="13" height="10">
-                                                <use xlink:href="images/sprite.svg#admin"></use>
-                                            </svg>
-                                            <span class="news__admin"> by admin</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </article>
+                         @@include('../parts/_news.html',{
+                         "images":"images/png/articles/news3.png",
+                         "text":"Rncididunt ut labore et dolore magna aliqua. Ut enim",
+                         "data":"7 january, 2020",
+                         "admin":"by admin"
+                         })
                     </li>
                 </ul>
             </div>
@@ -709,7 +208,7 @@
             </div>
         </section>
     </main>
-     @@include('../parts/footer.html')
+    @@include('../parts/_footer.html')
 
     <script src="js/main.min.js"></script>
 </body>

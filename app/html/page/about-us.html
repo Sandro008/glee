@@ -1,23 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glee | About Us</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
+@@include('../parts/_head.html',{
+    "title" : "About-us"
+})
 
 <body>
-     @@include('../parts/header.html')
+     @@include('../parts/_header.html')
     <main class="main">
         <section class="about-us">
             <div class="breadcrumbs">
@@ -52,7 +38,7 @@
                         </div>
                         <ul class="about-us__statistic">
                             <li class="about-us__word">
-                                <svg class="about-us__svg" width="37" height="38">">
+                                <svg class="about-us__svg" width="37" height="38">
                                     <use xlink:href="images/sprite.svg#list"></use>
                                 </svg>
                                 <div class="about-us__wrap">
@@ -61,7 +47,7 @@
                                 </div>
                             </li>
                             <li class="about-us__word">
-                                <svg class="about-us__svg" width="44" height="40">">">
+                                <svg class="about-us__svg" width="44" height="40">
                                     <use xlink:href="images/sprite.svg#shout"></use>
                                 </svg>
                                 <div class="about-us__wrap">
@@ -70,7 +56,7 @@
                                 </div>
                             </li>
                             <li class="about-us__word">
-                                <svg class="about-us__svg" width="43" height="42">">">
+                                <svg class="about-us__svg" width="43" height="42">
                                     <use xlink:href="images/sprite.svg#diamond"></use>
                                 </svg>
                                 <div class="about-us__wrap">
@@ -284,7 +270,7 @@
                                             <svg class="news__svg" width="10" height="10">
                                                 <use xlink:href="images/sprite.svg#calendar"></use>
                                             </svg>
-                                            <time class="news__data"> 28 january, 2020</time>
+                                            <p class="news__data"> 28 january, 2020</p>
                                         </div>
                                         <div class="news__wrap">
                                             <svg class="news__svg" width="13" height="10">
@@ -312,7 +298,7 @@
                                             <svg class="news__svg" width="10" height="10">
                                                 <use xlink:href="images/sprite.svg#calendar"></use>
                                             </svg>
-                                            <time class="news__data"> 28 january, 2020</time>
+                                            <p class="news__data"> 28 january, 2020</p>
                                         </div>
                                         <div class="news__wrap">
                                             <svg class="news__svg" width="13" height="10">
@@ -339,7 +325,7 @@
                                             <svg class="news__svg" width="10" height="10">
                                                 <use xlink:href="images/sprite.svg#calendar"></use>
                                             </svg>
-                                            <time class="news__data"> 28 january, 2020</time>
+                                            <p class="news__data"> 28 january, 2020</p>
                                         </div>
                                         <div class="news__wrap">
                                             <svg class="news__svg" width="13" height="10">
@@ -380,7 +366,7 @@
             </div>
         </section>
     </main>
-    @@include('../parts/footer.html')
+    @@include('../parts/_footer.html')
 
 
 

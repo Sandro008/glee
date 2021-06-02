@@ -2,10 +2,16 @@
 
     &__mission {
         display: flex;
+        padding-top: 118px;
         margin-bottom: 132px;
+
+        @include for-size(laptop) {
+            padding-top: 60px;
+        }
 
         @include for-size(tablet) {
             margin-bottom: 30px;
+            padding-top: 40px;
         }
 
         @include for-size(tablet-min) {
@@ -13,8 +19,14 @@
             justify-content: center;
             align-items: center;
         }
-    }
 
+        @include for-size(phone) {
+            padding-top: 20px;
+        }
+
+
+    }
+    
     &__wrapp {
         width: 50%;
 
@@ -49,6 +61,7 @@
         @include for-size(tablet-min) {
             padding: 10px;
         }
+
         @include for-size(phone) {
             width: 100%;
         }
@@ -101,7 +114,7 @@
         color: $blue-100;
         padding-bottom: 60px;
         border-bottom: 1px solid $about-bb;
-          @include line-clamp(6);
+        @include line-clamp(6);
     }
 
     &__statistic {
@@ -259,7 +272,7 @@
         @extend %rubik-400;
         line-height: 1.9;
         margin-bottom: 35px;
-         @include line-clamp(18)
+        @include line-clamp(18)
     }
 
     &__ref {
