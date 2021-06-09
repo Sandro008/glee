@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glee | Product-List 1</title>
+    <title>Glee | Product-List</title>
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
@@ -113,53 +113,715 @@
       </div>
   </header>
     <main>
-         <section class="top">
-             <h1 class="top__title">Product-list 1</h1>
-             <ul class="breadcrumbs">
-                 <li class="breadcrumbs__item">
-                     <a class="breadcrumbs__link" href="#">Home</a>
-                 </li>
-                 <li class="breadcrumbs__item">
-                     <a class="breadcrumbs__link">Product-list 1</a>
-             </ul>
-         </section>
+        <section class="top">
+            <h1 class="top__title">Product-list</h1>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link">Product-list 1</a>
+            </ul>
+        </section>
         <section class="catalog">
             <div class="container container--sm">
                 <div class="catalog__wrapper">
                     <div class="catalog__filter">
-                        <div class="catalog__box">
-                            <h2 class="catalog__title">Category</h2>
-                            <ul class="catalog__list">
-                                <li class="catalog__item">
-                                    <a class="catalog__link" href="#">Chair</a>
+                        <form class="catalog__forms" action="#">
+                            <div class="catalog__box">
+                                <h2 class="catalog__title titles">Category</h2>
+                                <form class="catalog__category" action="#">
+                                    <label class="catalog__label">
+                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                        <span class="catalog__name">Chair</span>
+                                    </label>
+                                    <label class="catalog__label">
+                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                        <span class="catalog__name">Table</span>
+                                    </label>
+                                    <label class="catalog__label">
+                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                        <span class="catalog__name">Lamp</span>
+                                    </label>
+                                    <label class="catalog__label">
+                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                        <span class="catalog__name">Watch</span>
+                                    </label>
+                                    <label class="catalog__label">
+                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                        <span class="catalog__name">Clock</span>
+                                    </label>
+                                </form>
+                            </div>
+                            <div class="catalog__box">
+                                <h2 class="catalog__titles titles">Price</h2>
+                                <form class="catalog__form" action="#">
+                                    <label class="visually-hidden" for="input-price">input-price</label>
+                                    <input class="catalog__input" type="text" id="input-price" name="input-price"
+                                        data-min="0" data-max="800" data-from="100" data-to="500">
+                                    <div class="catalog__price">
+                                        <div class="catalog__cash">
+                                            <span>$</span>
+                                            <p class="catalog__min"></p>
+                                        </div>
+                                        <div class="catalog__cash">
+                                            <span>$</span>
+                                            <p class="catalog__max"></p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="catalog__box">
+                                <h2 class="catalog__title titles">Brand</h2>
+                                <form class="catalog__brand" action="#">
+                                    <label class="catalog__labe">
+                                        <input class="catalog__chek visually-hidden" type="checkbox">
+                                        <span class="catalog__name">RFL</span>
+                                        <span class="catalog__item">(10)</span>
+                                    </label>
+                                    <label class="catalog__labe">
+                                        <input class="catalog__chek visually-hidden" type="checkbox">
+                                        <span class="catalog__name">Brothers</span>
+                                        <span class="catalog__item">(21)</span>
+                                    </label>
+                                    <label class="catalog__labe">
+                                        <input class="catalog__chek visually-hidden" type="checkbox">
+                                        <span class="catalog__name">Regal</span>
+                                        <span class="catalog__item">(3)</span>
+                                    </label>
+                                    <label class="catalog__labe">
+                                        <input class="catalog__chek visually-hidden" type="checkbox">
+                                        <span class="catalog__name">Nadia</span>
+                                        <span class="catalog__item">(14)</span>
+                                    </label>
+                                    <label class="catalog__labe">
+                                        <input class="catalog__chek visually-hidden" type="checkbox">
+                                        <span class="catalog__name">Otobi</span>
+                                        <span class="catalog__item">(6)</span>
+                                    </label>
+                                </form>
+
+
+                            </div>
+                            <div class="catalog__box">
+                                <h2 class="catalog__title titles">Recent Products</h2>
+                                <ul class="catalog__recent">
+                                    <li class="catalog__items">
+                                        <a href="#" class="catalog__links">
+                                            <div class="catalog__image">
+                                                <img class="catalog__img" src="images/png/week-products/lamp3.png"
+                                                    alt="Pendant Lamp">
+                                            </div>
+                                            <div class="catalog__txt">
+                                                <p class="catalog__text">Pendant Lamp</p>
+                                                <div class="catalog__star" data-rateyo-rating="4"></div>
+                                                <p class="catalog__money">23<span>$</span></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="catalog__items">
+                                        <a href="#" class="catalog__links">
+                                            <div class="catalog__image">
+                                                <img class="catalog__img" src="images/png/week-products/lamp-2.png"
+                                                    alt="Pendant Lamp">
+                                            </div>
+                                            <div class="catalog__txt">
+                                                <p class="catalog__text">Pendant Lamp</p>
+                                                <div class="catalog__star" data-rateyo-rating="4"></div>
+                                                <p class="catalog__money">23<span>$</span></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="catalog__items">
+                                        <a href="#" class="catalog__links">
+                                            <div class="catalog__image">
+                                                <img class="catalog__img" src="images/png/week-products/lamp-3.png"
+                                                    alt="Pendant Lamp">
+                                            </div>
+                                            <div class="catalog__txt">
+                                                <p class="catalog__text">Pendant Lamp</p>
+                                                <div class="catalog__star" data-rateyo-rating="4"></div>
+                                                <p class="catalog__money">23<span>$</span></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="catalog-content">
+                        <div class="catalog-content__filter">
+                            <div class="catalog-content__buttons">
+                                <span class="catalog-content__value">View</span>
+                                <button class="catalog-content__btn catalog-content__btn--active button-grid">
+                                    <span class="visually-hidden">displays block</span>
+                                    <svg width="15" height="15">
+                                        <use xlink:href="images/sprite.svg#product-grid"></use>
+                                    </svg>
+                                </button>
+                                <button class="catalog-content__btn button-list">
+                                    <span class="visually-hidden">displays list</span>
+                                    <svg width="20" height="15">
+                                        <use xlink:href="images/sprite.svg#product-list"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="catalog-content__filters">
+                                <form class="catalog-content__form" action="#">
+                                    <select class="catalog-content__sort select-style">
+                                        <option value="">Sort By Default</option>
+                                        <option value="">Sort By Popular</option>
+                                        <option value="">Sort From Minimum Price</option>
+                                        <option value="">Sort From The Maxsimum Price</option>
+                                    </select>
+                                    <select class="catalog-content__show select-style">
+                                        <option value="">Show 12</option>
+                                        <option value="">Show 9</option>
+                                        <option value="">Show 6</option>
+                                        <option value="">Show 3</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                        </div>
+                        <ul class="catalog-content__menu">
+                            <li class="catalog-content__item">
+                                <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/one.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Wooden radio</h3>
+        <div class="product-card__star" data-rateyo-rating=4></div>
+        <p class="product-card__price"><span>$</span>29.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                            </li>
+                            <li class="catalog-content__item">
+                                <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/two.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Wooden chair</h3>
+        <div class="product-card__star" data-rateyo-rating=3></div>
+        <p class="product-card__price"><span>$</span>19.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                            </li>
+                            <li class="catalog-content__item">
+                                <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/thre.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">White chair</h3>
+        <div class="product-card__star" data-rateyo-rating=5></div>
+        <p class="product-card__price"><span>$</span>49.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                            </li>
+                            <li class="catalog-content__item">
+                                <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/four.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Retro table</h3>
+        <div class="product-card__star" data-rateyo-rating=5></div>
+        <p class="product-card__price"><span>$</span>49.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                            </li>
+                            <li class="catalog-content__item">
+                                <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/five.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Wooden Radio</h3>
+        <div class="product-card__star" data-rateyo-rating=2></div>
+        <p class="product-card__price"><span>$</span>69.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                            </li>
+                            <li class="catalog-content__item">
+                                <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/six.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Wooden Chair</h3>
+        <div class="product-card__star" data-rateyo-rating=4></div>
+        <p class="product-card__price"><span>$</span>29.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                            </li>
+                            <li class="catalog-content__item">
+                                <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/seven.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">White radio</h3>
+        <div class="product-card__star" data-rateyo-rating=4></div>
+        <p class="product-card__price"><span>$</span>49.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                            </li>
+                            <li class="catalog-content__item">
+                                <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/eight.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Retro table</h3>
+        <div class="product-card__star" data-rateyo-rating=4></div>
+        <p class="product-card__price"><span>$</span>29.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                            </li>
+                            <li class="catalog-content__item">
+                                <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/six.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Wooden Chair</h3>
+        <div class="product-card__star" data-rateyo-rating=4></div>
+        <p class="product-card__price"><span>$</span>29.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                            </li>
+                            <li class="catalog-content__item">
+                                <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/nine.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">White radio</h3>
+        <div class="product-card__star" data-rateyo-rating=3></div>
+        <p class="product-card__price"><span>$</span>49.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                            </li>
+                            <li class="catalog-content__item">
+                                <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/ten.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Retro table</h3>
+        <div class="product-card__star" data-rateyo-rating=5></div>
+        <p class="product-card__price"><span>$</span>29.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                            </li>
+                            <li class="catalog-content__item">
+                                <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/eleven.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Wooden Chair</h3>
+        <div class="product-card__star" data-rateyo-rating=5></div>
+        <p class="product-card__price"><span>$</span>49.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link pagination__link--active">1</a>
                                 </li>
-                                <li class="catalog__item">
-                                    <a class="catalog__link" href="#">Table</a>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">2</a>
                                 </li>
-                                <li class="catalog__item">
-                                    <a class="catalog__link" href="#">Lamp</a>
-                                </li>
-                                <li class="catalog__item">
-                                    <a class="catalog__link" href="#">Watch</a>
-                                </li>
-                                <li class="catalog__item">
-                                    <a class="catalog__link" href="#">Clock</a>
+                                <li class="pagination__item">
+                                    <a href="#" class="pagination__link">3</a>
                                 </li>
                             </ul>
+                            <a class="pagination__next" href="#">next</a>
                         </div>
-                        <div class="catalog__box">
-                            <h2 class="catalog__title">Price</h2>
-                            <form class="catalog__form" action="#">
-                                <input class="catalg__input" type="text">
-                            </form>
-                        </div>
-
-
                     </div>
-                    <div class="catalog__content"></div>
+                </div>
+            </div>
+            <div class="partners">
+                <div class="container container--sm">
+                    <ul class="partners__slider">
+                        <li class="partners__item">
+                            <img class="partners__image" src="images/png/slider-photo/logo1.png" alt="Partners logo">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__image" src="images/png/slider-photo/logo2.png" alt="Partners logo">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__image" src="images/png/slider-photo/logo3.png" alt="Partners logo">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__image" src="images/png/slider-photo/logo4.png" alt="Partners logo">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__image" src="images/png/slider-photo/logo5.png" alt="Partners logo">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__image" src="images/png/slider-photo/logo6.png" alt="Partners logo">
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
+         
+
 
     </main>
        <footer class="footer">
@@ -226,6 +888,8 @@
 
        </div>
    </footer>
+
+    <script src="js/main.min.js"></script>
 </body>
 
 

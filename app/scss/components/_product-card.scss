@@ -31,7 +31,14 @@
 
     &__wrapper {
         text-align: center;
+    }
 
+    &__star {
+        display: none;
+    }
+
+    &__text {
+        display: none;
     }
 
     &__title {

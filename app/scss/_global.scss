@@ -52,3 +52,22 @@ body {
         padding: 10px 50px 10px 10px;
     }
 }
+
+.titles {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $blue-700;
+    margin-bottom: 20px;
+    position: relative;
+    
+    &::after {
+        content: '';
+        position: absolute;
+        width: 39px;
+        height: 3px;
+        top: 43%;
+        margin-left: 16px;
+        background-color: $title;
+    }
+}
