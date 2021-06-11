@@ -315,6 +315,11 @@
         align-items: center;
         margin-bottom: 25px;
     }
+    &__ser{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
 
     & .menu-nav__wrapper {
         display: none;
@@ -345,7 +350,7 @@
             display: flex;
         }
     }
-
+    &__user,
     &__close {
         background-color: $orange-500;
         border: transparent;
