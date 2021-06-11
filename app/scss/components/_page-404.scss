@@ -1,0 +1,60 @@
+.page-404 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $title;
+
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__number {
+        font-weight: 700;
+        font-size: 140px;
+        line-height: 1;
+        color: $orange-500;
+
+        @include for-size(tablet-min) {
+            font-size: 100px;
+        }
+    }
+
+    &__text {
+        font-size: 100px;
+        margin-bottom: 50px;
+
+        @include for-size(tablet-min) {
+            font-size: 70px;
+            margin-bottom: 20px;
+        }
+         @include for-size(phone) {
+             font-size: 47px;
+         }
+    }
+
+    &__button {
+        text-transform: uppercase;
+        text-align: center;
+        max-width: 500px;
+        width: 100%;
+        border: 2px solid $accent;
+        background-color: $orange-50;
+        padding: 20px;
+        transition: all 0.5s;
+
+        &:active {
+            background-color: $orange-500;
+        }
+
+        &:hover {
+            background-color: $accent;
+            color: $white;
+        }
+    }
+}

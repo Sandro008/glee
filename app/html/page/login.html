@@ -1,0 +1,86 @@
+@@include('../parts/_head.html',{
+"title" : "Log in"
+})
+
+<body>
+    @@include('../parts/_header.html')
+    <main>
+        <section class="top">
+            <h1 class="top__title">Log in</h1>
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link">Log in</a>
+            </ul>
+        </section>
+        <section class="modal">
+            <div class="container container--sm">
+                <form class="modal__form" action="#">
+                    <label class="modal__label" for="name">Username or email address *</label>
+                    <input class="modal__input" id="name" type="text" required>
+                    <label class="modal__label" for="password"> Password *</label>
+                    <input class="modal__input" id="password" type="password" required>
+                    <button class="modal__button" type="submit">Login</button>
+                    <div class="modal__box">
+                        <label class="modal__chek">Remember me
+                            <input type="checkbox">
+                        </label>
+                        <a class="modal__link" href="#">Lost your password?</a>
+                    </div>
+                    <p class="modal__text">Not registered? No problem</p>
+                    <a class="modal__buttn" href="#modal__popup">Create an account</a>
+                </form>
+                <form class="modal__registration" id="modal__popup" action="#">
+                    <div class="modal__body">
+                        <div class="modal__content">
+                            <a class="modal__close" href="#">
+                                <svg width="20" height="20">
+                                    <use xlink:href="images/sprite.svg#close"></use>
+                                </svg>
+                            </a>
+                            <span class="modal__slogan">Registrarion</span>
+                            <label class="modal__label" for="username">Username or email address *</label>
+                            <input class="modal__input" id="username" type="text" required>
+                            <label class="modal__label" for="pass"> Password *</label>
+                            <input class="modal__input" id="pass" type="password" required>
+                            <button class="modal__btn" type="submit">Registration</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="partner">
+            <div class="partners">
+                <div class="container container--sm">
+                    <ul class="partners__slider">
+                        <li class="partners__item">
+                            <img class="partners__image" src="images/png/slider-photo/logo1.png" alt="Partners logo">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__image" src="images/png/slider-photo/logo2.png" alt="Partners logo">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__image" src="images/png/slider-photo/logo3.png" alt="Partners logo">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__image" src="images/png/slider-photo/logo4.png" alt="Partners logo">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__image" src="images/png/slider-photo/logo5.png" alt="Partners logo">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__image" src="images/png/slider-photo/logo6.png" alt="Partners logo">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('../parts/_footer.html')
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

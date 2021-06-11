@@ -4,16 +4,14 @@ $(function () {
         $(this).addClass('catalog-content__btn--active');
     });
 
-    $('.button-list').on('click', function(){
+    $('.button-list').on('click', function () {
         $('.catalog-content__menu').addClass('catalog-content__menu--list');
     });
-     $('.button-grid').on('click', function () {
-         $('.catalog-content__menu').removeClass('catalog-content__menu--list');
-     });
-
+    $('.button-grid').on('click', function () {
+        $('.catalog-content__menu').removeClass('catalog-content__menu--list');
+    });
 
 });
-
 
 $(function () {
     $('.catalog__input').ionRangeSlider({
