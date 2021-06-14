@@ -14,7 +14,7 @@
     }
 
 
-    &:hover .product-card__pointing {
+    &:hover &__pointing {
         display: flex;
         opacity: 1;
     }

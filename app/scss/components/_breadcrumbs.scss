@@ -22,7 +22,7 @@
     }
 
     &__link {
-        transition: all 0.5s;
+        transition: color 0.5s;
 
         &:hover {
             color: $accent;

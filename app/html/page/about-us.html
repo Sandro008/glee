@@ -2,164 +2,146 @@
 "title" : "About-us"
 })
 
-<body>
-    @@include('../parts/_header.html')
-    <main class="main">
-        <section class="top">
-            <h1 class="top__title">About Us</h1>
-            <ul class="breadcrumbs">
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Home</a>
+@@include('../parts/_header.html')
+@@include('../parts/_top.html',{
+"title" :"About Us"
+})
+<section class="about-us">
+    <div class="container container--sm">
+        <div class="about-us__mission">
+            <div class="about-us__wrapp">
+                <div class="about-us__images" style="background-image: url(../images/png/about-us/about-photo.png);">
+                </div>
+            </div>
+            <div class="about-us__text">
+                <div class="about-us__slogan">
+                    <span>12</span>
+                    <p class="about-us__wd">Years Experience Working</p>
+                </div>
+                <h2 class="about-us__subject title">Mission of our creative house</h2>
+                <div class="about-us__txt">
+                    <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum
+                    </p>
+                </div>
+                <ul class="about-us__statistic">
+                    <li class="about-us__word">
+                        <svg class="about-us__svg" width="37" height="38">
+                            <use xlink:href="images/sprite.svg#list"></use>
+                        </svg>
+                        <div class="about-us__wrap">
+                            <p class="about-us__num">520+</p>
+                            <p class="about-us__news">Projects</p>
+                        </div>
+                    </li>
+                    <li class="about-us__word">
+                        <svg class="about-us__svg" width="44" height="40">
+                            <use xlink:href="images/sprite.svg#shout"></use>
+                        </svg>
+                        <div class="about-us__wrap">
+                            <p class="about-us__num">$4M</p>
+                            <p class="about-us__news">Revenue</p>
+                        </div>
+                    </li>
+                    <li class="about-us__word">
+                        <svg class="about-us__svg" width="43" height="42">
+                            <use xlink:href="images/sprite.svg#diamond"></use>
+                        </svg>
+                        <div class="about-us__wrap">
+                            <p class="about-us__num">250</p>
+                            <p class="about-us__news">Awards</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="about-us__inner">
+        <div class="container container--sm">
+            <ul class="about-us__statical">
+                <li class="about-us__info">
+                    <svg width="74" height="60">
+                        <use xlink:href="images/sprite.svg#laptop"></use>
+                    </svg>
+                    <p class="about-us__say"><span>99%</span>Satisﬁed Clients Rate </p>
                 </li>
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link">About Us</a>
+                <li class="about-us__info">
+                    <svg width="73" height="52">
+                        <use xlink:href="images/sprite.svg#bus"></use>
+                    </svg>
+                    <p class="about-us__say"><span>5020+</span>Products Delivered </p>
+                </li>
+                <li class="about-us__info">
+                    <svg width="79" height="64">
+                        <use xlink:href="images/sprite.svg#phone24"></use>
+                    </svg>
+                    <p class="about-us__say"><span>23h</span>Daily Working Time </p>
+                </li>
+                <li class="about-us__info">
+                    <svg width="61" height="64">
+                        <use xlink:href="images/sprite.svg#star"></use>
+                    </svg>
+                    <p class="about-us__say"><span>140+</span>Brands in Store</p>
+                </li>
             </ul>
-        </section>
-        <section class="about-us">
-            <div class="container container--sm">
-                <div class="about-us__mission">
-                    <div class="about-us__wrapp">
-                        <div class="about-us__images"
-                            style="background-image: url(../images/png/about-us/about-photo.png);">
-                        </div>
-                    </div>
-                    <div class="about-us__text">
-                        <div class="about-us__slogan">
-                            <span>12</span>
-                            <p class="about-us__wd">Years Experience Working</p>
-                        </div>
-                        <h2 class="about-us__subject title">Mission of our creative house</h2>
-                        <div class="about-us__txt">
-                            <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum
-                            </p>
-                        </div>
-                        <ul class="about-us__statistic">
-                            <li class="about-us__word">
-                                <svg class="about-us__svg" width="37" height="38">
-                                    <use xlink:href="images/sprite.svg#list"></use>
-                                </svg>
-                                <div class="about-us__wrap">
-                                    <p class="about-us__num">520+</p>
-                                    <p class="about-us__news">Projects</p>
-                                </div>
-                            </li>
-                            <li class="about-us__word">
-                                <svg class="about-us__svg" width="44" height="40">
-                                    <use xlink:href="images/sprite.svg#shout"></use>
-                                </svg>
-                                <div class="about-us__wrap">
-                                    <p class="about-us__num">$4M</p>
-                                    <p class="about-us__news">Revenue</p>
-                                </div>
-                            </li>
-                            <li class="about-us__word">
-                                <svg class="about-us__svg" width="43" height="42">
-                                    <use xlink:href="images/sprite.svg#diamond"></use>
-                                </svg>
-                                <div class="about-us__wrap">
-                                    <p class="about-us__num">250</p>
-                                    <p class="about-us__news">Awards</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+        </div>
+    </div>
+    <div class="container container--sm">
+        <div class="about-us__holder">
+            <div class="about-us__team">
+                <h2 class="about-us__caption title">Our Team</h2>
+                <div class="about-us__wrapper">
+                    <p>Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit,
+                        sed
+                        do
+                        eiusmod tempor inciLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
                 </div>
+                <a class="about-us__ref button" href="#">Join With US
+                    <svg width="15" height="11">
+                        <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                </a>
             </div>
-            <div class="about-us__inner">
-                <div class="container container--sm">
-                    <ul class="about-us__statical">
-                        <li class="about-us__info">
-                            <svg width="74" height="60">
-                                <use xlink:href="images/sprite.svg#laptop"></use>
-                            </svg>
-                            <p class="about-us__say"><span>99%</span>Satisﬁed Clients Rate </p>
-                        </li>
-                        <li class="about-us__info">
-                            <svg width="73" height="52">
-                                <use xlink:href="images/sprite.svg#bus"></use>
-                            </svg>
-                            <p class="about-us__say"><span>5020+</span>Products Delivered </p>
-                        </li>
-                        <li class="about-us__info">
-                            <svg width="79" height="64">
-                                <use xlink:href="images/sprite.svg#phone24"></use>
-                            </svg>
-                            <p class="about-us__say"><span>23h</span>Daily Working Time </p>
-                        </li>
-                        <li class="about-us__info">
-                            <svg width="61" height="64">
-                                <use xlink:href="images/sprite.svg#star"></use>
-                            </svg>
-                            <p class="about-us__say"><span>140+</span>Brands in Store</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container container--sm">
-                <div class="about-us__holder">
-                    <div class="about-us__team">
-                        <h2 class="about-us__caption title">Our Team</h2>
-                        <div class="about-us__wrapper">
-                            <p>Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit,
-                                sed
-                                do
-                                eiusmod tempor inciLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                nostrud
-                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            </p>
-                        </div>
-                        <a class="about-us__ref button" href="#">Join With US
-                            <svg width="15" height="11">
-                                <use xlink:href="images/sprite.svg#arrow"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <ul class="about-us__people">
-                        <li class="about-us__labor">
-                            @@include('../parts/_team.html',{
-                                "image": "images/png/about-us/team1.png",
-                                "title": "Eliza Elliot",
-                                "subtitle": "Commodo tempor"
-                               })
-                        </li>
-                        <li class="about-us__labor">
-                             @@include('../parts/_team.html',{
-                             "image": "images/png/about-us/team2.png",
-                             "title": "Roscoe A.",
-                             "subtitle": "Commodo tempor"
-                             })
-                        </li>
-                        <li class="about-us__labor">
-                            @@include('../parts/_team.html',{
-                            "image": "images/png/about-us/team3.png",
-                            "title": "Ruby M.",
-                            "subtitle": "Commodo tempor"
-                            })
-                        </li>
-                        <li class="about-us__labor">
-                              @@include('../parts/_team.html',{
-                              "image": "images/png/about-us/team4.png",
-                              "title": "Marie F.Bloss",
-                              "subtitle": "Commodo tempor"
-                              })
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-      @@include('../parts/_articles.html')
-    </main>
-    @@include('../parts/_footer.html')
+            <ul class="about-us__people">
+                <li class="about-us__labor">
+                    @@include('../parts/_team.html',{
+                    "image": "images/png/about-us/team1.png",
+                    "title": "Eliza Elliot",
+                    "subtitle": "Commodo tempor"
+                    })
+                </li>
+                <li class="about-us__labor">
+                    @@include('../parts/_team.html',{
+                    "image": "images/png/about-us/team2.png",
+                    "title": "Roscoe A.",
+                    "subtitle": "Commodo tempor"
+                    })
+                </li>
+                <li class="about-us__labor">
+                    @@include('../parts/_team.html',{
+                    "image": "images/png/about-us/team3.png",
+                    "title": "Ruby M.",
+                    "subtitle": "Commodo tempor"
+                    })
+                </li>
+                <li class="about-us__labor">
+                    @@include('../parts/_team.html',{
+                    "image": "images/png/about-us/team4.png",
+                    "title": "Marie F.Bloss",
+                    "subtitle": "Commodo tempor"
+                    })
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+@@include('../parts/_articles.html')
 
-
-
-
-    <script src="js/main.min.js"></script>
-</body>
-
-</html>
+@@include('../parts/_footer.html')

@@ -26,6 +26,10 @@
     }
 
     &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         font-size: 100px;
         margin-bottom: 50px;
 

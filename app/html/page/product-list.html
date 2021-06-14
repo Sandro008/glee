@@ -2,328 +2,277 @@
 "title" : "Product-List"
 })
 
-<body>
-    @@include('../parts/_header.html')
-    <main>
-        <section class="top">
-            <h1 class="top__title">Product-list</h1>
-            <ul class="breadcrumbs">
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Home</a>
-                </li>
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link">Product-list 1</a>
-            </ul>
-        </section>
-        <section class="catalog">
-            <div class="container container--sm">
-                <div class="catalog__wrapper">
-                    <div class="catalog__filter">
-                        <form class="catalog__forms" action="#">
-                            <div class="catalog__box">
-                                <h2 class="catalog__title titles">Category</h2>
-                                <div class="catalog__category">
-                                    <label class="catalog__label">
-                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
-                                        <span class="catalog__name">Chair</span>
-                                    </label>
-                                    <label class="catalog__label">
-                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
-                                        <span class="catalog__name">Table</span>
-                                    </label>
-                                    <label class="catalog__label">
-                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
-                                        <span class="catalog__name">Lamp</span>
-                                    </label>
-                                    <label class="catalog__label">
-                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
-                                        <span class="catalog__name">Watch</span>
-                                    </label>
-                                    <label class="catalog__label">
-                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
-                                        <span class="catalog__name">Clock</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="catalog__box">
-                                <h2 class="catalog__titles titles">Price</h2>
-                                <div class="catalog__form">
-                                    <label class="visually-hidden" for="input-price">input-price</label>
-                                    <input class="catalog__input" type="text" id="input-price" name="input-price"
-                                        data-min="0" data-max="800" data-from="100" data-to="500">
-                                    <div class="catalog__price">
-                                        <div class="catalog__cash">
-                                            <span>$</span>
-                                            <p class="catalog__min"></p>
-                                        </div>
-                                        <div class="catalog__cash">
-                                            <span>$</span>
-                                            <p class="catalog__max"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__box">
-                                <h2 class="catalog__title titles">Brand</h2>
-                                <div class="catalog__brand">
-                                    <label class="catalog__labe">
-                                        <input class="catalog__chek visually-hidden" type="checkbox">
-                                        <span class="catalog__name">RFL</span>
-                                        <span class="catalog__item">(10)</span>
-                                    </label>
-                                    <label class="catalog__labe">
-                                        <input class="catalog__chek visually-hidden" type="checkbox">
-                                        <span class="catalog__name">Brothers</span>
-                                        <span class="catalog__item">(21)</span>
-                                    </label>
-                                    <label class="catalog__labe">
-                                        <input class="catalog__chek visually-hidden" type="checkbox">
-                                        <span class="catalog__name">Regal</span>
-                                        <span class="catalog__item">(3)</span>
-                                    </label>
-                                    <label class="catalog__labe">
-                                        <input class="catalog__chek visually-hidden" type="checkbox">
-                                        <span class="catalog__name">Nadia</span>
-                                        <span class="catalog__item">(14)</span>
-                                    </label>
-                                    <label class="catalog__labe">
-                                        <input class="catalog__chek visually-hidden" type="checkbox">
-                                        <span class="catalog__name">Otobi</span>
-                                        <span class="catalog__item">(6)</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="catalog__box">
-                                <h2 class="catalog__title titles">Recent Products</h2>
-                                <ul class="catalog__recent">
-                                    <li class="catalog__items">
-                                        <a href="#" class="catalog__links">
-                                            <div class="catalog__image">
-                                                <img class="catalog__img" src="images/png/week-products/lamp3.png"
-                                                    alt="Pendant Lamp">
-                                            </div>
-                                            <div class="catalog__txt">
-                                                <p class="catalog__text">Pendant Lamp</p>
-                                                <div class="catalog__star" data-rateyo-rating="4"></div>
-                                                <p class="catalog__money">23<span>$</span></p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="catalog__items">
-                                        <a href="#" class="catalog__links">
-                                            <div class="catalog__image">
-                                                <img class="catalog__img" src="images/png/week-products/lamp-2.png"
-                                                    alt="Pendant Lamp">
-                                            </div>
-                                            <div class="catalog__txt">
-                                                <p class="catalog__text">Pendant Lamp</p>
-                                                <div class="catalog__star" data-rateyo-rating="4"></div>
-                                                <p class="catalog__money">23<span>$</span></p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="catalog__items">
-                                        <a href="#" class="catalog__links">
-                                            <div class="catalog__image">
-                                                <img class="catalog__img" src="images/png/week-products/lamp-3.png"
-                                                    alt="Pendant Lamp">
-                                            </div>
-                                            <div class="catalog__txt">
-                                                <p class="catalog__text">Pendant Lamp</p>
-                                                <div class="catalog__star" data-rateyo-rating="4"></div>
-                                                <p class="catalog__money">23<span>$</span></p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="catalog-content">
-                        <div class="catalog-content__filter">
-                            <div class="catalog-content__buttons">
-                                <span class="catalog-content__value">View</span>
-                                <button class="catalog-content__btn catalog-content__btn--active button-grid">
-                                    <span class="visually-hidden">displays block</span>
-                                    <svg width="15" height="15">
-                                        <use xlink:href="images/sprite.svg#product-grid"></use>
-                                    </svg>
-                                </button>
-                                <button class="catalog-content__btn button-list">
-                                    <span class="visually-hidden">displays list</span>
-                                    <svg width="20" height="15">
-                                        <use xlink:href="images/sprite.svg#product-list"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="catalog-content__filters">
-                                <form class="catalog-content__form" action="#">
-                                    <select class="catalog-content__sort select-style">
-                                        <option value="">Sort By Default</option>
-                                        <option value="">Sort By Popular</option>
-                                        <option value="">Sort From Minimum Price</option>
-                                        <option value="">Sort From The Maxsimum Price</option>
-                                    </select>
-                                    <select class="catalog-content__show select-style">
-                                        <option value="">Show 12</option>
-                                        <option value="">Show 9</option>
-                                        <option value="">Show 6</option>
-                                        <option value="">Show 3</option>
-                                    </select>
-                                </form>
-                            </div>
 
+@@include('../parts/_header.html')
+
+@@include('../parts/_top.html',{
+"title" :"Product List"
+})
+<section class="catalog">
+    <div class="container container--sm">
+        <div class="catalog__wrapper">
+            <div class="catalog__filter">
+                <form class="catalog__forms" action="#">
+                    <div class="catalog__box">
+                        <h2 class="catalog__title titles">Category</h2>
+                        <div class="catalog__category">
+                            <label class="catalog__label">
+                                <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                <span class="catalog__name">Chair</span>
+                            </label>
+                            <label class="catalog__label">
+                                <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                <span class="catalog__name">Table</span>
+                            </label>
+                            <label class="catalog__label">
+                                <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                <span class="catalog__name">Lamp</span>
+                            </label>
+                            <label class="catalog__label">
+                                <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                <span class="catalog__name">Watch</span>
+                            </label>
+                            <label class="catalog__label">
+                                <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                <span class="catalog__name">Clock</span>
+                            </label>
                         </div>
-                        <ul class="catalog-content__menu">
-                            <li class="catalog-content__item">
-                                @@include('../parts/_product-card.html',{
-                                "img" : "images/jpg/week-products/one.jpg",
-                                "name" : "Wooden radio",
-                                "rate" : "4",
-                                "price": "29.00"
-                                })
+                    </div>
+                    <div class="catalog__box">
+                        <h2 class="catalog__titles titles">Price</h2>
+                        <div class="catalog__form">
+                            <label class="visually-hidden" for="input-price">input-price</label>
+                            <input class="catalog__input" type="text" id="input-price" name="input-price" data-min="0"
+                                data-max="800" data-from="100" data-to="500">
+                            <div class="catalog__price">
+                                <div class="catalog__cash">
+                                    <span>$</span>
+                                    <p class="catalog__min"></p>
+                                </div>
+                                <div class="catalog__cash">
+                                    <span>$</span>
+                                    <p class="catalog__max"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__box">
+                        <h2 class="catalog__title titles">Brand</h2>
+                        <div class="catalog__brand">
+                            <label class="catalog__labe">
+                                <input class="catalog__chek visually-hidden" type="checkbox">
+                                <span class="catalog__name">RFL</span>
+                                <span class="catalog__item">(10)</span>
+                            </label>
+                            <label class="catalog__labe">
+                                <input class="catalog__chek visually-hidden" type="checkbox">
+                                <span class="catalog__name">Brothers</span>
+                                <span class="catalog__item">(21)</span>
+                            </label>
+                            <label class="catalog__labe">
+                                <input class="catalog__chek visually-hidden" type="checkbox">
+                                <span class="catalog__name">Regal</span>
+                                <span class="catalog__item">(3)</span>
+                            </label>
+                            <label class="catalog__labe">
+                                <input class="catalog__chek visually-hidden" type="checkbox">
+                                <span class="catalog__name">Nadia</span>
+                                <span class="catalog__item">(14)</span>
+                            </label>
+                            <label class="catalog__labe">
+                                <input class="catalog__chek visually-hidden" type="checkbox">
+                                <span class="catalog__name">Otobi</span>
+                                <span class="catalog__item">(6)</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="catalog__box">
+                        <h2 class="catalog__title titles">Recent Products</h2>
+                        <ul class="catalog__recent">
+                            <li class="catalog__items">
+                                <a href="http://localhost:3000/product-details.html" class="catalog__links">
+                                    <div class="catalog__image">
+                                        <img class="catalog__img" src="images/png/week-products/lamp3.png"
+                                            alt="Pendant Lamp">
+                                    </div>
+                                    <div class="catalog__txt">
+                                        <p class="catalog__text">Pendant Lamp</p>
+                                        <div class="catalog__star" data-rateyo-rating="4"></div>
+                                        <p class="catalog__money">23<span>$</span></p>
+                                    </div>
+                                </a>
                             </li>
-                            <li class="catalog-content__item">
-                                @@include('../parts/_product-card.html',{
-                                "img" : "images/jpg/week-products/two.jpg",
-                                "name" : "Wooden chair",
-                                "rate" : "3",
-                                "price": "19.00"
-                                })
+                            <li class="catalog__items">
+                                <a href="#" class="catalog__links">
+                                    <div class="catalog__image">
+                                        <img class="catalog__img" src="images/png/week-products/lamp-2.png"
+                                            alt="Pendant Lamp">
+                                    </div>
+                                    <div class="catalog__txt">
+                                        <p class="catalog__text">Pendant Lamp</p>
+                                        <div class="catalog__star" data-rateyo-rating="4"></div>
+                                        <p class="catalog__money">23<span>$</span></p>
+                                    </div>
+                                </a>
                             </li>
-                            <li class="catalog-content__item">
-                                @@include('../parts/_product-card.html',{
-                                "img" : "images/jpg/week-products/thre.jpg",
-                                "name" : "White chair",
-                                "rate" : "5",
-                                "price": "49.00"
-                                })
-                            </li>
-                            <li class="catalog-content__item">
-                                @@include('../parts/_product-card.html',{
-                                "img" : "images/jpg/week-products/four.jpg",
-                                "name" : "Retro table",
-                                "rate" : "5",
-                                "price": "49.00"
-                                })
-                            </li>
-                            <li class="catalog-content__item">
-                                @@include('../parts/_product-card.html',{
-                                "img" : "images/jpg/week-products/five.jpg",
-                                "name" : "Wooden Radio",
-                                "rate" : "2",
-                                "price": "69.00"
-                                })
-                            </li>
-                            <li class="catalog-content__item">
-                                @@include('../parts/_product-card.html',{
-                                "img" : "images/jpg/week-products/six.jpg",
-                                "name" : "Wooden Chair",
-                                "rate" : "4",
-                                "price": "29.00"
-                                })
-                            </li>
-                            <li class="catalog-content__item">
-                                @@include('../parts/_product-card.html',{
-                                "img" : "images/jpg/week-products/seven.jpg",
-                                "name" : "White radio",
-                                "rate" : "4",
-                                "price": "49.00"
-                                })
-                            </li>
-                            <li class="catalog-content__item">
-                                @@include('../parts/_product-card.html',{
-                                "img" : "images/jpg/week-products/eight.jpg",
-                                "name" : "Retro table",
-                                "rate" : "4",
-                                "price": "29.00"
-                                })
-                            </li>
-                            <li class="catalog-content__item">
-                                @@include('../parts/_product-card.html',{
-                                "img" : "images/jpg/week-products/six.jpg",
-                                "name" : "Wooden Chair",
-                                "rate" : "4",
-                                "price": "29.00"
-                                })
-                            </li>
-                            <li class="catalog-content__item">
-                                @@include('../parts/_product-card.html',{
-                                "img" : "images/jpg/week-products/nine.jpg",
-                                "name" : "White radio",
-                                "rate" : "3",
-                                "price": "49.00"
-                                })
-                            </li>
-                            <li class="catalog-content__item">
-                                @@include('../parts/_product-card.html',{
-                                "img" : "images/jpg/week-products/ten.jpg",
-                                "name" : "Retro table",
-                                "rate" : "5",
-                                "price": "29.00"
-                                })
-                            </li>
-                            <li class="catalog-content__item">
-                                @@include('../parts/_product-card.html',{
-                                "img" : "images/jpg/week-products/eleven.jpg",
-                                "name" : "Wooden Chair",
-                                "rate" : "5",
-                                "price": "49.00"
-                                })
+                            <li class="catalog__items">
+                                <a href="#" class="catalog__links">
+                                    <div class="catalog__image">
+                                        <img class="catalog__img" src="images/png/week-products/lamp-3.png"
+                                            alt="Pendant Lamp">
+                                    </div>
+                                    <div class="catalog__txt">
+                                        <p class="catalog__text">Pendant Lamp</p>
+                                        <div class="catalog__star" data-rateyo-rating="4"></div>
+                                        <p class="catalog__money">23<span>$</span></p>
+                                    </div>
+                                </a>
                             </li>
                         </ul>
-                        <div class="pagination">
-                            <ul class="pagination__list">
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link pagination__link--active">1</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">2</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">3</a>
-                                </li>
-                            </ul>
-                            <a class="pagination__next" href="#">next</a>
-                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="catalog-content">
+                <div class="catalog-content__filter">
+                    <div class="catalog-content__buttons">
+                        <span class="catalog-content__value">View</span>
+                        <button class="catalog-content__btn catalog-content__btn--active button-grid">
+                            <span class="visually-hidden">displays block</span>
+                            <svg width="15" height="15">
+                                <use xlink:href="images/sprite.svg#product-grid"></use>
+                            </svg>
+                        </button>
+                        <button class="catalog-content__btn button-list">
+                            <span class="visually-hidden">displays list</span>
+                            <svg width="20" height="15">
+                                <use xlink:href="images/sprite.svg#product-list"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="catalog-content__filters">
+                        <form class="catalog-content__form" action="#">
+                            <label class="visually-hidden" for="sort">Sort</label>
+                            <select class="catalog-content__sort select-style" id="sort">
+                                <option value="">Sort By Default</option>
+                                <option value="">Sort By Popular</option>
+                                <option value="">Sort From Minimum Price</option>
+                                <option value="">Sort From The Maxsimum Price</option>
+                            </select>
+                            <label class="visually-hidden" for="show">Show</label>
+                            <select class="catalog-content__show select-style" id="show">
+                                <option value="">Show 12</option>
+                                <option value="">Show 9</option>
+                                <option value="">Show 6</option>
+                                <option value="">Show 3</option>
+                            </select>
+                        </form>
                     </div>
                 </div>
+                <ul class="catalog-content__menu">
+                    <li class="catalog-content__item">
+                        @@include('../parts/_product-card.html',{
+                        "img" : "images/jpg/week-products/one.jpg",
+                        "name" : "Wooden radio",
+                        "rate" : "4",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="catalog-content__item">
+                        @@include('../parts/_product-card.html',{
+                        "img" : "images/jpg/week-products/two.jpg",
+                        "name" : "Wooden chair",
+                        "rate" : "3",
+                        "price": "19.00"
+                        })
+                    </li>
+                    <li class="catalog-content__item">
+                        @@include('../parts/_product-card.html',{
+                        "img" : "images/jpg/week-products/thre.jpg",
+                        "name" : "White chair",
+                        "rate" : "5",
+                        "price": "49.00"
+                        })
+                    </li>
+                    <li class="catalog-content__item">
+                        @@include('../parts/_product-card.html',{
+                        "img" : "images/jpg/week-products/four.jpg",
+                        "name" : "Retro table",
+                        "rate" : "5",
+                        "price": "49.00"
+                        })
+                    </li>
+                    <li class="catalog-content__item">
+                        @@include('../parts/_product-card.html',{
+                        "img" : "images/jpg/week-products/five.jpg",
+                        "name" : "Wooden Radio",
+                        "rate" : "2",
+                        "price": "69.00"
+                        })
+                    </li>
+                    <li class="catalog-content__item">
+                        @@include('../parts/_product-card.html',{
+                        "img" : "images/jpg/week-products/six.jpg",
+                        "name" : "Wooden Chair",
+                        "rate" : "4",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="catalog-content__item">
+                        @@include('../parts/_product-card.html',{
+                        "img" : "images/jpg/week-products/seven.jpg",
+                        "name" : "White radio",
+                        "rate" : "4",
+                        "price": "49.00"
+                        })
+                    </li>
+                    <li class="catalog-content__item">
+                        @@include('../parts/_product-card.html',{
+                        "img" : "images/jpg/week-products/eight.jpg",
+                        "name" : "Retro table",
+                        "rate" : "4",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="catalog-content__item">
+                        @@include('../parts/_product-card.html',{
+                        "img" : "images/jpg/week-products/six.jpg",
+                        "name" : "Wooden Chair",
+                        "rate" : "4",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="catalog-content__item">
+                        @@include('../parts/_product-card.html',{
+                        "img" : "images/jpg/week-products/nine.jpg",
+                        "name" : "White radio",
+                        "rate" : "3",
+                        "price": "49.00"
+                        })
+                    </li>
+                    <li class="catalog-content__item">
+                        @@include('../parts/_product-card.html',{
+                        "img" : "images/jpg/week-products/ten.jpg",
+                        "name" : "Retro table",
+                        "rate" : "5",
+                        "price": "29.00"
+                        })
+                    </li>
+                    <li class="catalog-content__item">
+                        @@include('../parts/_product-card.html',{
+                        "img" : "images/jpg/week-products/eleven.jpg",
+                        "name" : "Wooden Chair",
+                        "rate" : "5",
+                        "price": "49.00"
+                        })
+                    </li>
+                </ul>
+                @@include('../parts/_pagination.html')
             </div>
-            <div class="partners">
-                <div class="container container--sm">
-                    <ul class="partners__slider">
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo1.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo2.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo3.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo4.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo5.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo6.png" alt="Partners logo">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        </div>
+    </div>
+</section>
+@@include('../parts/_partners.html')
 
 
 
-    </main>
-    @@include('../parts/_footer.html')
-
-    <script src="js/main.min.js"></script>
-</body>
-
-
-
-
-</html>
+@@include('../parts/_footer.html')

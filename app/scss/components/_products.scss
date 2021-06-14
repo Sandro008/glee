@@ -24,33 +24,33 @@
 
         @include for-size(phone) {
             grid-template-columns: repeat(1, 1fr);
-             margin-bottom: 30px;
+            margin-bottom: 30px;
         }
     }
 
-    &__items {
-       
-    }
 }
 
 .products-links {
     display: flex;
     margin-bottom: 86px;
-      @include for-size(laptop) {
-          flex-direction: column;
-      }
-         @include for-size(phone) {
-                margin-bottom: 30px;
-         }
+
+    @include for-size(laptop) {
+        flex-direction: column;
+    }
+
+    @include for-size(phone) {
+        margin-bottom: 30px;
+    }
 
     &__item {
         width: 50%;
         margin-right: 30px;
-         @include for-size(laptop) {
-             width: 100%;
-             margin-right: 0;
-             margin-bottom: 30px;
-         }
+
+        @include for-size(laptop) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
 
         &:last-child {
             margin-right: 0;

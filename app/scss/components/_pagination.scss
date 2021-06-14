@@ -4,8 +4,9 @@
     align-items: center;
     @extend %rubik-400;
     margin-bottom: 120px;
-    @include for-size(phone){
-         margin-bottom: 20px;
+
+    @include for-size(phone) {
+        margin-bottom: 20px;
     }
 
     &__list {
@@ -15,6 +16,10 @@
 
     &__item {
         margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
     }
 
     &__link {
@@ -23,7 +28,7 @@
         align-items: center;
         color: $blue-100;
         height: 50px;
-        width: 50px;
+        padding: 0 20px;
         border: 1px solid $title;
         transition: background-color 0.5s, color 0.5s;
 
@@ -49,10 +54,10 @@
         align-items: center;
         color: $blue-100;
         height: 50px;
-        width: 70px;
+        padding: 0 20px;
         text-transform: uppercase;
         border: 1px solid $title;
-        transition: background-color 0.5s,  color 0.5s;
+        transition: background-color 0.5s, color 0.5s;
 
         &:hover {
             background-color: $title;

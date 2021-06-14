@@ -31,7 +31,7 @@ $(function () {
 $(function () {
 
     $('.select-style').styler()
-})
+});
 
 $(function () {
 

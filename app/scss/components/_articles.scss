@@ -1,5 +1,14 @@
 .articles {
 
+    & .partners {
+        padding: 260px 0 76px;
+        margin-top: -170px;
+    }
+
+    &__title{
+        color: $blue-100;
+    }
+
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -13,6 +22,7 @@
     }
 
     &__all {
+        color: $blue-100;
         font-weight: 700;
         transition: color 0.5s;
 
@@ -159,6 +169,5 @@
         margin-right: 5px;
         fill: $accent;
     }
-
 
 }

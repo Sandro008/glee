@@ -2,7 +2,7 @@
     position: relative;
     margin-bottom: 100px;
 
-    &:hover .team__phototitle {
+    &:hover &__phototitle {
         background-color: $orange-500;
         transform: translateX(15%);
 

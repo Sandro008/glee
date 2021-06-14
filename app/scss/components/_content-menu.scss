@@ -25,12 +25,12 @@
         cursor: pointer;
         transition: color 0.5s;
 
-        &:hover {
-            color: $accent;
-        }
-
         &:focus {
             color: $title;
+        }
+
+        &:hover {
+            color: $accent;
         }
 
         &:active {

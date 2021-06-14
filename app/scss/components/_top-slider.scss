@@ -10,7 +10,7 @@
     }
 
     &__item {
-        height: 820px;
+        height: 88vh;
         margin: 0 auto;
         display: flex !important;
         justify-content: space-between;
@@ -19,11 +19,11 @@
         z-index: 1;
 
         @include for-size(tablet) {
-            height: 500px;
+            height: 70vh;
         }
 
         @include for-size(tablet-min) {
-            height: 400px;
+            height: 57vh;
         }
 
         @include for-size(phone) {
@@ -223,84 +223,4 @@
         }
 
     }
-}
-
-.advantage {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    @include for-size (tablet-min) {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-
-    &__item {
-        padding: 38px 0;
-        background-color: $orange-100;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-right: 1px solid $gray-100;
-
-        &:last-child {
-            border-right: none;
-        }
-
-        @include for-size(tablet) {
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 20px;
-        }
-
-        @include for-size(tablet-min) {
-            flex-direction: row;
-            align-items: center;
-            border-right: none;
-            border-bottom: 1px solid $gray-100;
-            padding: 0;
-
-        }
-
-        @include for-size(phone) {
-            padding: 20px;
-        }
-
-    }
-
-    &__text {
-        max-width: 235px;
-        padding-left: 20px;
-        @include line-clamp(3);
-
-        @include for-size(tablet) {
-            padding: 0;
-        }
-
-        @include for-size(tablet-min) {
-            padding: 20px;
-        }
-
-        @include for-size(phone) {
-            padding: 0;
-            max-width: 180px;
-            padding-left: 10px;
-        }
-    }
-
-    &__title {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2.2;
-        @include line-clamp(1);
-
-         @include for-size(phone) {
-            font-size: 16px;
-         }
-    }
-    &__txt {
-          @include for-size(phone) {
-              font-size: 14px;
-          }
-    }
-
 }

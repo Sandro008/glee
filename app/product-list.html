@@ -17,7 +17,9 @@
 </head>
 
 <body>
-      <header class="header">
+
+
+  <header class="header">
       <div class="container">
           <div class="header__inner">
               <nav class="menu-nav">
@@ -32,7 +34,7 @@
                           <a class="menu-nav__link" href="http://localhost:3000/about-us.html">About</a>
                       </li>
                       <li class="menu-nav__item">
-                          <a class="menu-nav__link" href="#">Services</a>
+                          <a class="menu-nav__link" href="http://localhost:3000/terms-conditions.html#">Services</a>
                       </li>
                       <li class="menu-nav__item">
                           <a class="menu-nav__link"
@@ -119,179 +121,183 @@
           </div>
       </div>
   </header>
-    <main>
-        <section class="top">
-            <h1 class="top__title">Product-list</h1>
-            <ul class="breadcrumbs">
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Home</a>
-                </li>
-                <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link">Product-list 1</a>
-            </ul>
-        </section>
-        <section class="catalog">
-            <div class="container container--sm">
-                <div class="catalog__wrapper">
-                    <div class="catalog__filter">
-                        <form class="catalog__forms" action="#">
-                            <div class="catalog__box">
-                                <h2 class="catalog__title titles">Category</h2>
-                                <div class="catalog__category">
-                                    <label class="catalog__label">
-                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
-                                        <span class="catalog__name">Chair</span>
-                                    </label>
-                                    <label class="catalog__label">
-                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
-                                        <span class="catalog__name">Table</span>
-                                    </label>
-                                    <label class="catalog__label">
-                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
-                                        <span class="catalog__name">Lamp</span>
-                                    </label>
-                                    <label class="catalog__label">
-                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
-                                        <span class="catalog__name">Watch</span>
-                                    </label>
-                                    <label class="catalog__label">
-                                        <input class="catalog__chek visually-hidden" type="checkbox" name="category">
-                                        <span class="catalog__name">Clock</span>
-                                    </label>
+
+  <main class="main">
+
+ <section class="top">
+     <h1 class="top__title">Product List</h1>
+      <ul class="breadcrumbs">
+     <li class="breadcrumbs__item">
+         <a class="breadcrumbs__link" href="#">Home</a>
+     </li>
+     <li class="breadcrumbs__item">
+         <a class="breadcrumbs__link">Product List</a>
+     </li>
+ </ul>
+ </section>
+<section class="catalog">
+    <div class="container container--sm">
+        <div class="catalog__wrapper">
+            <div class="catalog__filter">
+                <form class="catalog__forms" action="#">
+                    <div class="catalog__box">
+                        <h2 class="catalog__title titles">Category</h2>
+                        <div class="catalog__category">
+                            <label class="catalog__label">
+                                <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                <span class="catalog__name">Chair</span>
+                            </label>
+                            <label class="catalog__label">
+                                <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                <span class="catalog__name">Table</span>
+                            </label>
+                            <label class="catalog__label">
+                                <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                <span class="catalog__name">Lamp</span>
+                            </label>
+                            <label class="catalog__label">
+                                <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                <span class="catalog__name">Watch</span>
+                            </label>
+                            <label class="catalog__label">
+                                <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                                <span class="catalog__name">Clock</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="catalog__box">
+                        <h2 class="catalog__titles titles">Price</h2>
+                        <div class="catalog__form">
+                            <label class="visually-hidden" for="input-price">input-price</label>
+                            <input class="catalog__input" type="text" id="input-price" name="input-price" data-min="0"
+                                data-max="800" data-from="100" data-to="500">
+                            <div class="catalog__price">
+                                <div class="catalog__cash">
+                                    <span>$</span>
+                                    <p class="catalog__min"></p>
+                                </div>
+                                <div class="catalog__cash">
+                                    <span>$</span>
+                                    <p class="catalog__max"></p>
                                 </div>
                             </div>
-                            <div class="catalog__box">
-                                <h2 class="catalog__titles titles">Price</h2>
-                                <div class="catalog__form">
-                                    <label class="visually-hidden" for="input-price">input-price</label>
-                                    <input class="catalog__input" type="text" id="input-price" name="input-price"
-                                        data-min="0" data-max="800" data-from="100" data-to="500">
-                                    <div class="catalog__price">
-                                        <div class="catalog__cash">
-                                            <span>$</span>
-                                            <p class="catalog__min"></p>
-                                        </div>
-                                        <div class="catalog__cash">
-                                            <span>$</span>
-                                            <p class="catalog__max"></p>
-                                        </div>
+                        </div>
+                    </div>
+                    <div class="catalog__box">
+                        <h2 class="catalog__title titles">Brand</h2>
+                        <div class="catalog__brand">
+                            <label class="catalog__labe">
+                                <input class="catalog__chek visually-hidden" type="checkbox">
+                                <span class="catalog__name">RFL</span>
+                                <span class="catalog__item">(10)</span>
+                            </label>
+                            <label class="catalog__labe">
+                                <input class="catalog__chek visually-hidden" type="checkbox">
+                                <span class="catalog__name">Brothers</span>
+                                <span class="catalog__item">(21)</span>
+                            </label>
+                            <label class="catalog__labe">
+                                <input class="catalog__chek visually-hidden" type="checkbox">
+                                <span class="catalog__name">Regal</span>
+                                <span class="catalog__item">(3)</span>
+                            </label>
+                            <label class="catalog__labe">
+                                <input class="catalog__chek visually-hidden" type="checkbox">
+                                <span class="catalog__name">Nadia</span>
+                                <span class="catalog__item">(14)</span>
+                            </label>
+                            <label class="catalog__labe">
+                                <input class="catalog__chek visually-hidden" type="checkbox">
+                                <span class="catalog__name">Otobi</span>
+                                <span class="catalog__item">(6)</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="catalog__box">
+                        <h2 class="catalog__title titles">Recent Products</h2>
+                        <ul class="catalog__recent">
+                            <li class="catalog__items">
+                                <a href="http://localhost:3000/product-details.html" class="catalog__links">
+                                    <div class="catalog__image">
+                                        <img class="catalog__img" src="images/png/week-products/lamp3.png"
+                                            alt="Pendant Lamp">
                                     </div>
-                                </div>
-                            </div>
-                            <div class="catalog__box">
-                                <h2 class="catalog__title titles">Brand</h2>
-                                <div class="catalog__brand">
-                                    <label class="catalog__labe">
-                                        <input class="catalog__chek visually-hidden" type="checkbox">
-                                        <span class="catalog__name">RFL</span>
-                                        <span class="catalog__item">(10)</span>
-                                    </label>
-                                    <label class="catalog__labe">
-                                        <input class="catalog__chek visually-hidden" type="checkbox">
-                                        <span class="catalog__name">Brothers</span>
-                                        <span class="catalog__item">(21)</span>
-                                    </label>
-                                    <label class="catalog__labe">
-                                        <input class="catalog__chek visually-hidden" type="checkbox">
-                                        <span class="catalog__name">Regal</span>
-                                        <span class="catalog__item">(3)</span>
-                                    </label>
-                                    <label class="catalog__labe">
-                                        <input class="catalog__chek visually-hidden" type="checkbox">
-                                        <span class="catalog__name">Nadia</span>
-                                        <span class="catalog__item">(14)</span>
-                                    </label>
-                                    <label class="catalog__labe">
-                                        <input class="catalog__chek visually-hidden" type="checkbox">
-                                        <span class="catalog__name">Otobi</span>
-                                        <span class="catalog__item">(6)</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="catalog__box">
-                                <h2 class="catalog__title titles">Recent Products</h2>
-                                <ul class="catalog__recent">
-                                    <li class="catalog__items">
-                                        <a href="#" class="catalog__links">
-                                            <div class="catalog__image">
-                                                <img class="catalog__img" src="images/png/week-products/lamp3.png"
-                                                    alt="Pendant Lamp">
-                                            </div>
-                                            <div class="catalog__txt">
-                                                <p class="catalog__text">Pendant Lamp</p>
-                                                <div class="catalog__star" data-rateyo-rating="4"></div>
-                                                <p class="catalog__money">23<span>$</span></p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="catalog__items">
-                                        <a href="#" class="catalog__links">
-                                            <div class="catalog__image">
-                                                <img class="catalog__img" src="images/png/week-products/lamp-2.png"
-                                                    alt="Pendant Lamp">
-                                            </div>
-                                            <div class="catalog__txt">
-                                                <p class="catalog__text">Pendant Lamp</p>
-                                                <div class="catalog__star" data-rateyo-rating="4"></div>
-                                                <p class="catalog__money">23<span>$</span></p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="catalog__items">
-                                        <a href="#" class="catalog__links">
-                                            <div class="catalog__image">
-                                                <img class="catalog__img" src="images/png/week-products/lamp-3.png"
-                                                    alt="Pendant Lamp">
-                                            </div>
-                                            <div class="catalog__txt">
-                                                <p class="catalog__text">Pendant Lamp</p>
-                                                <div class="catalog__star" data-rateyo-rating="4"></div>
-                                                <p class="catalog__money">23<span>$</span></p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                                    <div class="catalog__txt">
+                                        <p class="catalog__text">Pendant Lamp</p>
+                                        <div class="catalog__star" data-rateyo-rating="4"></div>
+                                        <p class="catalog__money">23<span>$</span></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="catalog__items">
+                                <a href="#" class="catalog__links">
+                                    <div class="catalog__image">
+                                        <img class="catalog__img" src="images/png/week-products/lamp-2.png"
+                                            alt="Pendant Lamp">
+                                    </div>
+                                    <div class="catalog__txt">
+                                        <p class="catalog__text">Pendant Lamp</p>
+                                        <div class="catalog__star" data-rateyo-rating="4"></div>
+                                        <p class="catalog__money">23<span>$</span></p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="catalog__items">
+                                <a href="#" class="catalog__links">
+                                    <div class="catalog__image">
+                                        <img class="catalog__img" src="images/png/week-products/lamp-3.png"
+                                            alt="Pendant Lamp">
+                                    </div>
+                                    <div class="catalog__txt">
+                                        <p class="catalog__text">Pendant Lamp</p>
+                                        <div class="catalog__star" data-rateyo-rating="4"></div>
+                                        <p class="catalog__money">23<span>$</span></p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div class="catalog-content">
+                <div class="catalog-content__filter">
+                    <div class="catalog-content__buttons">
+                        <span class="catalog-content__value">View</span>
+                        <button class="catalog-content__btn catalog-content__btn--active button-grid">
+                            <span class="visually-hidden">displays block</span>
+                            <svg width="15" height="15">
+                                <use xlink:href="images/sprite.svg#product-grid"></use>
+                            </svg>
+                        </button>
+                        <button class="catalog-content__btn button-list">
+                            <span class="visually-hidden">displays list</span>
+                            <svg width="20" height="15">
+                                <use xlink:href="images/sprite.svg#product-list"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="catalog-content__filters">
+                        <form class="catalog-content__form" action="#">
+                            <label class="visually-hidden" for="sort">Sort</label>
+                            <select class="catalog-content__sort select-style" id="sort">
+                                <option value="">Sort By Default</option>
+                                <option value="">Sort By Popular</option>
+                                <option value="">Sort From Minimum Price</option>
+                                <option value="">Sort From The Maxsimum Price</option>
+                            </select>
+                            <label class="visually-hidden" for="show">Show</label>
+                            <select class="catalog-content__show select-style" id="show">
+                                <option value="">Show 12</option>
+                                <option value="">Show 9</option>
+                                <option value="">Show 6</option>
+                                <option value="">Show 3</option>
+                            </select>
                         </form>
                     </div>
-                    <div class="catalog-content">
-                        <div class="catalog-content__filter">
-                            <div class="catalog-content__buttons">
-                                <span class="catalog-content__value">View</span>
-                                <button class="catalog-content__btn catalog-content__btn--active button-grid">
-                                    <span class="visually-hidden">displays block</span>
-                                    <svg width="15" height="15">
-                                        <use xlink:href="images/sprite.svg#product-grid"></use>
-                                    </svg>
-                                </button>
-                                <button class="catalog-content__btn button-list">
-                                    <span class="visually-hidden">displays list</span>
-                                    <svg width="20" height="15">
-                                        <use xlink:href="images/sprite.svg#product-list"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="catalog-content__filters">
-                                <form class="catalog-content__form" action="#">
-                                    <select class="catalog-content__sort select-style">
-                                        <option value="">Sort By Default</option>
-                                        <option value="">Sort By Popular</option>
-                                        <option value="">Sort From Minimum Price</option>
-                                        <option value="">Sort From The Maxsimum Price</option>
-                                    </select>
-                                    <select class="catalog-content__show select-style">
-                                        <option value="">Show 12</option>
-                                        <option value="">Show 9</option>
-                                        <option value="">Show 6</option>
-                                        <option value="">Show 3</option>
-                                    </select>
-                                </form>
-                            </div>
-
-                        </div>
-                        <ul class="catalog-content__menu">
-                            <li class="catalog-content__item">
-                                <article class="product-card">
+                </div>
+                <ul class="catalog-content__menu">
+                    <li class="catalog-content__item">
+                        <article class="product-card">
     <div class="product-card__inner">
         <img class="product-card__image" src=images/jpg/week-products/one.jpg alt="style Wooden radio">
     </div>
@@ -330,9 +336,9 @@
         </li>
     </ul>
 </article>
-                            </li>
-                            <li class="catalog-content__item">
-                                <article class="product-card">
+                    </li>
+                    <li class="catalog-content__item">
+                        <article class="product-card">
     <div class="product-card__inner">
         <img class="product-card__image" src=images/jpg/week-products/two.jpg alt="style Wooden radio">
     </div>
@@ -371,9 +377,9 @@
         </li>
     </ul>
 </article>
-                            </li>
-                            <li class="catalog-content__item">
-                                <article class="product-card">
+                    </li>
+                    <li class="catalog-content__item">
+                        <article class="product-card">
     <div class="product-card__inner">
         <img class="product-card__image" src=images/jpg/week-products/thre.jpg alt="style Wooden radio">
     </div>
@@ -412,9 +418,9 @@
         </li>
     </ul>
 </article>
-                            </li>
-                            <li class="catalog-content__item">
-                                <article class="product-card">
+                    </li>
+                    <li class="catalog-content__item">
+                        <article class="product-card">
     <div class="product-card__inner">
         <img class="product-card__image" src=images/jpg/week-products/four.jpg alt="style Wooden radio">
     </div>
@@ -453,9 +459,9 @@
         </li>
     </ul>
 </article>
-                            </li>
-                            <li class="catalog-content__item">
-                                <article class="product-card">
+                    </li>
+                    <li class="catalog-content__item">
+                        <article class="product-card">
     <div class="product-card__inner">
         <img class="product-card__image" src=images/jpg/week-products/five.jpg alt="style Wooden radio">
     </div>
@@ -494,9 +500,9 @@
         </li>
     </ul>
 </article>
-                            </li>
-                            <li class="catalog-content__item">
-                                <article class="product-card">
+                    </li>
+                    <li class="catalog-content__item">
+                        <article class="product-card">
     <div class="product-card__inner">
         <img class="product-card__image" src=images/jpg/week-products/six.jpg alt="style Wooden radio">
     </div>
@@ -535,9 +541,9 @@
         </li>
     </ul>
 </article>
-                            </li>
-                            <li class="catalog-content__item">
-                                <article class="product-card">
+                    </li>
+                    <li class="catalog-content__item">
+                        <article class="product-card">
     <div class="product-card__inner">
         <img class="product-card__image" src=images/jpg/week-products/seven.jpg alt="style Wooden radio">
     </div>
@@ -576,9 +582,9 @@
         </li>
     </ul>
 </article>
-                            </li>
-                            <li class="catalog-content__item">
-                                <article class="product-card">
+                    </li>
+                    <li class="catalog-content__item">
+                        <article class="product-card">
     <div class="product-card__inner">
         <img class="product-card__image" src=images/jpg/week-products/eight.jpg alt="style Wooden radio">
     </div>
@@ -617,9 +623,9 @@
         </li>
     </ul>
 </article>
-                            </li>
-                            <li class="catalog-content__item">
-                                <article class="product-card">
+                    </li>
+                    <li class="catalog-content__item">
+                        <article class="product-card">
     <div class="product-card__inner">
         <img class="product-card__image" src=images/jpg/week-products/six.jpg alt="style Wooden radio">
     </div>
@@ -658,9 +664,9 @@
         </li>
     </ul>
 </article>
-                            </li>
-                            <li class="catalog-content__item">
-                                <article class="product-card">
+                    </li>
+                    <li class="catalog-content__item">
+                        <article class="product-card">
     <div class="product-card__inner">
         <img class="product-card__image" src=images/jpg/week-products/nine.jpg alt="style Wooden radio">
     </div>
@@ -699,9 +705,9 @@
         </li>
     </ul>
 </article>
-                            </li>
-                            <li class="catalog-content__item">
-                                <article class="product-card">
+                    </li>
+                    <li class="catalog-content__item">
+                        <article class="product-card">
     <div class="product-card__inner">
         <img class="product-card__image" src=images/jpg/week-products/ten.jpg alt="style Wooden radio">
     </div>
@@ -740,9 +746,9 @@
         </li>
     </ul>
 </article>
-                            </li>
-                            <li class="catalog-content__item">
-                                <article class="product-card">
+                    </li>
+                    <li class="catalog-content__item">
+                        <article class="product-card">
     <div class="product-card__inner">
         <img class="product-card__image" src=images/jpg/week-products/eleven.jpg alt="style Wooden radio">
     </div>
@@ -781,123 +787,123 @@
         </li>
     </ul>
 </article>
-                            </li>
-                        </ul>
-                        <div class="pagination">
-                            <ul class="pagination__list">
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link pagination__link--active">1</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">2</a>
-                                </li>
-                                <li class="pagination__item">
-                                    <a href="#" class="pagination__link">3</a>
-                                </li>
-                            </ul>
-                            <a class="pagination__next" href="#">next</a>
-                        </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
+                  <article class="pagination">
+      <ul class="pagination__list">
+          <li class="pagination__item">
+              <a class="pagination__link pagination__link--active" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+              <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+              <a class="pagination__next" href="#">next</a>
+          </li>
+      </ul>
+  </article>
             </div>
-            <div class="partners">
-                <div class="container container--sm">
-                    <ul class="partners__slider">
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo1.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo2.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo3.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo4.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo5.png" alt="Partners logo">
-                        </li>
-                        <li class="partners__item">
-                            <img class="partners__image" src="images/png/slider-photo/logo6.png" alt="Partners logo">
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        </div>
+    </div>
+</section>
+ <div class="partners">
+     <div class="container container--sm">
+         <ul class="partners__slider">
+             <li class="partners__item">
+                 <img class="partners__image" src="images/png/slider-photo/logo1.png" alt="Partners logo">
+             </li>
+             <li class="partners__item">
+                 <img class="partners__image" src="images/png/slider-photo/logo2.png" alt="Partners logo">
+             </li>
+             <li class="partners__item">
+                 <img class="partners__image" src="images/png/slider-photo/logo3.png" alt="Partners logo">
+             </li>
+             <li class="partners__item">
+                 <img class="partners__image" src="images/png/slider-photo/logo4.png" alt="Partners logo">
+             </li>
+             <li class="partners__item">
+                 <img class="partners__image" src="images/png/slider-photo/logo5.png" alt="Partners logo">
+             </li>
+             <li class="partners__item">
+                 <img class="partners__image" src="images/png/slider-photo/logo6.png" alt="Partners logo">
+             </li>
+         </ul>
+     </div>
+ </div>
 
 
 
-    </main>
-       <footer class="footer">
-       <div class="container container--sm">
-           <div class="footer__section">
-               <div class="footer__column">
-                   <a class="footer__logo logo" href="#">
-                       <img class="logo__img" src="images/png/logo/logo.png" alt="logo">
-                   </a>
-                   <address class="footer__address">
-                       <a class="footer__data" href="#">ADDRESS: 4772 Wines Lane Houston,TX 77032</a>
-                       <a class="footer__data" href="tel:+8323475843">TELEPHONE: +832-347-5843</a>
-                       <a class="footer__data" href="mailto:contact@Glee.com">EMAIL: contact@Glee.com</a>
-                   </address>
-               </div>
-               <div class="footer__column">
-                   <p class="footer__title">Services</p>
-                   <ul class="footer__list">
-                       <li class="footer__item"><a class="footer__link" href="#">About us</a></li>
-                       <li class="footer__item"><a class="footer__link" href="#">Return Policy</a></li>
-                       <li class="footer__item"><a class="footer__link" href="#">Our Blog </a></li>
-                       <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
-                       <li class="footer__item"><a class="footer__link" href="#">Terms & Condition</a>
-                       </li>
-                   </ul>
-               </div>
-               <div class="footer__column">
-                   <p class="footer__title">Account</p>
-                   <ul class="footer__info">
-                       <li class="footer__item"><a class="footer__link" href="#">Your Account</a></li>
-                       <li class="footer__item"><a class="footer__link" href="#">Checkout</a></li>
-                       <li class="footer__item"><a class="footer__link" href="#">Login</a></li>
-                       <li class="footer__item"><a class="footer__link" href="#">Register</a></li>
-                   </ul>
-               </div>
-               <div class="footer__column">
-                   <p class="footer__title">Newsletter</p>
-                   <p class="footer__text">Subscribe by our newsletter and get update protidin.</p>
-                   <form class="footer__form" action="#">
-                       <label class="visually-hidden" for="email">email</label>
-                       <input id="email" class="footer__input" type="email" name="email" placeholder="Email address"
-                           required>
-                       <button class="button footer__btn" type="submit">Subscribe</button>
-                   </form>
-               </div>
-           </div>
-           <div class="footer__subsection">
-               <p class="footer__copy">©2020 CopyRight Example. All rights reserved.</p>
-               <ul class="footer__menu">
-                   <li class="footer__element">
-                       <a class="footer__ref" href="#">Home</a>
-                   </li>
-                   <li class="footer__element">
-                       <a class="footer__ref" href="#">About</a>
-                   </li>
-                   <li class="footer__element">
-                       <a class="footer__ref" href="#">Blog</a>
-                   </li>
-                   <li class="footer__element">
-                       <a class="footer__ref" href="#">Contact</a>
-                   </li>
-               </ul>
-           </div>
+ </main>
 
-       </div>
-   </footer>
+ <footer class="footer">
+     <div class="container container--sm">
+         <div class="footer__section">
+             <div class="footer__column">
+                 <a class="footer__logo logo" href="#">
+                     <img class="logo__img" src="images/png/logo/logo.png" alt="logo">
+                 </a>
+                 <address class="footer__address">
+                     <a class="footer__data" href="#">ADDRESS: 4772 Wines Lane Houston,TX 77032</a>
+                     <a class="footer__data" href="tel:+8323475843">TELEPHONE: +832-347-5843</a>
+                     <a class="footer__data" href="mailto:contact@Glee.com">EMAIL: contact@Glee.com</a>
+                 </address>
+             </div>
+             <div class="footer__column">
+                 <p class="footer__title">Services</p>
+                 <ul class="footer__list">
+                     <li class="footer__item"><a class="footer__link" href="#">About us</a></li>
+                     <li class="footer__item"><a class="footer__link" href="#">Return Policy</a></li>
+                     <li class="footer__item"><a class="footer__link" href="#">Our Blog </a></li>
+                     <li class="footer__item"><a class="footer__link" href="#">Contact Us</a></li>
+                     <li class="footer__item"><a class="footer__link" href="#">Terms & Condition</a>
+                     </li>
+                 </ul>
+             </div>
+             <div class="footer__column">
+                 <p class="footer__title">Account</p>
+                 <ul class="footer__info">
+                     <li class="footer__item"><a class="footer__link" href="#">Your Account</a></li>
+                     <li class="footer__item"><a class="footer__link" href="#">Checkout</a></li>
+                     <li class="footer__item"><a class="footer__link" href="#">Login</a></li>
+                     <li class="footer__item"><a class="footer__link" href="#">Register</a></li>
+                 </ul>
+             </div>
+             <div class="footer__column">
+                 <p class="footer__title">Newsletter</p>
+                 <p class="footer__text">Subscribe by our newsletter and get update protidin.</p>
+                 <form class="footer__form" action="#">
+                     <label class="visually-hidden" for="email">email</label>
+                     <input id="email" class="footer__input" type="email" name="email" placeholder="Email address"
+                         required>
+                     <button class="button footer__btn" type="submit">Subscribe</button>
+                 </form>
+             </div>
+         </div>
+         <div class="footer__subsection">
+             <p class="footer__copy">©2020 CopyRight Example. All rights reserved.</p>
+             <ul class="footer__menu">
+                 <li class="footer__element">
+                     <a class="footer__ref" href="#">Home</a>
+                 </li>
+                 <li class="footer__element">
+                     <a class="footer__ref" href="#">About</a>
+                 </li>
+                 <li class="footer__element">
+                     <a class="footer__ref" href="#">Blog</a>
+                 </li>
+                 <li class="footer__element">
+                     <a class="footer__ref" href="#">Contact</a>
+                 </li>
+             </ul>
+         </div>
 
-    <script src="js/main.min.js"></script>
-</body>
+     </div>
+ </footer>
 
+ <script src="js/main.min.js"></script>
+ </body>
 
-
-
-</html>
+ </html>

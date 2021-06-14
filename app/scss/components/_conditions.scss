@@ -1,0 +1,65 @@
+.conditions {
+    padding-top: 109px;
+    margin-bottom: 100px;
+    @include for-size(tablet){
+         padding-top: 60px;
+         margin-bottom: 60px;
+    }
+      @include for-size(phone) {
+          padding-top: 30px;
+          margin-bottom: 30px;
+      }
+
+    &__title {
+        @extend %rubik-500;
+        font-size: 24px;
+        line-height: 1.7;
+        color: $blue-100;
+        margin-bottom: 17px;
+        @include line-clamp(2);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 33px;
+         @include for-size(phone) {
+             margin-bottom: 15px;
+         }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        @extend %rubik-400;
+        font-size: 16px;
+        color: $blue-100;
+        line-height: 1.9;
+        padding-left: 5px;
+        margin-bottom: 20px;
+        &:last-child{
+            margin-right: 0;
+        }
+          @include for-size(phone) {
+              margin-bottom: 10px;
+          }
+    }
+
+    &__num {
+        margin-right: 10px;
+    }
+    &__text{
+         @include line-clamp(5);
+    }
+    &__wrapper{
+        margin-bottom: 55px;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+          @include for-size(phone) {
+              margin-bottom: 15px;
+          }
+    }
+
+}

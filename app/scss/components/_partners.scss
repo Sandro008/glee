@@ -1,7 +1,7 @@
 .partners {
     background-color: $orange-100;
-    padding: 260px 0 76px;
-    margin-top: -170px;
+    padding: 76px 0;
+    
     @include for-size(phone){
         display: none;
     }
