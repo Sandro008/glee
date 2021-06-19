@@ -27,33 +27,23 @@
                     </p>
                 </div>
                 <ul class="about-us__statistic">
-                    <li class="about-us__word">
-                        <svg class="about-us__svg" width="37" height="38">
-                            <use xlink:href="images/sprite.svg#list"></use>
-                        </svg>
-                        <div class="about-us__wrap">
-                            <p class="about-us__num">520+</p>
-                            <p class="about-us__news">Projects</p>
-                        </div>
-                    </li>
-                    <li class="about-us__word">
-                        <svg class="about-us__svg" width="44" height="40">
-                            <use xlink:href="images/sprite.svg#shout"></use>
-                        </svg>
-                        <div class="about-us__wrap">
-                            <p class="about-us__num">$4M</p>
-                            <p class="about-us__news">Revenue</p>
-                        </div>
-                    </li>
-                    <li class="about-us__word">
-                        <svg class="about-us__svg" width="43" height="42">
-                            <use xlink:href="images/sprite.svg#diamond"></use>
-                        </svg>
-                        <div class="about-us__wrap">
-                            <p class="about-us__num">250</p>
-                            <p class="about-us__news">Awards</p>
-                        </div>
-                    </li>
+                    @@include('../parts/_about-us__word.html',{
+                    "img": "images/sprite.svg#list",
+                    "num" : "520+",
+                    "text" : "Projects"
+                    })
+
+                    @@include('../parts/_about-us__word.html',{
+                    "img": "images/sprite.svg#shout",
+                    "num" : "$4M",
+                    "text" : "Revenue"
+                    })
+
+                    @@include('../parts/_about-us__word.html',{
+                    "img": "images/sprite.svg#diamond",
+                    "num" : "250",
+                    "text" : "Awards"
+                    })
                 </ul>
             </div>
         </div>

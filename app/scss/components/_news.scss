@@ -1,0 +1,98 @@
+.news {
+    position: relative;
+    max-width: 370px;
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    transition: transform 0.5s;
+
+    $n :&;
+
+    &:hover {
+        transform: translateY(-20px);
+
+        & #{$n}__name {
+            color: $dblue;
+            background-color: $orange-500;
+        }
+    }
+    &:active{
+         & #{$n}__name {
+             color: $accent;
+             background-color: $white;
+         }
+    }
+
+    &__image {
+        height: 250px;
+        border-radius: 5px;
+        @extend %fit;
+        object-fit: cover;
+
+    }
+
+    &__name {
+        position: absolute;
+        @extend %poppins-700;
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 1.4;
+        width: 100px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $title;
+        border-radius: 20px;
+        color: $white;
+        top: 56%;
+        left: 8%;
+        transition: color 0.5s,
+            background-color 0.5s;
+
+    }
+
+    &__text {
+        height: 170px;
+        padding: 30px 35px 15px 30px;
+        color: $black-700;
+        display: flex;
+        flex-direction: column;
+        @include for-size(phone){
+            padding-right: 15px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.3;
+        margin-bottom: auto;
+    }
+
+    &__txt {
+        @extend %rubik-400;
+        border-top: 1px solid $bb;
+        font-size: 12px;
+        line-height: 2.5;
+        padding-top: 10px;
+        text-transform: uppercase;
+        color: $blue-50;
+        display: flex;
+    }
+
+    &__data {
+        margin-right: 28px;
+        display: inline-block;
+
+        @include for-size(phone) {
+            margin-right: 18px;
+        }
+    }
+
+    &__svg {
+        margin-right: 5px;
+        fill: $accent;
+    }
+
+}

@@ -54,18 +54,13 @@
                 padding: 0;
                 background-color: $white;
 
-                @include for-size(tablet) {
-                    height: 400px;
-                }
+                @include for-size(tablet) {}
 
-                @include for-size(tablet-min) {
-                    height: 300px;
-                }
+                @include for-size(tablet-min) {}
 
                 &__inner {
                     height: 100%;
                     width: 370px;
-                    width: 100%;
                     padding: 80px 20px;
                     margin-right: 55px;
                     margin-bottom: 0;
@@ -174,7 +169,7 @@
             fill: $title;
         }
 
-        &.catalog-content__btn--active {
+        &--active {
 
             & svg {
                 fill: $orange-500;
@@ -182,35 +177,39 @@
         }
     }
 
-    &.jq-selectbox__select {
-        margin-right: 15px;
-        height: 32px;
-        padding: 0 30px 0 5px;
-        border: none;
-        background: transparent;
-        box-shadow: none;
-        color: $title;
-        text-shadow: none;
-        @extend %rubik-400;
 
-        &:hover {
+    .jq-selectbox {
+
+        &__select {
+            margin-right: 15px;
+            height: 32px;
+            padding: 0 30px 0 5px;
+            border: none;
             background: transparent;
+            box-shadow: none;
+            color: $accent;
+            text-shadow: none;
+            @extend %rubik-400;
+
+            &:hover {
+                background: transparent;
+            }
         }
-    }
 
-    &.jq-selectbox__trigger {
-        border-left: none;
-    }
+        &__trigger {
+            border-left: none;
 
-    &.jq-selectbox__trigger-arrow {
-        position: absolute;
-        background-image: url(../../images/sprite.svg#more);
-        background-size: cover;
-        transform: rotate(90deg);
-        top: 12px;
-        right: 10px;
-        width: 10px;
-        height: 10px;
-        border: none;
+            &-arrow {
+                position: absolute;
+                background-image: url(../../images/sprite.svg#more);
+                background-size: cover;
+                transform: rotate(90deg);
+                top: 12px;
+                right: 10px;
+                width: 10px;
+                height: 10px;
+                border: none;
+            }
+        }
     }
 }

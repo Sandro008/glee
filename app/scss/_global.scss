@@ -52,6 +52,19 @@ body {
         padding: 10px 50px 10px 10px;
     }
 }
+.details-btn{
+     @extend %rubik-400;
+     font-size: 15px;
+     line-height: 2;
+     padding: 10px;
+     background-color: $title;
+     color: $white;
+     cursor: pointer;
+     border: none;
+     border-radius: 5px;
+     border: 1px solid transparent;
+     transition: all 0.5s;
+}
 
 .titles {
     font-weight: 700;

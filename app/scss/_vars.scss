@@ -31,7 +31,8 @@ $catalog-bg: #edf1f4;
 $form: #c2d2db;
 $color:#333333;
 $gray-20: #8D8D8D;
-
+$white-05: #fefefe;
+$white-01: #fbfbfb;
 
 
 %dmsans-400 {
@@ -76,6 +77,11 @@ $gray-20: #8D8D8D;
 
 %rubik-700 {
     font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+}
+
+%nunito-700 {
+    font-family: 'Nunito', sans-serif;
     font-weight: 700;
 }
 

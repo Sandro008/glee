@@ -18,7 +18,6 @@
 
 <body>
 
-
   <header class="header">
       <div class="container">
           <div class="header__inner">
@@ -28,13 +27,13 @@
                   <ul class="menu-nav__list">
                       <li class="menu-nav__item">
                           <a class="menu-nav__link menu-nav__link--active"
-                              href="http://localhost:3000/#">Home<span>+</span></a>
+                              href="http://localhost:3000/">Home<span>+</span></a>
                       </li>
                       <li class="menu-nav__item">
                           <a class="menu-nav__link" href="http://localhost:3000/about-us.html">About</a>
                       </li>
                       <li class="menu-nav__item">
-                          <a class="menu-nav__link" href="http://localhost:3000/terms-conditions.html#">Services</a>
+                          <a class="menu-nav__link" href="http://localhost:3000/terms-conditions.html">Services</a>
                       </li>
                       <li class="menu-nav__item">
                           <a class="menu-nav__link"
@@ -44,7 +43,7 @@
                           <a class="menu-nav__link" href="#">News</a>
                       </li>
                       <li class="menu-nav__item">
-                          <a class="menu-nav__link" href="#">Contact</a>
+                          <a class="menu-nav__link" href="http://localhost:3000/contact.html">Contact</a>
                       </li>
                   </ul>
                   <div class="menu-nav">
@@ -110,12 +109,17 @@
                        </div>
                   </div>
                   <ul class="menubar__list">
-                      <li class="menubar__item"><a class="menubar__link" href="#">Home</a></li>
-                      <li class="menubar__item"><a class="menubar__link" href="#">About</a></li>
-                      <li class="menubar__item"><a class="menubar__link" href="#">Services</a></li>
-                      <li class="menubar__item"><a class="menubar__link" href="#">Pages</a></li>
+                      <li class="menubar__item">
+                          <a class="menubar__link" href="http://localhost:3000">Home</a></li>
+                      <li class="menubar__item"><a class="menubar__link"
+                              href="http://localhost:3000/about-us.html">About</a></li>
+                      <li class="menubar__item"><a class="menubar__link"
+                              href="http://localhost:3000/terms-conditions.html">Services</a></li>
+                      <li class="menubar__item"><a class="menubar__link"
+                              href="http://localhost:3000/product-list.html">Pages</a></li>
                       <li class="menubar__item"><a class="menubar__link" href="#">News</a></li>
-                      <li class="menubar__item"><a class="menubar__link" href="#">Contact</a></li>
+                      <li class="menubar__item"><a class="menubar__link"
+                              href="http://localhost:3000/contact.html">Contact</a></li>
                   </ul>
               </div>
           </div>
@@ -123,7 +127,6 @@
   </header>
 
   <main class="main">
-
  <section class="top">
      <h1 class="top__title">Product Details</h1>
       <ul class="breadcrumbs">
@@ -135,96 +138,480 @@
      </li>
  </ul>
  </section>
-</section>
+
 <section class="details">
-    <div class="cantainer container--sm">
+    <div class="container container--sm">
         <div class="details-item">
-            <div class="details-item__inner">
-                <div class="details-item__slide">
-                    <ul class="details-item__list">
-                        <!-- thumb  -->
-                        <li class="details-item__items">
-                            <div class="details-item__box">
-                                <img src="../../images/png/produst-details/1.png" alt="lamp">
-                            </div>
-                        </li>
-                        <li class="details-item__items">
-                            <div class="details-item__box">
-                                <img src="../../images/png/produst-details/small1.png" alt="lamp">
-                            </div>
-                        </li>
-                        <li class="details-item__items">
-                            <div class="details-item__box">
-                                <img src="../../images/png/produst-details/small2.png" alt="lamp">
-                            </div>
-                        </li>
-                        <li class="details-item__items">
-                            <div class="details-item__box">
-                                <img src="../../images/png/produst-details/small3.png" alt="lamp">
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="details-item__top">
-                        <!-- big -->
-                        <li class="details-item__wrap">
-                            <div class="details-item__box2">
-                                <img src="../../images/png/produst-details/1.png" alt="lamp">
-                            </div>
-                        </li>
-                        <li class="details-item__wrap">
-                            <div class="details-item__box2">
-                                <img src="../../images/png/produst-details/small1.png" alt="lamp">
-                            </div>
-                        </li>
-                        <li class="details-item__wrap">
-                            <div class="details-item__box2">
-                                <img src="../../images/png/produst-details/small2.png" alt="lamp">
-                            </div>
-                        </li>
-                        <li class="details-item__wrap">
-                            <div class="details-item__box2">
-                                <img src="../../images/png/produst-details/small3.png" alt="lamp">
-                            </div>
-                        </li>
-                    </ul>
+            <div class="details-item__slide">
+                <ul class="details-item__list">
+                    <li class="details-item__items">
+                        <div class="details-item__box">
+                            <img class="details-item__image" src="images/png/produst-details/1.png" alt="lamp">
+                        </div>
+                    </li>
+                    <li class="details-item__items">
+                        <div class="details-item__box">
+                            <img class="details-item__image" src="images/png/produst-details/small1.png" alt="lamp">
+                        </div>
+                    </li>
+                    <li class="details-item__items">
+                        <div class="details-item__box">
+                            <img class="details-item__image" src="images/png/produst-details/small2.png" alt="lamp">
+                        </div>
+                    </li>
+                    <li class="details-item__items">
+                        <div class="details-item__box">
+                            <img class="details-item__image" src="images/png/produst-details/small3.png" alt="lamp">
+                        </div>
+                    </li>
+                </ul>
+                <ul class="details-item__top">
+                    <li class="details-item__wrap">
+                        <div class="details-item__box2">
+                            <img class="details-item__image" src="images/png/produst-details/1.png" alt="lamp">
+                        </div>
+                    </li>
+                    <li class="details-item__wrap">
+                        <div class="details-item__box2">
+                            <img class="details-item__image" src="images/png/produst-details/small1.png" alt="lamp">
+                        </div>
+                    </li>
+                    <li class="details-item__wrap">
+                        <div class="details-item__box2">
+                            <img class="details-item__image" src="images/png/produst-details/small2.png" alt="lamp">
+                        </div>
+                    </li>
+                    <li class="details-item__wrap">
+                        <div class="details-item__box2">
+                            <img class="details-item__image" src="images/png/produst-details/small3.png" alt="lamp">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="details-item__content">
+                <h2 class="details-item__title">Pendant lamp</h2>
+                <div class="details-item__star" data-rateyo-rating="4"></div>
+                <p class="details-item__price">23<span>$</span></p>
+                <div class="details-item__text">
+                    <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    </p>
                 </div>
-                <div class="details-item__content">
-                    <h2 class="details-item__title">Pendant lamp</h2>
-                    <div class="details-item__star" data-rateyo-rating="4"></div>
-                    <p class="details-item__price"><span>$</span>23</p>
-                    <div class="product-item__text">
-                        <p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        </p>
-                    </div>
-                    <div class="product-item__value">
-                        <a href="#">-</a>
-                        <input type="text">
-                        <a href="">+</a>
-                    </div>
-                    <ul class="product-item__info">
-                        <li class="product-item__information">
-                            <p class="product-item__word">SKU:<span>014</span></p>
-                        </li>
-                        <li class="product-item__information">
-                            <p class="product-item__word">Category:<span>Lights</span></p>
-                        </li>
-                        <li class="product-item__information">
-                            <p class="product-item__word">Tag:<span>Decorative</span></p>
-                        </li>
-                    </ul>
+                <div class="details-item__value">
+                    <label class="visually-hidden" for="details">Details</label>
+                    <input class="details-item__input" id="details" type="number" value="1">
+                    <button class="details-item__button details-btn" type="submit"> add to card</button>
                 </div>
+                <ul class="details-item__info">
+                    <li class="details-item__information">
+                        <p class="details-item__word">SKU:<span>014</span></p>
+                    </li>
+                    <li class="details-item__information">
+                        <p class="details-item__word">Category:<span>Lights</span></p>
+                    </li>
+                    <li class="details-item__information">
+                        <p class="details-item__word">Tag:<span>Decorative</span></p>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="details-button"></div>
+        <div class="details-tabs">
+            <div class="details-tabs__buttons">
+                <ul class="details-tabs__list">
+                    <li class="details-tabs__item">
+                        <a href="#tab-1" class="details-tabs__link details-tabs__link--active">Description</a>
+                    </li>
+                    <li class="details-tabs__item">
+                        <a href="#tab-2" class="details-tabs__link ">Additional information</a>
+                    </li>
+                    <li class="details-tabs__item">
+                        <a href="#tab-3" class="details-tabs__link ">Reviews<span>(2)</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="details-tabs__content">
+                <ul class="details-tabs__wrapper">
+                    <li class="details-tabs__items">
+                        <div class="details-tabs__box details-tabs__box--active" id="tab-1">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ab officiis cumque, itaque,
+                                dolor perferendis at quasi qui minima cupiditate vero nulla, ex saepe consectetur totam
+                                sunt. Beatae, ducimus ipsam!
+                                Expedita mollitia atque accusantium sequi fugit, quas iure nemo vitae vero numquam?
+                                Tempora placeat quaerat enim rem odit culpa ut recusandae ipsa consequatur itaque sunt
+                                in repellat eum, illum atque?</p>
+                        </div>
+                    </li>
+                    <li class="details-tabs__items">
+                        <div class="details-tabs__box" id="tab-2">
+                            <ul class="details-tabs__inner">
+                                <li class="details-tabs__text">
+                                    <p class="details-tabs__txt">Weight <span>1.240 kg</span></p>
+                                </li>
+                                <li class="details-tabs__text">
+                                    <p class="details-tabs__txt">Height <span>98 sm</span></p>
+                                </li>
+                                <li class="details-tabs__text">
+                                    <p class="details-tabs__txt">Made in <span> Germany</span></p>
+                                </li>
+                                <li class="details-tabs__text">
+                                    <p class="details-tabs__txt">Color <span> Black</span></p>
+                                </li>
+                                <li class="details-tabs__text">
+                                    <p class="details-tabs__txt">Guarantee <span>1 year</span></p>
+                                </li>
+                                <li class="details-tabs__text">
+                                    <p class="details-tabs__txt">Availability <span>are available</span></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="details-tabs__items">
+                        <div class="details-tabs__box" id="tab-3">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+                                tempora nesciunt quibusdam praesentium. Eveniet tempora, iusto
+                                officia
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="details-slider">
+            <h2 class="details-slider__title">Related products</h2>
+            <ul class="details-slider__list">
+                <li class="details-slider__item">
+                    <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/one.jpg alt="style Wooden radio">
     </div>
-
-
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Wooden radio</h3>
+        <div class="product-card__star" data-rateyo-rating=4></div>
+        <p class="product-card__price"><span>$</span>29.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                </li>
+                <li class="details-slider__item">
+                    <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/two.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Wooden Chair</h3>
+        <div class="product-card__star" data-rateyo-rating=4></div>
+        <p class="product-card__price"><span>$</span>39.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                </li>
+                <li class="details-slider__item">
+                    <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/thre.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Wooden Chair</h3>
+        <div class="product-card__star" data-rateyo-rating=4></div>
+        <p class="product-card__price"><span>$</span>72.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                </li>
+                <li class="details-slider__item">
+                    <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/four.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Retro Table</h3>
+        <div class="product-card__star" data-rateyo-rating=4></div>
+        <p class="product-card__price"><span>$</span>55.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                </li>
+                <li class="details-slider__item">
+                    <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/five.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Wooden radio</h3>
+        <div class="product-card__star" data-rateyo-rating=4></div>
+        <p class="product-card__price"><span>$</span>28.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                </li>
+                <li class="details-slider__item">
+                    <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/six.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Wooden radio</h3>
+        <div class="product-card__star" data-rateyo-rating=4></div>
+        <p class="product-card__price"><span>$</span>71.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                </li>
+                <li class="details-slider__item">
+                    <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/seven.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Wooden Chair</h3>
+        <div class="product-card__star" data-rateyo-rating=4></div>
+        <p class="product-card__price"><span>$</span>29.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                </li>
+                <li class="details-slider__item">
+                    <article class="product-card">
+    <div class="product-card__inner">
+        <img class="product-card__image" src=images/jpg/week-products/eight.jpg alt="style Wooden radio">
+    </div>
+    <div class="product-card__wrapper">
+        <h3 class="product-card__title">Wooden radio</h3>
+        <div class="product-card__star" data-rateyo-rating=4></div>
+        <p class="product-card__price"><span>$</span>291.00</p>
+        <div class="product-card__text">
+            <p>
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis nostrud exercitation
+            </p>
+        </div>
+    </div>
+    <ul class="product-card__pointing">
+        <li class="product-card__element">
+            <a class="product-card__btn" href="#">
+                <svg width="20" height="20">
+                    <use xlink:href="images/sprite.svg#card-search"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="20">
+                    <use xlink:href="images/sprite.svg#card-cart"></use>
+                </svg>
+            </button>
+        </li>
+        <li class="product-card__element">
+            <button class="product-card__btn" type="button">
+                <svg width="22" height="18">
+                    <use xlink:href="images/sprite.svg#card-heart"></use>
+                </svg>
+            </button>
+        </li>
+    </ul>
+</article>
+                </li>
+            </ul>
+        </div>
+    </div>
 </section>
-
-
-
 
 <section class="articles">
     <div class="container container--sm">
@@ -336,7 +723,6 @@
      </div>
  </div>
 </section>
-
  </main>
 
  <footer class="footer">

@@ -1,0 +1,95 @@
+.details-tabs {
+
+    &__buttons {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+          @include for-size(tablet-min) {
+              flex-wrap: wrap;
+          }
+
+    }
+
+    &__item {
+        width: 240px;
+        margin-right: 10px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+         @include for-size(tablet-min) {
+             margin-bottom: 10px;
+         }
+        
+    }
+
+    &__link {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        background-color: $catalog-bg;
+        color: $accent;
+        font-size: 18px;
+        @extend %rubik-500;
+        line-height: 2.2;
+        padding: 5.5px 10px;
+        border-radius: 5px;
+        transition: all 0.5s;
+
+        &--active {
+            background-color: $title;
+            color: $white;
+
+        }
+        &:hover{
+             background-color: $orange-500;
+             color: $accent;
+        }
+    }
+
+    &__content {
+        margin-bottom: 120px;
+
+        @include for-size(laptop) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__box {
+        display: none;
+        @extend %rubik-400;
+        color: $blue-100;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__inner {
+        padding: 0 10px;
+        min-width: 50%;
+    }
+
+    &__text {
+        position: relative;
+    }
+
+    &__txt {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 20%;
+            left: 0;
+            right: 0;
+            border-bottom: 1px dotted $gray-500;
+        }
+    }
+
+}

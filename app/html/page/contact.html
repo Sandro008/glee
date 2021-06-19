@@ -1,0 +1,80 @@
+@@include('../parts/_head.html',{
+"title" : "Contact"
+})
+
+@@include('../parts/_header.html')
+@@include('../parts/_top.html',{
+"title" :"Contact"
+})
+<section class="contact">
+    <div class="container container--sm">
+        <h2 class="contact__title"><span>Write Here</span> Get In Touch</h2>
+        <ul class="contact__list">
+            <li class="contact__item">
+                <div class="contact__inner">
+                    <div class="contact__wrap">
+                        <svg width="31" height="44">
+                            <use xlink:href="images/sprite.svg#contact-address"></use>
+                        </svg>
+                    </div>
+                    <h3 class="contact__subtitle">Address</h3>
+                </div>
+                <address class="contact__info">
+                    <a class="contact__all" href="#">2416 Mapleview Drive Tampa, FL 33634</a>
+                </address>
+            </li>
+            <li class="contact__item contact__item--active">
+                <div class="contact__inner">
+                    <div class="contact__wrap">
+                        <svg width="37" height="35">
+                            <use xlink:href="images/sprite.svg#contact-mail"></use>
+                        </svg>
+                    </div>
+                    <h3 class="contact__subtitle">Our Email</h3>
+                </div>
+                <address class="contact__info">
+                    <a class="contact__all" href="mailto:contact@website.com">Main Email : contact@website.com</a>
+                    <a class="contact__all" href="mailto: Info@mail.com">Inquiries :
+                        Info@mail.com</a>
+                </address>
+            </li>
+            <li class="contact__item">
+                <div class="contact__inner">
+                    <div class="contact__wrap">
+                        <svg width="37" height="45">
+                            <use xlink:href="images/sprite.svg#contact-phone"></use>
+                        </svg>
+                    </div>
+                    <h3 class="contact__subtitle">Our Phone</h3>
+                </div>
+                <address class="contact__info">
+                    <a class="contact__all" href="tel:0029129102320"> Office Telephone : 0029129102320</a>
+                    <a class="contact__all" href="tel:000232439493"> Mobile : 000 2324 39493</a>
+                </address>
+            </li>
+        </ul>
+        <div class="contact__wrapper">
+            <form class="contact__form" action="#">
+                <div class="contact__cover">
+                    <label class="visually-hidden" for="contact-name">Name</label>
+                    <input class="contact__name" id="contact-name" type="text" placeholder="NAME" required
+                        style="background-image: url(images/sprite.svg#contact-user);">
+                    <label class="visually-hidden" for="contact-email">Email</label>
+                    <input class="contact__email" id="contact-email" type="email" placeholder="EMAIL" required
+                        style="background-image: url(images/sprite.svg#contact-sms);">
+                </div>
+                <label class="visually-hidden" for="contact-texarea">Message</label>
+                <textarea class="contact__texarea" id="contact-texarea" placeholder="MESSAGE" required
+                    style="background-image: url(images/sprite.svg#contact-message);"></textarea>
+                <button class="contact__button" type="submit">Send Message</button>
+            </form>
+            <div class="contact__map">
+                 <img src="images/png/map.png" alt="map">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@@include('../parts/_articles.html')
+@@include('../parts/_footer.html')

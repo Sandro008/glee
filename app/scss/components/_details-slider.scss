@@ -1,0 +1,99 @@
+.details-slider {
+
+    .slider {
+        position: relative;
+    }
+
+    .slick-track {
+        padding: 0 15px;
+
+        @include for-size(phone) {
+            padding: 0;
+        }
+
+    }
+
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        top: -103px;
+        right: 0;
+        font-size: 0;
+        width: 46px;
+        height: 46px;
+        border-radius: 5px;
+        background-color: transparent;
+        cursor: pointer;
+        border: 2px solid $title;
+        transition: background-color 0.3s;
+
+        &:focus {
+            background-color: $dblue-50;
+        }
+
+        &:hover {
+            background-color: $orange-500;
+        }
+
+        &:active {
+            background-color: $gray-500;
+        }
+
+        @include for-size(tablet-min) {
+            top: -83px;
+        }
+
+    }
+
+    .slick-next {
+        background: url('../../images/sprite.svg#arrow2'); // ../../ uberu
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 22px;
+
+
+    }
+
+    .slick-prev {
+        right: 70px;
+        background: url('../../images/sprite.svg#arrow2'); // ../../ uberu
+        transform: rotate(180deg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 22px;
+
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        color: $blue-700;
+        margin-bottom: 50px;
+
+        @include for-size(tablet-min) {
+            margin-bottom: 20px;
+        }
+
+        @include for-size(phone) {
+            font-size: 27px;
+            text-align: center;
+        }
+    }
+
+    &__item {
+        background-color: transparent;
+
+        .product-card {
+            background-color: $white-05;
+            margin-right: 30px;
+
+            @include for-size(phone) {
+                margin-right: 0;
+                max-width: none;
+            }
+        }
+
+
+    }
+
+}
