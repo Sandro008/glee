@@ -73,7 +73,7 @@ $(function () {
 
 $(function () {
 
-    $('.select-style , .details-item__input').styler()
+    $('.select-style ,.details-item__input').styler()
 });
 
 $(function () {
@@ -88,7 +88,7 @@ $(function () {
 });
 $(function () {
 
-    $(".product-card__star ,.details-item__star").rateYo({
+    $(".product-card__star", ".details-item__star").rateYo({
         starWidth: "20px",
         normalFill: "#d6d6d6",
         ratedFill: "#ffcc00",
@@ -195,15 +195,26 @@ $(function () {
 
 
 $(function () {
-    var mixerOne = mixitup('.products__mixitup', {
-        controls: {
-            scope: 'local'
-        }
-    });
+    var containerEl = document.querySelector('.products__mixitup');
+    var mixer;
 
-    var mixertwo = mixitup('.design__mixitup', {
-        controls: {
-            scope: 'local'
-        }
-    });
+    if (containerEl) {
+        mixer = mixitup(containerEl, {
+            controls: {
+                scope: 'local'
+            }
+        });
+    }
+});
+$(function () {
+    var containerEl = document.querySelector('.design__mixitup');
+    var mixer;
+
+    if (containerEl) {
+        mixer = mixitup(containerEl, {
+            controls: {
+                scope: 'local'
+            }
+        });
+    }
 });
