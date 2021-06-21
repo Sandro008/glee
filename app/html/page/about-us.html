@@ -9,7 +9,7 @@
 <section class="about-us">
     <div class="container container--sm">
         <div class="about-us__mission">
-            <div class="about-us__wrapp">
+            <div class="about-us__wrapp" data-aos="fade-right">
                 <div class="about-us__images" style="background-image: url(../images/png/about-us/about-photo.png);">
                 </div>
             </div>
@@ -27,23 +27,29 @@
                     </p>
                 </div>
                 <ul class="about-us__statistic">
-                    @@include('../parts/_about-us__word.html',{
-                    "img": "images/sprite.svg#list",
-                    "num" : "520+",
-                    "text" : "Projects"
-                    })
-
-                    @@include('../parts/_about-us__word.html',{
-                    "img": "images/sprite.svg#shout",
-                    "num" : "$4M",
-                    "text" : "Revenue"
-                    })
-
+                    <li class="about-us__word" data-aos="flip-left" data-aos-delay="100"
+                    data-aos-duration="700">
+                        @@include('../parts/_about-us__word.html',{
+                        "img": "images/sprite.svg#list",
+                        "num" : "520+",
+                        "text" : "Projects"
+                        })
+                    </li>
+                    <li class="about-us__word" data-aos="flip-left" data-aos-delay="200" data-aos-duration="700">
+                        @@include('../parts/_about-us__word.html',{
+                        "img": "images/sprite.svg#shout",
+                        "num" : "$4M",
+                        "text" : "Revenue"
+                        })
+                    </li>
+                    <li class="about-us__word" data-aos="flip-left" data-aos-delay="300"
+                    data-aos-duration="700">
                     @@include('../parts/_about-us__word.html',{
                     "img": "images/sprite.svg#diamond",
                     "num" : "250",
                     "text" : "Awards"
                     })
+                    </li>
                 </ul>
             </div>
         </div>
@@ -51,36 +57,40 @@
     <div class="about-us__inner">
         <div class="container container--sm">
             <ul class="about-us__statical">
-                <li class="about-us__info">
+                <li class="about-us__info" >
                     <svg width="74" height="60">
                         <use xlink:href="images/sprite.svg#laptop"></use>
                     </svg>
-                    <p class="about-us__say"><span>99%</span>Satisﬁed Clients Rate </p>
+                    <p class="about-us__say"><span data-aos="flip-up">99%</span>Satisﬁed Clients
+                        Rate </p>
                 </li>
                 <li class="about-us__info">
                     <svg width="73" height="52">
                         <use xlink:href="images/sprite.svg#bus"></use>
                     </svg>
-                    <p class="about-us__say"><span>5020+</span>Products Delivered </p>
+                    <p class="about-us__say"><span data-aos="flip-up">5020+</span>Products
+                        Delivered </p>
                 </li>
                 <li class="about-us__info">
                     <svg width="79" height="64">
                         <use xlink:href="images/sprite.svg#phone24"></use>
                     </svg>
-                    <p class="about-us__say"><span>23h</span>Daily Working Time </p>
+                    <p class="about-us__say"><span data-aos="flip-up">23h</span>Daily Working Time
+                    </p>
                 </li>
                 <li class="about-us__info">
                     <svg width="61" height="64">
                         <use xlink:href="images/sprite.svg#star"></use>
                     </svg>
-                    <p class="about-us__say"><span>140+</span>Brands in Store</p>
+                    <p class="about-us__say"><span data-aos="flip-up">140+</span>Brands in Store
+                    </p>
                 </li>
             </ul>
         </div>
     </div>
     <div class="container container--sm">
         <div class="about-us__holder">
-            <div class="about-us__team">
+            <div class="about-us__team" data-aos="fade-up" data-aos-duration="2000">
                 <h2 class="about-us__caption title">Our Team</h2>
                 <div class="about-us__wrapper">
                     <p>Lorem ipsum dolor sit amet, conse ctetur adipi sicing elit,
@@ -100,28 +110,28 @@
                 </a>
             </div>
             <ul class="about-us__people">
-                <li class="about-us__labor">
+                <li class="about-us__labor" data-aos="fade-right">
                     @@include('../parts/_team.html',{
                     "image": "images/png/about-us/team1.png",
                     "title": "Eliza Elliot",
                     "subtitle": "Commodo tempor"
                     })
                 </li>
-                <li class="about-us__labor">
+                <li class="about-us__labor" data-aos="fade-left">
                     @@include('../parts/_team.html',{
                     "image": "images/png/about-us/team2.png",
                     "title": "Roscoe A.",
                     "subtitle": "Commodo tempor"
                     })
                 </li>
-                <li class="about-us__labor">
+                <li class="about-us__labor" data-aos="fade-right">
                     @@include('../parts/_team.html',{
                     "image": "images/png/about-us/team3.png",
                     "title": "Ruby M.",
                     "subtitle": "Commodo tempor"
                     })
                 </li>
-                <li class="about-us__labor">
+                <li class="about-us__labor" data-aos="fade-left">
                     @@include('../parts/_team.html',{
                     "image": "images/png/about-us/team4.png",
                     "title": "Marie F.Bloss",

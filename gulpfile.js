@@ -74,6 +74,7 @@
              'node_modules/rateyo/src/jquery.rateyo.js',
              'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
              'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+             'node_modules/aos/dist/aos.js',
              'app/js/main.js'
          ])
          .pipe(concat('main.min.js'))

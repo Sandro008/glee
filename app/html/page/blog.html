@@ -1,0 +1,31 @@
+@@include('../parts/_head.html',{
+"title" : "Blog"
+})
+
+@@include('../parts/_header.html')
+@@include('../parts/_top.html',{
+"title" :"Blog"
+})
+
+<section class="blog">
+    <div class="container container--sm">
+        <div class="blog__inner">
+            <ul class="blog__list">
+                <li class="blog__item">
+                       @@include('../parts/_news.html',{
+                       "images" : "images/png/articles/news1.png",
+                       "text" : "Diusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam",
+                       "data" : "28 january, 2020",
+                       "admin" : "by admin"
+                       })
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+@@include('../parts/_partners.html')
+@@include('../parts/_footer.html')

@@ -5,7 +5,7 @@
             <a class="articles__all" href="#">View All<span>></span></a>
         </div>
         <ul class="articles__items">
-            <li class="articles__item">
+            <li class="articles__item" data-aos="flip-left" data-aos-delay="150">
                 @@include('../parts/_news.html',{
                 "images" : "images/png/articles/news1.png",
                 "text" : "Diusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam",
@@ -13,7 +13,7 @@
                 "admin" : "by admin"
                 })
             </li>
-            <li class="articles__item">
+            <li class="articles__item" data-aos="flip-left" data-aos-delay="250">
                 @@include('../parts/_news.html',{
                 "images" : "images/png/articles/news2.png",
                 "text" : "Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore",
@@ -22,7 +22,7 @@
                 })
 
             </li>
-            <li class="articles__item">
+            <li class="articles__item" data-aos="flip-left" data-aos-delay="350">
                 @@include('../parts/_news.html',{
                 "images" : "images/png/articles/news3.png",
                 "text" : "Rncididunt ut labore et dolore magna aliqua.Ut enim",
@@ -32,5 +32,5 @@
             </li>
         </ul>
     </div>
-     @@include('../parts/_partners.html')
+    @@include('../parts/_partners.html')
 </section>

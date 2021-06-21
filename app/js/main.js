@@ -1,3 +1,11 @@
+AOS.init({
+
+    disable: 'phone',
+    duration: 1000,
+    once: true
+
+});
+
 $(function () {
     $('.details-item__list').slick({
         asNavFor: '.details-item__top',
@@ -123,7 +131,7 @@ $(function () {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 4,
-                     slidesToScroll: 2
+                    slidesToScroll: 2
                 }
             },
             {
