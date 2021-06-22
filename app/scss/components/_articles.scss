@@ -1,5 +1,5 @@
 .articles {
-
+   
     & .partners {
         padding: 260px 0 76px;
         margin-top: -170px;
@@ -49,10 +49,13 @@
     }
 
     &__item {
-        margin-right: 30px;
+        .aos-init{
+            transition-delay: .2s;
+        }
 
-        &:last-child {
-            margin-right: 0;
+        &:not(:last-child) {
+            margin-right: 30px;
+
         }
 
         @include for-size(laptop) {
@@ -65,3 +68,4 @@
     }
 
 }
+

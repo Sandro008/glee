@@ -1,33 +1,3 @@
-AOS.init({
-
-    disable: 'phone',
-    duration: 1000,
-    once: true
-
-});
-
-$(function () {
-    $('.details-item__list').slick({
-        asNavFor: '.details-item__top',
-        focusOnSelect: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        vertical: true,
-        draggable: false,
-        arrows: false
-
-    });
-    $('.details-item__top').slick({
-        asNavFor: '.details-item__list',
-        draggable: false,
-        arrows: false,
-        fade: true,
-        autoplay: true,
-        autoplaySpeed: 1500
-
-    });
-
-})
 $(function () {
     $('.details-tabs__link').on('click', function (e) {
         e.preventDefault();
@@ -106,17 +76,75 @@ $(function () {
     });
 });
 
-$(function () {
-    $('.top-slider__inner').slick({
-        arrows: false,
-        dots: true,
-        autoplay: true,
-        autoplaySpeed: 2000,
 
-    });
+
+$(function () {
+    var containerEl = document.querySelector('.products__mixitup');
+    var mixer;
+
+    if (containerEl) {
+        mixer = mixitup(containerEl, {
+            controls: {
+                scope: 'local'
+            }
+        });
+    }
+});
+$(function () {
+    var containerEl = document.querySelector('.design__mixitup');
+    var mixer;
+
+    if (containerEl) {
+        mixer = mixitup(containerEl, {
+            controls: {
+                scope: 'local'
+            }
+        });
+    }
 });
 
-$(function () {
+$(window).on('load', function () {
+
+    AOS.init({
+        disable: 'phone',
+        duration: 1500,
+        once: true,
+    });
+
+    $('.details-slider__list').slick({
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        touchMove: true,
+        responsive: [{
+
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1
+                }
+            }
+        ]
+
+
+    });
     $('.partners__slider').slick({
         arrows: false,
         dots: false,
@@ -153,68 +181,32 @@ $(function () {
 
 
     });
-
-});
-$(function () {
-    $('.details-slider__list').slick({
-        arrows: true,
-        dots: false,
+    $('.top-slider__inner').slick({
+        arrows: false,
+        dots: true,
         autoplay: true,
-        autoplaySpeed: 1500,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        touchMove: true,
-        responsive: [{
-
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 3,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2
-                }
-
-            },
-            {
-                breakpoint: 575,
-                settings: {
-                    arrows: false,
-                    slidesToShow: 1
-                }
-            }
-        ]
-
+        autoplaySpeed: 2000,
 
     });
+     $('.details-item__list').slick({
+         asNavFor: '.details-item__top',
+         focusOnSelect: true,
+         slidesToShow: 3,
+         slidesToScroll: 1,
+         vertical: true,
+         draggable: false,
+         arrows: false
 
-});
+     });
+     $('.details-item__top').slick({
+         asNavFor: '.details-item__list',
+         draggable: false,
+         arrows: false,
+         fade: true,
+         autoplay: true,
+         autoplaySpeed: 1500
 
+     });
 
-$(function () {
-    var containerEl = document.querySelector('.products__mixitup');
-    var mixer;
-
-    if (containerEl) {
-        mixer = mixitup(containerEl, {
-            controls: {
-                scope: 'local'
-            }
-        });
-    }
-});
-$(function () {
-    var containerEl = document.querySelector('.design__mixitup');
-    var mixer;
-
-    if (containerEl) {
-        mixer = mixitup(containerEl, {
-            controls: {
-                scope: 'local'
-            }
-        });
-    }
+    AOS.refresh();
 });
