@@ -94,5 +94,12 @@
         margin-right: 5px;
         fill: $accent;
     }
+    &__info{
+        display: none;
+    }
+    &__button{
+        display: none;
+    }
+    
 
 }

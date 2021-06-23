@@ -12,15 +12,115 @@
         <div class="blog__inner">
             <ul class="blog__list">
                 <li class="blog__item">
-                       @@include('../parts/_news.html',{
-                       "images" : "images/png/articles/news1.png",
-                       "text" : "Diusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam",
-                       "data" : "28 january, 2020",
-                       "admin" : "by admin"
-                       })
+                    @@include('../parts/_news.html',{
+                    "images" : "images/png/blog/blog1.png",
+                    "text" : "Fonsectetur adipisicing eiusmod",
+                    "data" : "28 january, 2020",
+                    "admin" : "by admin",
+                    "info" : "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                    })
+                </li>
+                <li class="blog__item">
+                    @@include('../parts/_news.html',{
+                    "images" : "images/png/blog/blog2.png",
+                    "text" : "Fonsectetur adipisicing elit,",
+                    "data" : "28 january, 2020",
+                    "admin" : "by admin",
+                    "info" : "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                    })
+                </li>
+                <li class="blog__item">
+                    @@include('../parts/_news.html',{
+                    "images" : "images/png/blog/blog3.png",
+                    "text" :"Fsectetur adipisicing tempor incididunt",
+                    "data" : "28 january, 2020",
+                    "admin" : "by admin",
+                    "info" : "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                    })
+                </li>
+                <li class="blog__item">
+                    @@include('../parts/_news.html',{
+                    "images" : "images/png/blog/blog4.png",
+                    "text" : "Vonsectetur adipisicing elit",
+                    "data" : "28 january, 2020",
+                    "admin" : "by admin",
+                    "info" : "consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                    })
                 </li>
             </ul>
+            <form action="#" class="blog__form">
+                <div class="blog__box">
+                    <label class="visually-hidden" for="blog-search">Search</label>
+                    <input class="blog__input" type="text" id="blog-search">
+                    <button class="blog__btn" type="submit">
+                        <span class="visually-hidden"> Button Search</span>
+                        <svg width="15.28" height="15.281">
+                            <use xlink:href="images/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="catalog__box">
+                    <h2 class="catalog__title titles">Category</h2>
+                    <div class="catalog__category">
+                        <label class="catalog__label">
+                            <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                            <span class="catalog__name">Chair</span>
+                        </label>
+                        <label class="catalog__label">
+                            <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                            <span class="catalog__name">Table</span>
+                        </label>
+                        <label class="catalog__label">
+                            <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                            <span class="catalog__name">Lamp</span>
+                        </label>
+                        <label class="catalog__label">
+                            <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                            <span class="catalog__name">Watch</span>
+                        </label>
+                        <label class="catalog__label">
+                            <input class="catalog__chek visually-hidden" type="checkbox" name="category">
+                            <span class="catalog__name">Clock</span>
+                        </label>
+                    </div>
+                </div>
+                 <div class="blog__recent">
+                     <h2 class="blog__titles titles">Recent Posts</h2>
+                     <ul class="blog__word">
+                         <li class="blog__items">
+                             @@include('../parts/_blog__links.html',{
+                             "image" : "images/png/blog/blog1.png",
+                             "text" : "Corem ipsum dolor tetur adipisicing elit",
+                             "data" : "28 january 2020"
+                             })
+                         </li>
+                         <li class="blog__items">
+                             @@include('../parts/_blog__links.html',{
+                             "image" : "images/png/blog/blog2.png",
+                             "text" : "Fdipisicing elit, sed do eiusmod tempor",
+                             "data" : "28 january 2020"
+                             })
+                         </li>
+                         <li class="blog__items">
+                             @@include('../parts/_blog__links.html',{
+                             "image" : "images/png/blog/blog3.png",
+                             "text" : "Eonsectetur adipisicing elit, sed do eiusmod",
+                             "data" : "28 january 2020"
+                             })
+                         </li>
+                         <li class="blog__items">
+                             @@include('../parts/_blog__links.html',{
+                             "image" : "images/png/blog/blog4.png",
+                             "text" : "gnim ad minim veniam, quis nostrud",
+                             "data" : "28 january 2020"
+                             })
+                         </li>
+                     </ul>
+                 </div>
+            </form>
+            
         </div>
+        @@include('../parts/_pagination.html')
     </div>
 </section>
 
