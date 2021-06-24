@@ -13,13 +13,14 @@
 
     .news {
         max-width: 100%;
-        position: relative;
         margin-bottom: 50px;
         box-shadow: none;
+        position: relative;
 
         &:hover {
             transform: translateY(0);
         }
+        
 
         &__image {
             height: 51vh;
@@ -52,8 +53,7 @@
 
         &__txt {
             position: absolute;
-            left: 0;
-            bottom: 35%;
+            bottom:273px;
             width: 270px;
             border-top: none;
             line-height: 3;
@@ -77,7 +77,6 @@
             line-height: 2;
             color: $accent;
             @include line-clamp(3)
-            
         }
 
         &__button {
@@ -170,6 +169,7 @@
         padding: 0;
         cursor: pointer;
         transition: all 0.5s;
+
         svg {
             fill: $accent;
         }
