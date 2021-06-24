@@ -49,14 +49,16 @@
     }
 
     &__item {
+         margin-right: 30px;
+
+         &:last-child{
+             margin-right: 0;
+         }
         .aos-init{
             transition-delay: .2s;
         }
 
-        &:not(:last-child) {
-            margin-right: 30px;
-
-        }
+        
 
         @include for-size(laptop) {
             margin-bottom: 30px;
