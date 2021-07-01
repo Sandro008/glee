@@ -193,6 +193,7 @@
     }
 
     &__name {
+        background-image: url(images/sprite.svg#contact-user);
         margin-right: 20px;
         background-repeat: no-repeat;
         background-size: 14px;
@@ -204,6 +205,7 @@
     }
 
     &__email {
+        background-image: url(images/sprite.svg#contact-sms);
         background-repeat: no-repeat;
         background-size: 14px;
         background-position: 92%;
@@ -221,6 +223,7 @@
         &::placeholder {
             font-size: 16px;
             color: $fiolet;
+            text-transform: uppercase;
         }
 
         &:focus {
@@ -234,6 +237,7 @@
 
 
     &__texarea {
+        background-image: url(images/sprite.svg#contact-message);
         width: 100%;
         min-height: 180px;
         margin-bottom: 17px;
@@ -250,6 +254,7 @@
         &::placeholder {
             font-size: 16px;
             color: $fiolet;
+            text-transform: uppercase;
         }
 
         &:focus {

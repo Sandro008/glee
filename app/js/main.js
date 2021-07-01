@@ -1,4 +1,15 @@
 $(function () {
+    $('.entry__buttn').on('click', function () {
+        $('.entry__registration').addClass('entry__registration--active');
+        $("body").css("overflow", "hidden");
+    });
+      $('.entry__close').on('click', function () {
+         $('.entry__registration').removeClass('entry__registration--active');
+          $("body").css("overflow", "visible");
+      });
+});
+
+$(function () {
     $('.details-tabs__link').on('click', function (e) {
         e.preventDefault();
         $('.details-tabs__link').removeClass('details-tabs__link--active');
@@ -74,6 +85,7 @@ $(function () {
     $('.menubar__close').on('click', function () {
         $('.menubar').addClass('menubar--close');
     });
+
 });
 
 
@@ -188,25 +200,25 @@ $(window).on('load', function () {
         autoplaySpeed: 2000,
 
     });
-     $('.details-item__list').slick({
-         asNavFor: '.details-item__top',
-         focusOnSelect: true,
-         slidesToShow: 3,
-         slidesToScroll: 1,
-         vertical: true,
-         draggable: false,
-         arrows: false
+    $('.details-item__list').slick({
+        asNavFor: '.details-item__top',
+        focusOnSelect: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        vertical: true,
+        draggable: false,
+        arrows: false
 
-     });
-     $('.details-item__top').slick({
-         asNavFor: '.details-item__list',
-         draggable: false,
-         arrows: false,
-         fade: true,
-         autoplay: true,
-         autoplaySpeed: 1500
+    });
+    $('.details-item__top').slick({
+        asNavFor: '.details-item__list',
+        draggable: false,
+        arrows: false,
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 1500
 
-     });
+    });
 
     AOS.refresh();
 });
